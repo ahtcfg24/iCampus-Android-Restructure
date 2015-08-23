@@ -14,7 +14,7 @@ import java.security.UnrecoverableKeyException;
 
 /**
  * Created by hcjcch on 2015/2/13.
- * 网络访问累类，使用第三方库AsyncHttpClient
+ * 网络访问类，使用第三方库AsyncHttpClient
  */
 
 public class AsyncHttpIc {

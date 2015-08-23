@@ -17,6 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 加载登录界面的网页
  * Created by hcjcch on 2015/2/12.
  */
 public class OAuthActivity extends Activity {
@@ -26,6 +27,7 @@ public class OAuthActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oauth);
+
         initView();
         setWebView();
         oauth();

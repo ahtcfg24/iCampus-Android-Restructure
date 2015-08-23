@@ -14,17 +14,16 @@
         android:layout_height="wrap_content"
         android:text="登录"
         android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="退出"
         android:id="@+id/button2"
-        android:layout_above="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -32,8 +31,8 @@
         android:layout_height="wrap_content"
         android:text="刷新Token"
         android:id="@+id/button3"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -41,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="获取用户信息"
         android:id="@+id/button4"
-        android:layout_above="@+id/button3"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

@@ -44,6 +44,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         login = (Button) findViewById(R.id.button);
         logout = (Button) findViewById(R.id.button2);
         refreshToken = (Button) findViewById(R.id.button3);
@@ -51,6 +52,7 @@ public class MainActivity extends ActionBarActivity {
         textView = (TextView) findViewById(R.id.textView);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,8 +63,9 @@ public class MainActivity extends ActionBarActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PersonalActivity.class);
-                startActivity(intent);
+                // TODO: 2015/8/23 logout
+                startActivity(new Intent(MainActivity.this,HomeActivity.class));
+
             }
         });
         refreshToken.setOnClickListener(new View.OnClickListener() {
