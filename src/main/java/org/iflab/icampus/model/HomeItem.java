@@ -8,7 +8,7 @@ package org.iflab.icampus.model;
 public class HomeItem {
     private int iconId;
     private String itemName;
-    private Class itemModule;
+    private Class<?> itemModule;
 
     public int getIconId() {
         return iconId;

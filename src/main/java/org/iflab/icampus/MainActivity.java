@@ -64,7 +64,6 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 // TODO: 2015/8/23 logout
-                startActivity(new Intent(MainActivity.this,HomeActivity.class));
 
             }
         });

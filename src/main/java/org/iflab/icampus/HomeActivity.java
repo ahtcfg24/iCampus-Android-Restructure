@@ -3,6 +3,7 @@ package org.iflab.icampus;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,7 +42,8 @@ public class HomeActivity extends ActionBarActivity {
         modules.add(new HomeItem(R.drawable.job, "工作", JobActivity.class));
         modules.add(new HomeItem(R.drawable.group, "群组", GroupActivity.class));
         modules.add(new HomeItem(R.drawable.secondhand, "二手", SecondActivity.class));
-        modules.add(new HomeItem(R.drawable.classroom, "教室", ClassRoomActivity.class));
+        modules.add(new HomeItem(R.drawable.classroom,"教室", ClassRoomActivity.class));
+        modules.add(new HomeItem(R.drawable.grade,"成绩",GradeActivity.class));
 
         gridView.setAdapter(new MyGridAdapter(modules,HomeActivity.this));
     }
@@ -121,8 +123,10 @@ public class HomeActivity extends ActionBarActivity {
             convertView = LayoutInflater.from(context).inflate(R.layout.home_item, null);
             imageView=(ImageView)findViewById(R.id.home_icon);
             textView=(TextView)findViewById(R.id.home_name);
-            imageView.setImageResource(items.get(position).getIconId());
-            textView.setText(items.get(position).getItemName());
+            Log.i("哈哈", "---》" + items.size() + items.get(position).getIconId());
+
+//            imageView.setImageResource(R.drawable.)
+//            textView.setText(items.get(position).getItemName());
             return convertView;
         }
     }
