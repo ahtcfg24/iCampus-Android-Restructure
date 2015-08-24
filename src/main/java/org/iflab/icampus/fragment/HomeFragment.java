@@ -31,6 +31,9 @@ import java.util.List;
 //import org.iflab.icampus.WiFiActivity;
 //import org.iflab.icampus.YellowPageActivity;
 
+/**
+ * 绘制GridView
+ */
 public class HomeFragment extends Fragment {
     private GridView gridView;//主界面宫格
     private List<HomeItem> modules;//存放所有模块的列表

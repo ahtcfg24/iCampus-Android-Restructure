@@ -9,12 +9,13 @@
     app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
     <TextView
-        android:id="@+id/text_view_toolbar_title"
+        android:id="@+id/toolbar_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:textColor="@color/text_color"
+        android:text="测试"
+        android:textColor="#fff"
         android:textSize="@dimen/tool_bar_text_size"/>
 
 </android.support.v7.widget.Toolbar>

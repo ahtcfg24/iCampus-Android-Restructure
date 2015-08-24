@@ -1,7 +1,5 @@
 package org.iflab.icampus;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -27,16 +25,20 @@ import org.iflab.icampus.fragment.HomeFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 主页
+ */
 public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener,
         OnMenuItemLongClickListener {
 
     private FragmentManager fragmentManager;
-    private DialogFragment mMenuDialogFragment;
+    private DialogFragment menuDialogFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         fragmentManager = getSupportFragmentManager();
         initToolbar("主页");
         initMenuFragment();
@@ -48,7 +50,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         menuParams.setActionBarSize((int) getResources().getDimension(R.dimen.tool_bar_height));
         menuParams.setMenuObjects(getMenuObjects());
         menuParams.setClosableOutside(false);
-        mMenuDialogFragment = ContextMenuDialogFragment.newInstance(menuParams);
+        menuDialogFragment = ContextMenuDialogFragment.newInstance(menuParams);
     }
 
     private List<MenuObject> getMenuObjects() {
@@ -70,26 +72,25 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
         List<MenuObject> menuObjects = new ArrayList<>();
 
-        MenuObject close = new MenuObject();
-        close.setResource(R.drawable.ic_action_edit);
+        MenuObject userMenu = new MenuObject("用户中心");
+        userMenu.setResource(R.drawable.option_user);
 
-        MenuObject send = new MenuObject("Send message");
-        send.setResource(R.drawable.ic_action_done);
+        MenuObject aboutMenu = new MenuObject("关于我们");
+        aboutMenu.setResource(R.drawable.option_about);
 
-        MenuObject like = new MenuObject("Like profile");
-        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.ic_action_select_all);
-        like.setBitmap(b);
+        MenuObject update = new MenuObject("检查更新");
+        update.setResource(R.drawable.option_update);
 
 
-        menuObjects.add(close);
-        menuObjects.add(send);
-        menuObjects.add(like);
+        menuObjects.add(userMenu);
+        menuObjects.add(aboutMenu);
+        menuObjects.add(update);
         return menuObjects;
     }
 
     private void initToolbar(String title) {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView mToolBarTextView = (TextView) findViewById(R.id.text_view_toolbar_title);
+        TextView toolbarTirle = (TextView) findViewById(R.id.toolbar_title);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -101,7 +102,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 onBackPressed();
             }
         });
-        mToolBarTextView.setText(title);
+        toolbarTirle.setText(title);
     }
 
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
@@ -130,7 +131,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         switch (item.getItemId()) {
             case R.id.context_menu:
                 if (fragmentManager.findFragmentByTag(ContextMenuDialogFragment.TAG) == null) {
-                    mMenuDialogFragment.show(fragmentManager, ContextMenuDialogFragment.TAG);
+                    menuDialogFragment.show(fragmentManager, ContextMenuDialogFragment.TAG);
                 }
                 break;
         }
@@ -139,8 +140,8 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     @Override
     public void onBackPressed() {
-        if (mMenuDialogFragment != null && mMenuDialogFragment.isAdded()) {
-            mMenuDialogFragment.dismiss();
+        if (menuDialogFragment != null && menuDialogFragment.isAdded()) {
+            menuDialogFragment.dismiss();
         } else {
             finish();
         }
