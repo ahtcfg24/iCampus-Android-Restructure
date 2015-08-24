@@ -7,11 +7,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
@@ -33,6 +33,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
+    private long exitTime = 0;//记录按返回键的时间点
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         setContentView(R.layout.activity_home);
 
         fragmentManager = getSupportFragmentManager();
-        initToolbar("主页");
+        initToolbar();
         initMenuFragment();
         addFragment(new HomeFragment(), true, R.id.container);
     }
@@ -88,21 +89,14 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         return menuObjects;
     }
 
-    private void initToolbar(String title) {
+    /**
+     *
+     */
+    private void initToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView toolbarTirle = (TextView) findViewById(R.id.toolbar_title);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-        toolbarTirle.setText(title);
+        toolbar.setTitle("iBistu");
+        toolbar.setLogo(R.drawable.logo_bistu);//设置静态logo
+        setSupportActionBar(toolbar);//把ToolBar设置为ActionBar
     }
 
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
@@ -117,6 +111,21 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 transaction.addToBackStack(backStackName);
             transaction.commit();
         }
+    }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if ((System.currentTimeMillis() - exitTime) > 2000) {
+                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                exitTime = System.currentTimeMillis();
+            } else {
+                finish();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override
@@ -138,11 +147,18 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * 当在主页按返回键时，双击退出，并确保fragment被dismiss
+     */
     @Override
     public void onBackPressed() {
-        if (menuDialogFragment != null && menuDialogFragment.isAdded()) {
-            menuDialogFragment.dismiss();
+        if ((System.currentTimeMillis() - exitTime) > 2000) {
+            Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+            exitTime = System.currentTimeMillis();
         } else {
+            if (menuDialogFragment != null && menuDialogFragment.isAdded()) {
+                menuDialogFragment.dismiss();
+            }
             finish();
         }
     }

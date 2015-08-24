@@ -12,7 +12,6 @@
     <style name="MyActionBar"
            parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/actionbar_background</item>
-
         <!-- 支持库兼容 -->
         <item name="background">@drawable/actionbar_background</item>
     </style>
