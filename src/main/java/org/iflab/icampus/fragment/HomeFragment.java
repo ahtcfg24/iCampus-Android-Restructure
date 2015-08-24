@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import org.iflab.icampus.NewsActivity;
 import org.iflab.icampus.R;
+import org.iflab.icampus.YellowPageActivity;
 import org.iflab.icampus.model.HomeItem;
 
 import java.util.ArrayList;
@@ -42,7 +43,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_home, container, false);
         initGridView();
-
         return rootView;
 
     }
@@ -158,4 +158,5 @@ public class HomeFragment extends Fragment {
             return convertView;
         }
     }
+
 }

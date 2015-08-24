@@ -18,7 +18,6 @@ import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
 import com.yalantis.contextmenu.lib.MenuObject;
 import com.yalantis.contextmenu.lib.MenuParams;
 import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
-import com.yalantis.contextmenu.lib.interfaces.OnMenuItemLongClickListener;
 
 import org.iflab.icampus.fragment.HomeFragment;
 
@@ -28,8 +27,7 @@ import java.util.List;
 /**
  * 主页
  */
-public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener,
-        OnMenuItemLongClickListener {
+public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener {
 
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
@@ -50,47 +48,38 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         MenuParams menuParams = new MenuParams();
         menuParams.setActionBarSize((int) getResources().getDimension(R.dimen.tool_bar_height));
         menuParams.setMenuObjects(getMenuObjects());
-        menuParams.setClosableOutside(false);
         menuDialogFragment = ContextMenuDialogFragment.newInstance(menuParams);
     }
 
-    private List<MenuObject> getMenuObjects() {
-        // You can use any [resource, bitmap, drawable, color] as image:
-        // item.setResource(...)
-        // item.setBitmap(...)
-        // item.setDrawable(...)
-        // item.setColor(...)
-        // You can set image ScaleType:
-        // item.setScaleType(ScaleType.FIT_XY)
-        // You can use any [resource, drawable, color] as background:
-        // item.setBgResource(...)
-        // item.setBgDrawable(...)
-        // item.setBgColor(...)
-        // You can use any [color] as text color:
-        // item.setTextColor(...)
-        // You can set any [color] as divider color:
-        // item.setDividerColor(...)
 
+    private List<MenuObject> getMenuObjects() {
         List<MenuObject> menuObjects = new ArrayList<>();
 
-        MenuObject userMenu = new MenuObject("用户中心");
-        userMenu.setResource(R.drawable.option_user);
 
-        MenuObject aboutMenu = new MenuObject("关于我们");
-        aboutMenu.setResource(R.drawable.option_about);
+        MenuObject cancelOption = new MenuObject();
+        cancelOption.setResource(R.drawable.option_fold);
 
-        MenuObject update = new MenuObject("检查更新");
-        update.setResource(R.drawable.option_update);
+        MenuObject userOption = new MenuObject("用户中心");
+        userOption.setResource(R.drawable.option_user);
+        userOption.setMenuTextAppearanceStyle(R.style.MenuTextStyle);//设置选项样式
 
+        MenuObject aboutOption = new MenuObject("关于我们");
+        aboutOption.setResource(R.drawable.option_about);
+        aboutOption.setMenuTextAppearanceStyle(R.style.MenuTextStyle);
 
-        menuObjects.add(userMenu);
-        menuObjects.add(aboutMenu);
-        menuObjects.add(update);
+        MenuObject updateOption = new MenuObject("检查更新");
+        updateOption.setResource(R.drawable.option_update);
+        updateOption.setMenuTextAppearanceStyle(R.style.MenuTextStyle);
+
+        menuObjects.add(cancelOption);
+        menuObjects.add(userOption);
+        menuObjects.add(aboutOption);
+        menuObjects.add(updateOption);
         return menuObjects;
     }
 
     /**
-     *
+     * 初始化ToolBar
      */
     private void initToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -116,14 +105,11 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if ((System.currentTimeMillis() - exitTime) > 2000) {
-                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
-                exitTime = System.currentTimeMillis();
-            } else {
-                finish();
+        /*按菜单键时也能弹出菜单*/
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            if (fragmentManager.findFragmentByTag(ContextMenuDialogFragment.TAG) == null) {
+                menuDialogFragment.show(fragmentManager, ContextMenuDialogFragment.TAG);
             }
-            return true;
         }
         return super.onKeyDown(keyCode, event);
     }
@@ -163,15 +149,22 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         }
     }
 
-    @Override
-    public void onMenuItemClick(View clickedView, int position) {
-        Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
-    }
 
     @Override
-    public void onMenuItemLongClick(View clickedView, int position) {
-        Toast.makeText(this, "Long clicked on position: " + position, Toast.LENGTH_SHORT).show();
+    public void onMenuItemClick(View clickedView, int position) {
+        switch (position) {
+            case 0://返回主界面
+                break;
+            case 1:// TODO: 2015/8/25  
+                break;
+            case 2:// TODO: 2015/8/25  
+                break;
+            case 3:// TODO: 2015/8/25  
+                break;
+        }
+
     }
+
 }
 
 

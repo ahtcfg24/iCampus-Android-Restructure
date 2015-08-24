@@ -1,11 +1,9 @@
-package org.iflab.icampus.fragment;
+package org.iflab.icampus;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import org.iflab.icampus.R;
 
 public class YellowPageActivity extends ActionBarActivity {
 
