@@ -3,10 +3,9 @@
 
     <item
         android:id="@+id/context_menu"
-        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:icon="@drawable/ic_action_overflow"
         android:orderInCategory="100"
-        android:title="标题"
+        android:title="@string/context_menu"
         app:showAsAction="always"/>
 
 </menu>
-

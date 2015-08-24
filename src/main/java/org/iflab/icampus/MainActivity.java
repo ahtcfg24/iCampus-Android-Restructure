@@ -1,10 +1,10 @@
 package org.iflab.icampus;
 
 import android.content.Context;
-import android.support.v7.app.ActionBar;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,7 +26,6 @@ import org.iflab.icampus.oauth.TokenHandle;
 import org.iflab.icampus.utils.StaticVariable;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -39,6 +38,16 @@ public class MainActivity extends ActionBarActivity {
     private TextView textView;
     private WebView webView;
     private String info = "";
+
+    public static RequestParams createRefreshTokenParams(Context context) {
+        RequestParams params = new RequestParams();
+        params.put(StaticVariable.OauthStaticVariable.KEY_CLIENT_ID, StaticVariable.OauthStaticVariable.CLIENT_ID);
+        params.put(StaticVariable.OauthStaticVariable.KEY_CLIENT_SECRET, StaticVariable.OauthStaticVariable.CLIENT_SECRET);
+        params.put(StaticVariable.OauthStaticVariable.KEY_REDIRECT_URI, StaticVariable.OauthStaticVariable.REDIRECT_URI);
+        params.put(StaticVariable.OauthStaticVariable.KEY_GRANT_TYPE, "refresh_token");
+        params.put("refresh_token", TokenHandle.getRefreshToken(context));
+        return params;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,14 +106,13 @@ public class MainActivity extends ActionBarActivity {
                 GetUserInfo.getUser(MainActivity.this,new GetUserInfo.HandleUser() {
                     @Override
                     public void handleUser(User user) {
-                        info = info + TokenHandle.getAccessToken(MainActivity.this) + "\n" + user; 
+                        info = info + TokenHandle.getAccessToken(MainActivity.this) + "\n" + user;
                         textView.setText(info);
                     }
                 });
             }
         });
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -126,7 +134,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_news, menu);
         return true;
     }
 
@@ -143,15 +151,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public static RequestParams createRefreshTokenParams(Context context) {
-        RequestParams params = new RequestParams();
-        params.put(StaticVariable.OauthStaticVariable.KEY_CLIENT_ID, StaticVariable.OauthStaticVariable.CLIENT_ID);
-        params.put(StaticVariable.OauthStaticVariable.KEY_CLIENT_SECRET, StaticVariable.OauthStaticVariable.CLIENT_SECRET);
-        params.put(StaticVariable.OauthStaticVariable.KEY_REDIRECT_URI, StaticVariable.OauthStaticVariable.REDIRECT_URI);
-        params.put(StaticVariable.OauthStaticVariable.KEY_GRANT_TYPE, "refresh_token");
-        params.put("refresh_token", TokenHandle.getRefreshToken(context));
-        return params;
     }
 }

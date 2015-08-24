@@ -1,8 +1,22 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="CustomActionBarTheme"
+           parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- 支持库兼容 -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
 
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar"
+           parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_background</item>
+
+        <!-- 支持库兼容 -->
+        <item name="background">@drawable/actionbar_background</item>
+    </style>
+
+    <drawable name="actionbar_background">#0099cc</drawable>
 </resources>
+

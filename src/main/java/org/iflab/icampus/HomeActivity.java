@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -22,8 +22,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends ActionBarActivity {
+
     private GridView gridView;//主界面宫格
     private List<HomeItem> modules;//存放所有模块的列表
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class HomeActivity extends ActionBarActivity {
         setContentView(R.layout.activity_home);
 
         initGridView();
+
     }
 
     public void initGridView() {
@@ -55,25 +58,10 @@ public class HomeActivity extends ActionBarActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+    public boolean onCreateOptionsMenu(final Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_home, menu);
         return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -101,6 +89,7 @@ public class HomeActivity extends ActionBarActivity {
 
         /**
          * 覆盖自AdapteView，此处不会自动调用
+         *
          * @param position 正在点击的item在数据集合中的的位置
          * @return 该位置处的item对象
          */
@@ -113,6 +102,7 @@ public class HomeActivity extends ActionBarActivity {
 
         /**
          * 点击时调用
+         *
          * @param position 正在点击的item在数据集合中的的位置
          * @return 当前选项所在的位置的id
          */
@@ -157,36 +147,11 @@ public class HomeActivity extends ActionBarActivity {
         }
     }
 
-
     private class MyItemListener implements android.widget.AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            switch (modules.get(position).getItemName()) {
-                case "新闻":
-                    startActivity(new Intent(HomeActivity.this, NewsActivity.class));
-                    break;
-                case "黄页":
-                    break;
-                case "地图":
-                    break;
-                case "校车":
-                    break;
-                case "WiFi":
-                    break;
-                case "工作":
-                    break;
-                case "群组":
-                    break;
-                case "二手":
-                    break;
-                case "教室":
-                    break;
-                case "成绩":
-                    break;
-                default:
-                    break;
-            }
+            startActivity(new Intent(HomeActivity.this, modules.get(position).getItemModule()));
         }
     }
+
 }
