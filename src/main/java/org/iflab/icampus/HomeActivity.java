@@ -1,6 +1,7 @@
 package org.iflab.icampus;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -46,6 +48,10 @@ public class HomeActivity extends ActionBarActivity {
         modules.add(new HomeItem(R.drawable.grade, "成绩", GradeActivity.class));
 
         gridView.setAdapter(new MyGridAdapter(modules, HomeActivity.this));
+
+        gridView.setOnItemClickListener(new MyItemListener());
+
+
     }
 
     @Override
@@ -76,7 +82,6 @@ public class HomeActivity extends ActionBarActivity {
     private class MyGridAdapter extends BaseAdapter {
         private List<HomeItem> items;//存放从GridView传过来的items
         private Context context;//代表GridView所在的Activity
-        private ViewHolder viewHolder;
         private TextView textView;
         private ImageView imageView;
 
@@ -135,37 +140,43 @@ public class HomeActivity extends ActionBarActivity {
                 imageView = (ImageView) convertView.findViewById(R.id.home_icon);//findViewById是用来找子控件的
                 textView = (TextView) convertView.findViewById(R.id.home_name);
             }
-            Log.i("哈哈",""+ position);
+            Log.i("哈哈", "" + position);
             imageView.setImageResource(items.get(position).getIconId());
             textView.setText(items.get(position).getItemName());
             return convertView;
         }
     }
 
-    class ViewHolder extends View {
-        private TextView myTextView;
-        private ImageView myImageView;
 
-        public ViewHolder(TextView myTextView, ImageView myImageView, Context context) {
-            super(context);
-            this.myTextView = myTextView;
-            this.myImageView = myImageView;
-        }
+    private class MyItemListener implements android.widget.AdapterView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-        public TextView getMyTextView() {
-            return myTextView;
-        }
-
-        public void setMyTextView(TextView myTextView) {
-            this.myTextView = myTextView;
-        }
-
-        public ImageView getMyImageView() {
-            return myImageView;
-        }
-
-        public void setMyImageView(ImageView myImageView) {
-            this.myImageView = myImageView;
+            switch (modules.get(position).getItemName()) {
+                case "新闻":
+                    startActivity(new Intent(HomeActivity.this, NewsActivity.class));
+                    break;
+                case "黄页":
+                    break;
+                case "地图":
+                    break;
+                case "校车":
+                    break;
+                case "WiFi":
+                    break;
+                case "工作":
+                    break;
+                case "群组":
+                    break;
+                case "二手":
+                    break;
+                case "教室":
+                    break;
+                case "成绩":
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
