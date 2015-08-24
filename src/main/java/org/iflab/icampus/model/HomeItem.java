@@ -26,15 +26,15 @@ public class HomeItem {
         this.itemName = itemName;
     }
 
-    public Class getItemModule() {
+    public Class<?> getItemModule() {
         return itemModule;
     }
 
-    public void setItemModule(Class itemModule) {
+    public void setItemModule(Class<?> itemModule) {
         this.itemModule = itemModule;
     }
 
-    public HomeItem(int iconId, String itemName, Class itemModule) {
+    public HomeItem(int iconId, String itemName, Class<?> itemModule) {
 
         this.iconId = iconId;
         this.itemName = itemName;
