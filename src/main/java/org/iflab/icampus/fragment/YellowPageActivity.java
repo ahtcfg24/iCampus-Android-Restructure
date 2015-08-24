@@ -1,22 +1,24 @@
-package org.iflab.icampus;
+package org.iflab.icampus.fragment;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class NewsActivity extends ActionBarActivity {
+import org.iflab.icampus.R;
+
+public class YellowPageActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.activity_yellow_page);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_news, menu);
+        getMenuInflater().inflate(R.menu.menu_yellow_page, menu);
         return true;
     }
 

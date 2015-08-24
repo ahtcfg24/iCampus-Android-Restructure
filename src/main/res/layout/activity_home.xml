@@ -5,17 +5,11 @@
               android:orientation="vertical"
     >
 
-    <GridView
-        android:id="@+id/gridView_home"
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:horizontalSpacing="10dp"
-        android:numColumns="3"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="10dp"
-
-        />
-
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
