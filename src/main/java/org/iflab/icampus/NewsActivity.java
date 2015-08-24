@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
 /**
+ * 新闻模块
+ *
  * @date 2015/8/23
  * @time 21:59
  */

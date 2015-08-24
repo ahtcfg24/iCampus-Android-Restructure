@@ -95,6 +95,7 @@ public class HomeActivity extends ActionBarActivity {
          */
         @Override
         public int getCount() {
+            Log.i("getCount", "--调试->");
             return items.size();
         }
 
@@ -104,15 +105,19 @@ public class HomeActivity extends ActionBarActivity {
          */
         @Override
         public Object getItem(int position) {
+            Log.i("getItem", "--调试->" + position);
+
             return items.get(position);
         }
 
         /**
          * @param position 正在点击的item在数据集合中的的位置
-         * @return position
+         * @return 当前选项所在的位置的id
          */
         @Override
         public long getItemId(int position) {
+            Log.i("getItemId", "--调试->" + position);
+
             return position;
         }
 
@@ -125,8 +130,8 @@ public class HomeActivity extends ActionBarActivity {
          * @param position    即将脱离屏幕边缘的位置，如果屏幕向上滑动就是最上端的View所在位置
          * @param convertView 即将出缓冲区再度进入内存被重新利用的View，在屏幕未被占满时，该参数为空,
          *                    此时可以为其新建一个View对象，也可以从XML布局文件中inflate出来一个View对象，
-         *                    当屏幕被占满，有View进入缓冲区时，这时该参数就是一个已经存在过但已经脱离屏幕范围
-         *                    时的View对象
+         *                    当屏幕被占满，有View进入缓冲区时，这时该参数就是一个已经存在过但已经脱离屏幕
+         *                    范围时的View对象
          * @param parent      item的父级容器，在这里就是指GridView
          * @return 绑定了home_item控件之后的自定义的View
          */
@@ -135,12 +140,15 @@ public class HomeActivity extends ActionBarActivity {
             /**
              * 如果Recycle缓冲区里没有可用的View，那么就从资源加载
              */
+            Log.i("getView", "--调试->" + position + convertView);
+
             if (convertView == null) {
                 convertView = LayoutInflater.from(context).inflate(R.layout.home_item, null);
-                imageView = (ImageView) convertView.findViewById(R.id.home_icon);//findViewById是用来找子控件的
+                convertView.setTag("使convertView不为空");
+                //findViewById是用来在父控件中找子控件的
+                imageView = (ImageView) convertView.findViewById(R.id.home_icon);
                 textView = (TextView) convertView.findViewById(R.id.home_name);
             }
-            Log.i("哈哈", "" + position);
             imageView.setImageResource(items.get(position).getIconId());
             textView.setText(items.get(position).getItemName());
             return convertView;

@@ -1,11 +1,12 @@
 package org.iflab.icampus;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 
-
+/**
+ * 启动页
+ */
 public class SplashActivity extends Activity {
 
     @Override
