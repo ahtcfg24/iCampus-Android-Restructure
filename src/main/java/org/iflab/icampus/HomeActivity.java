@@ -100,6 +100,7 @@ public class HomeActivity extends ActionBarActivity {
         }
 
         /**
+         * 覆盖自AdapteView，此处不会自动调用
          * @param position 正在点击的item在数据集合中的的位置
          * @return 该位置处的item对象
          */
@@ -111,6 +112,7 @@ public class HomeActivity extends ActionBarActivity {
         }
 
         /**
+         * 点击时调用
          * @param position 正在点击的item在数据集合中的的位置
          * @return 当前选项所在的位置的id
          */
