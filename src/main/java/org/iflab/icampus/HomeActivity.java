@@ -57,7 +57,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
 
         MenuObject cancelOption = new MenuObject();
-        cancelOption.setResource(R.drawable.option_fold);
+        cancelOption.setResource(R.layout.selector_option_fold);
 
         MenuObject userOption = new MenuObject("用户中心");
         userOption.setResource(R.drawable.option_user);
@@ -114,6 +114,11 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         return super.onKeyDown(keyCode, event);
     }
 
+    /**
+     * 加载菜单
+     *
+     * @return true
+     */
     @Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -121,6 +126,12 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         return true;
     }
 
+    /**
+     * 监听点击Toolbar上的按钮
+     *
+     * @param item 点击Toolbar上的按钮时传入
+     * @return super.onOptionsItemSelected(item)
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -155,22 +166,14 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         switch (position) {
             case 0://返回主界面
                 break;
-            case 1:// TODO: 2015/8/25  
+            case 1:// TODO: 2015/8/25
                 break;
-            case 2:// TODO: 2015/8/25  
+            case 2:// TODO: 2015/8/25
                 break;
-            case 3:// TODO: 2015/8/25  
+            case 3:// TODO: 2015/8/25
                 break;
         }
 
     }
 
 }
-
-
-
-
-
-
-
-

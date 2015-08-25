@@ -3,9 +3,9 @@
     <!--ToolBar上一排的的按钮item-->
     <item
         android:id="@+id/context_menu"
-        android:icon="@drawable/menu"
+        android:icon="@layout/slector_menu"
         android:orderInCategory="100"
-        android:title="标题"
+        android:title="菜单"
         app:showAsAction="always"/>
 
 
