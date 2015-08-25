@@ -1,5 +1,6 @@
 package org.iflab.icampus;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -166,7 +167,8 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         switch (position) {
             case 0://返回主界面
                 break;
-            case 1:// TODO: 2015/8/25
+            case 1:
+                startActivity(new Intent(HomeActivity.this, UserCenterActivity.class));
                 break;
             case 2:// TODO: 2015/8/25
                 break;

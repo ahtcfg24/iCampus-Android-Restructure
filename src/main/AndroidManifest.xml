@@ -27,22 +27,24 @@
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".NewsActivity"
-            android:icon="@drawable/news"
             android:label="新闻">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
         </activity>
         <activity
             android:name=".YellowPageActivity"
-            android:icon="@drawable/yellowpage"
             android:label="黄页">
+        </activity>
+        <activity
+            android:name=".UserCenterActivity"
+            android:label="@string/title_activity_user_center">
         </activity>
     </application>
 
 </manifest>
-
-

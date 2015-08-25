@@ -7,24 +7,38 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class NewsActivity extends ActionBarActivity {
+public class UserCenterActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.activity_user_center);
+        setTitle("ç”¨æˆ·ä¸­å¿ƒ");
+
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);//ÉèÖÃActionBar×óÉÏ½Ç·µ»Ø¸¸¼¶Activity£¬ĞèÒªÔÚÇåµ¥ÖĞÉùÃ÷¸¸¼¶
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
     }
 
+    /**
+     * ç»˜åˆ¶èœå•æŒ‰é’®ï¼Œæ·»åŠ éƒ¨ä»¶æŒ‰é’®åˆ°ActionBarä¸Š
+     *
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_news, menu);
+        getMenuInflater().inflate(R.menu.menu_user_center, menu);
         return true;
     }
 
+    /**
+     * å¤„ç†ActionBarä¸ŠæŒ‰é’®çš„ç‚¹å‡»äº‹ä»¶
+     *
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
