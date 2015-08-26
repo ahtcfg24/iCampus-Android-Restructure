@@ -22,16 +22,6 @@ import org.iflab.icampus.model.HomeItem;
 import java.util.ArrayList;
 import java.util.List;
 
-//import org.iflab.icampus.ClassRoomActivity;
-//import org.iflab.icampus.GradeActivity;
-//import org.iflab.icampus.GroupActivity;
-//import org.iflab.icampus.JobActivity;
-//import org.iflab.icampus.MapActivity;
-//import org.iflab.icampus.SchoolBusActivity;
-//import org.iflab.icampus.SecondActivity;
-//import org.iflab.icampus.WiFiActivity;
-//import org.iflab.icampus.YellowPageActivity;
-
 /**
  * 绘制GridView
  */

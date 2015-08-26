@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import org.iflab.icampus.utils.StaticVariable;
 
 /**
+ * 处理AuthorizationCode
  * Created by hcjcch on 2015/2/13.
  */
 public class AuthorizationCodeHandle {

@@ -7,6 +7,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * пбнедё©И
+ */
 public class NewsActivity extends ActionBarActivity {
 
     @Override

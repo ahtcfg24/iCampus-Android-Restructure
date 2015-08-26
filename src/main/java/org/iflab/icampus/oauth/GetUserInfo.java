@@ -13,6 +13,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
+ * 获取用户信息，并提供处理用户信息的接口
  * Created by hcjcch on 2015/3/7.
  */
 public class GetUserInfo {
@@ -56,6 +57,6 @@ public class GetUserInfo {
     }
 
     public interface HandleUser {
-        public void handleUser(User user);
+        void handleUser(User user);
     }
 }

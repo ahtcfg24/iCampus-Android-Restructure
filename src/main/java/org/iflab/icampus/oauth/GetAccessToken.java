@@ -2,7 +2,6 @@ package org.iflab.icampus.oauth;
 
 import android.content.Context;
 
-import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
@@ -15,6 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
+ * 获得AccessToken
  * Created by hcjcch on 2015/2/14.
  */
 public class GetAccessToken {
@@ -28,7 +28,7 @@ public class GetAccessToken {
                         JSONObject jsonObject = new JSONObject(new String(responseBody));
                         String access_token = jsonObject.getString("access_token");
                         String refresh_token = jsonObject.getString("refresh_token");
-                        TokenHandle.saveAccessToken(context, access_token);
+                        TokenHandle.saveAccessToken(context, access_token);//保存AccessToken到本地
                         TokenHandle.saveRefreshToken(context, refresh_token);
                         GetUserInfo.getUser(context,new GetUserInfo.HandleUser() {
                             @Override
@@ -39,8 +39,6 @@ public class GetAccessToken {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                } else {
-
                 }
             }
 

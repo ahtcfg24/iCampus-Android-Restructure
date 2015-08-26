@@ -1,6 +1,7 @@
 package org.iflab.icampus.http;
 
 /**
+ * 静态URL
  * Created by hcjcch on 2015/2/13.
  */
 

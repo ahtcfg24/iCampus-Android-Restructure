@@ -7,7 +7,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,7 +34,6 @@ public class MainActivity extends ActionBarActivity {
     private Button refreshToken;
     private Button getUser;
     private TextView textView;
-    private WebView webView;
     private String info = "";
 
     public static RequestParams createRefreshTokenParams(Context context) {
@@ -75,6 +73,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+       /*刷新token*/
         refreshToken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,8 +120,8 @@ public class MainActivity extends ActionBarActivity {
                 if (resultCode == RESULT_OK) {
                     String authorizationCode = data.getStringExtra("result");
                     System.out.println("authorizationCode:   " + authorizationCode);
-                    AuthorizationCodeHandle.saveAuthorizationCode(MainActivity.this, authorizationCode);
-                    GetAccessToken.getAccessToken(MainActivity.this, authorizationCode);
+                    AuthorizationCodeHandle.saveAuthorizationCode(MainActivity.this, authorizationCode);//保存authorizationCode到本地
+                    GetAccessToken.getAccessToken(MainActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
                 } else {
                     Toast.makeText(MainActivity.this, "授权失败", Toast.LENGTH_SHORT).show();
                 }

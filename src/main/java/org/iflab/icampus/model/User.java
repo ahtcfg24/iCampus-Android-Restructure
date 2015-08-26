@@ -1,6 +1,7 @@
 package org.iflab.icampus.model;
 
 /**
+ * 描述用户的类
  * Created by hcjcch on 2015/3/7.
  */
 public class User {
@@ -11,6 +12,10 @@ public class User {
     private String avatar;
     private String idCard;
 
+    public User() {
+
+    }
+
     public User(String userName, String realName, String userType, String email, String avatar, String idCard) {
         this.userName = userName;
         this.realName = realName;
@@ -20,9 +25,7 @@ public class User {
         this.idCard = idCard;
     }
 
-    public User() {
 
-    }
 
     public String getUserName() {
         return userName;
