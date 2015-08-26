@@ -1,17 +1,10 @@
 <resources>
-    <string name="app_name">Icampus</string>
+    <string name="app_name">iCampus</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_personal">PersonalActivity</string>
-    <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_home">主页</string>
-    <string name="text">Squid blog crucifix Marfa, consectetur vero placeat mixtape. Non seitan sriracha eu, do Banksy fashion axe cred qui vegan delectus consequat Helvetica mollit. XOXO gluten-free disrupt, gastropub officia cliche chillwave hella pop-up. Fixie swag raw denim, YOLO craft beer assumenda occupy veniam photo booth pug consectetur next level Portland tote bag +1. Mlkshk PBR aliquip placeat Wes Anderson.</string>
-    <string name="title">My Description</string>
-    <string name="context_menu">Context menu</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_news">NewsActivity</string>
-    <string name="title_activity_yellow_page">YellowPageActivity</string>
-    <string name="title_activity_user_center">UserCenterActivity</string>
+    <string name="title_activity_news">新闻</string>
+    <string name="title_activity_yellow_page">黄页</string>
+    <string name="title_activity_user_center">用户中心</string>
 </resources>

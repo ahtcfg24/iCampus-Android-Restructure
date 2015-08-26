@@ -11,40 +11,40 @@
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".TestActivity"
             android:label="@string/app_name">
+        </activity>
 
-        </activity>
-        <activity android:name=".OAuthActivity">
-
-        </activity>
-        <activity
-            android:name=".SplashActivity"
-            android:label="@string/title_activity_splash">
-        </activity>
+        <activity android:name=".SplashActivity"/>
         <activity
             android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".OAuthActivity"/>
         <activity
             android:name=".NewsActivity"
-            android:label="新闻">
+            android:label="@string/title_activity_news">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomeActivity"/>
         </activity>
         <activity
             android:name=".YellowPageActivity"
-            android:label="黄页">
+            android:label="@string/title_activity_yellow_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
         </activity>
         <activity
             android:name=".UserCenterActivity"
             android:label="@string/title_activity_user_center">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
         </activity>
     </application>
 
