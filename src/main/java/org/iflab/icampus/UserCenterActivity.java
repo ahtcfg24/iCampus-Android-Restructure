@@ -6,9 +6,13 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import org.iflab.icampus.model.User;
+import org.iflab.icampus.oauth.GetUserInfo;
 
 public class UserCenterActivity extends ActionBarActivity {
-
+    private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +22,13 @@ public class UserCenterActivity extends ActionBarActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-
+        textView = (TextView) findViewById(R.id.text_user);
+        GetUserInfo.getUser(UserCenterActivity.this, new GetUserInfo.HandleUser() {
+            @Override
+            public void handleUser(User user) {
+                textView.setText(user.toString());
+            }
+        });
     }
 
     /**

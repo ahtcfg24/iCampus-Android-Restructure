@@ -19,6 +19,7 @@ import org.json.JSONObject;
 public class GetUserInfo {
     public static void getUser(Context context, final HandleUser handleUser) {
         final User user = new User();
+        //先从文件中读取出AccessToken
         AsyncHttpIc.get(UrlStatic.GET_PERSONAL_INFORMATION, createAccessTokenParams(TokenHandle.getAccessToken(context)), new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {

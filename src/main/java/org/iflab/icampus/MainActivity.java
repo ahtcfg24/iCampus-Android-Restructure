@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -17,8 +16,6 @@ import com.loopj.android.http.RequestParams;
 import org.apache.http.Header;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.model.User;
-import org.iflab.icampus.oauth.AuthorizationCodeHandle;
-import org.iflab.icampus.oauth.GetAccessToken;
 import org.iflab.icampus.oauth.GetUserInfo;
 import org.iflab.icampus.oauth.TokenHandle;
 import org.iflab.icampus.utils.StaticVariable;
@@ -112,22 +109,22 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode) {
-            case GET_AUTHO_RIZATIONCODE:
-                if (resultCode == RESULT_OK) {
-                    String authorizationCode = data.getStringExtra("result");
-                    System.out.println("authorizationCode:   " + authorizationCode);
-                    AuthorizationCodeHandle.saveAuthorizationCode(MainActivity.this, authorizationCode);//保存authorizationCode到本地
-                    GetAccessToken.getAccessToken(MainActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
-                } else {
-                    Toast.makeText(MainActivity.this, "授权失败", Toast.LENGTH_SHORT).show();
-                }
-                break;
-        }
-    }
+    //    @Override
+    //    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    //        super.onActivityResult(requestCode, resultCode, data);
+    //        switch (requestCode) {
+    //            case GET_AUTHO_RIZATIONCODE:
+    //                if (resultCode == RESULT_OK) {
+    //                    String authorizationCode = data.getStringExtra("result");
+    //                    System.out.println("authorizationCode:   " + authorizationCode);
+    //                    AuthorizationCodeHandle.saveAuthorizationCode(MainActivity.this, authorizationCode);//保存authorizationCode到本地
+    //                    GetAccessToken.getAccessToken(MainActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
+    //                } else {
+    //                    Toast.makeText(MainActivity.this, "授权失败", Toast.LENGTH_SHORT).show();
+    //                }
+    //                break;
+    //        }
+    //    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

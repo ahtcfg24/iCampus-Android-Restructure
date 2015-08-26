@@ -21,6 +21,9 @@ import com.yalantis.contextmenu.lib.MenuParams;
 import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
 
 import org.iflab.icampus.fragment.HomeFragment;
+import org.iflab.icampus.oauth.AuthorizationCodeHandle;
+import org.iflab.icampus.oauth.GetAccessToken;
+import org.iflab.icampus.oauth.TokenHandle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,9 +33,14 @@ import java.util.List;
  */
 public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener {
 
+    private static final int GET_AUTHO_RIZATIONCODE = 1;//OAuth认证的requestCode
+
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
     private long exitTime = 0;//记录按返回键的时间点
+
+    private Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +51,25 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         initToolbar();
         initMenuFragment();
         addFragment(new HomeFragment(), true, R.id.container);
+
+        intent = new Intent();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case GET_AUTHO_RIZATIONCODE:
+                if (resultCode == RESULT_OK) {
+                    String authorizationCode = data.getStringExtra("result");
+                    System.out.println("authorizationCode:   " + authorizationCode);
+                    AuthorizationCodeHandle.saveAuthorizationCode(HomeActivity.this, authorizationCode);//保存authorizationCode到本地
+                    GetAccessToken.getAccessToken(HomeActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
+                } else {
+                    Toast.makeText(HomeActivity.this, "授权失败", Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
     }
 
     private void initMenuFragment() {
@@ -52,7 +79,11 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         menuDialogFragment = ContextMenuDialogFragment.newInstance(menuParams);
     }
 
-
+    /**
+     * 添加菜单选项对象
+     *
+     * @return
+     */
     private List<MenuObject> getMenuObjects() {
         List<MenuObject> menuObjects = new ArrayList<>();
 
@@ -89,6 +120,12 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         setSupportActionBar(toolbar);//把ToolBar设置为ActionBar
     }
 
+    /**
+     * 添加Fragment
+     * @param fragment
+     * @param addToBackStack
+     * @param containerId
+     */
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
         invalidateOptionsMenu();
         String backStackName = fragment.getClass().getName();
@@ -103,7 +140,12 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         }
     }
 
-
+    /**
+     * 监听按键
+     * @param keyCode 正在点击的按键代码
+     * @param event 触发的事件
+     * @return
+     */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         /*按菜单键时也能弹出菜单*/
@@ -168,11 +210,20 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
             case 0://返回主界面
                 break;
             case 1:
-                startActivity(new Intent(HomeActivity.this, UserCenterActivity.class));
+                if (TokenHandle.getAccessToken(HomeActivity.this) == null) {
+                    Toast.makeText(HomeActivity.this, "亲，你还木有登录哟0.0", Toast.LENGTH_LONG).show();
+                    intent.setClass(HomeActivity.this, OAuthActivity.class);
+                    startActivityForResult(intent, GET_AUTHO_RIZATIONCODE);
+                } else {
+                    intent.setClass(HomeActivity.this, UserCenterActivity.class);
+                    startActivity(intent);
+                }
                 break;
             case 2:// TODO: 2015/8/25
+
                 break;
             case 3:// TODO: 2015/8/25
+
                 break;
         }
 
