@@ -1,32 +1,36 @@
 package org.iflab.icampus;
 
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import org.iflab.icampus.model.User;
 import org.iflab.icampus.oauth.GetUserInfo;
 
 public class UserCenterActivity extends ActionBarActivity {
-    private TextView textView;
+    private SimpleDraweeView avatarImageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(UserCenterActivity.this);//初始化Fresco
         setContentView(R.layout.activity_user_center);
         setTitle("用户中心");
-
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        textView = (TextView) findViewById(R.id.text_user);
+        avatarImageView = (SimpleDraweeView) findViewById(R.id.avatar_image_view);
+
         GetUserInfo.getUser(UserCenterActivity.this, new GetUserInfo.HandleUser() {
             @Override
             public void handleUser(User user) {
-                textView.setText(user.toString());
+                avatarImageView.setImageURI(Uri.parse(user.getAvatar()));
             }
         });
     }

@@ -33,7 +33,7 @@ import java.util.List;
  */
 public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener {
 
-    private static final int GET_AUTHO_RIZATIONCODE = 1;//OAuth认证的requestCode
+    private static final int GET_AUTHORIZATION_CODE = 1;//OAuth认证的requestCode
 
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
@@ -59,14 +59,15 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
-            case GET_AUTHO_RIZATIONCODE:
+            case GET_AUTHORIZATION_CODE:
                 if (resultCode == RESULT_OK) {
                     String authorizationCode = data.getStringExtra("result");
                     System.out.println("authorizationCode:   " + authorizationCode);
                     AuthorizationCodeHandle.saveAuthorizationCode(HomeActivity.this, authorizationCode);//保存authorizationCode到本地
                     GetAccessToken.getAccessToken(HomeActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
+                    Toast.makeText(HomeActivity.this, "登录成功，尽情体验吧0.0", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(HomeActivity.this, "授权失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HomeActivity.this, "登录失败囧", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -213,7 +214,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 if (TokenHandle.getAccessToken(HomeActivity.this) == null) {
                     Toast.makeText(HomeActivity.this, "亲，你还木有登录哟0.0", Toast.LENGTH_LONG).show();
                     intent.setClass(HomeActivity.this, OAuthActivity.class);
-                    startActivityForResult(intent, GET_AUTHO_RIZATIONCODE);
+                    startActivityForResult(intent, GET_AUTHORIZATION_CODE);
                 } else {
                     intent.setClass(HomeActivity.this, UserCenterActivity.class);
                     startActivity(intent);
