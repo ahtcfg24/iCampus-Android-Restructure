@@ -23,7 +23,9 @@ import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
 import org.iflab.icampus.fragment.HomeFragment;
 import org.iflab.icampus.oauth.AuthorizationCodeHandle;
 import org.iflab.icampus.oauth.GetAccessToken;
+import org.iflab.icampus.oauth.RefreshToken;
 import org.iflab.icampus.oauth.TokenHandle;
+import org.iflab.icampus.utils.StaticVariable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +35,6 @@ import java.util.List;
  */
 public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener {
 
-    private static final int GET_AUTHORIZATION_CODE = 1;//OAuth认证的requestCode
 
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
@@ -59,10 +60,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
-            case GET_AUTHORIZATION_CODE:
+            case StaticVariable.GET_AUTHORIZATION_CODE:
                 if (resultCode == RESULT_OK) {
                     String authorizationCode = data.getStringExtra("result");
-                    System.out.println("authorizationCode:   " + authorizationCode);
                     AuthorizationCodeHandle.saveAuthorizationCode(HomeActivity.this, authorizationCode);//保存authorizationCode到本地
                     GetAccessToken.getAccessToken(HomeActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
                     Toast.makeText(HomeActivity.this, "登录成功，尽情体验吧0.0", Toast.LENGTH_SHORT).show();
@@ -214,8 +214,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 if (TokenHandle.getAccessToken(HomeActivity.this) == null) {
                     Toast.makeText(HomeActivity.this, "亲，你还木有登录哟0.0", Toast.LENGTH_LONG).show();
                     intent.setClass(HomeActivity.this, OAuthActivity.class);
-                    startActivityForResult(intent, GET_AUTHORIZATION_CODE);
+                    startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else {
+//                    RefreshToken.refreshToken(HomeActivity.this);//登录后每次进入都刷新Token，防止Token过期
                     intent.setClass(HomeActivity.this, UserCenterActivity.class);
                     startActivity(intent);
                 }

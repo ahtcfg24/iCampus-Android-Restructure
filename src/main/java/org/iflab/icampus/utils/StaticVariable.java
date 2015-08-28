@@ -4,6 +4,8 @@ package org.iflab.icampus.utils;
  * Created by hcjcch on 2015/2/12.
  */
 public final class StaticVariable {
+    public static final int GET_AUTHORIZATION_CODE = 1;//OAuth认证的requestCode
+
     public static final class OauthStaticVariable {
         public static final String CLIENT_ID = "0b97ad49e755de0d210a8bab3d310046";
         public static final String CLIENT_SECRET = "6c4347eb6d23825f1586d8a67784d29b";
@@ -16,5 +18,7 @@ public final class StaticVariable {
         public static final String AUTHORIZATIONCODE = "authorizationCode";
         public static final String KEY_RESPONSE_TYPE = "response_type";
         public static final String KEY_GRANT_TYPE = "grant_type";
+
+
     }
 }
