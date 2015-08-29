@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 
 /**
- * 处理AccessToken以及RefreshToken
+ * AccessToken以及RefreshToken的本地保存和本地获取
  * Created by hcjcch on 2015/2/14.
  */
 public class TokenHandle {

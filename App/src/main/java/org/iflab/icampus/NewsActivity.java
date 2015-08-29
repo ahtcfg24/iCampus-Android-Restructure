@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 /**
- * ĞÂÎÅÄ£¿é
+ * æ–°é—»æ¨¡å—
  */
 public class NewsActivity extends ActionBarActivity {
 
@@ -17,7 +17,7 @@ public class NewsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);//ÉèÖÃActionBar×óÉÏ½Ç·µ»Ø¸¸¼¶Activity£¬ĞèÒªÔÚÇåµ¥ÖĞÉùÃ÷¸¸¼¶
+        actionBar.setDisplayHomeAsUpEnabled(true);//è®¾ç½®ActionBarå·¦ä¸Šè§’è¿”å›çˆ¶çº§Activityï¼Œéœ€è¦åœ¨æ¸…å•ä¸­å£°æ˜çˆ¶çº§
 
     }
 

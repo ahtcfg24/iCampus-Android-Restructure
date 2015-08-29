@@ -49,6 +49,7 @@ public class OAuthActivity extends Activity {
                 if (url.contains("code")) {
                     String authorizationCode = url.substring(url.indexOf("=") + 1, url.length());
                     Intent intent = getIntent();
+                    /*登录完成之后会获得一个授权码传递到onActivityResult()*/
                     intent.putExtra("result", authorizationCode);
                     OAuthActivity.this.setResult(RESULT_OK, intent);
                     OAuthActivity.this.finish();

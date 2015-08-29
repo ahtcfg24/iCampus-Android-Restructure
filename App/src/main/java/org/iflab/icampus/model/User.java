@@ -1,10 +1,13 @@
 package org.iflab.icampus.model;
 
+import java.io.Serializable;
+
 /**
  * 描述用户的类
  * Created by hcjcch on 2015/3/7.
  */
-public class User {
+/*实现Serializable才可以把这个对象存储到文件中*/
+public class User implements Serializable {
     private String userName;
     private String realName;
     private String userType;

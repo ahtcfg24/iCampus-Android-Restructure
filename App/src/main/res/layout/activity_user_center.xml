@@ -19,7 +19,6 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            fresco:placeholderImage="@drawable/ic_launcher"
             fresco:placeholderImageScaleType="fitCenter"
             fresco:roundAsCircle="true"
             fresco:roundingBorderColor="@color/toolbar_color"
@@ -33,7 +32,24 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="@color/transparent">
+        android:background="@color/transparent"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="re"
+            android:text="刷新"
+            />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            />
+
     </RelativeLayout>
 
 </LinearLayout>

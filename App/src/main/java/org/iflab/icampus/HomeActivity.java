@@ -21,10 +21,11 @@ import com.yalantis.contextmenu.lib.MenuParams;
 import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
 
 import org.iflab.icampus.fragment.HomeFragment;
+import org.iflab.icampus.model.User;
 import org.iflab.icampus.oauth.AuthorizationCodeHandle;
 import org.iflab.icampus.oauth.GetAccessToken;
-import org.iflab.icampus.oauth.RefreshToken;
 import org.iflab.icampus.oauth.TokenHandle;
+import org.iflab.icampus.ui.ACache;
 import org.iflab.icampus.utils.StaticVariable;
 
 import java.util.ArrayList;
@@ -35,13 +36,12 @@ import java.util.List;
  */
 public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener {
 
-
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
     private long exitTime = 0;//记录按返回键的时间点
 
     private Intent intent;
-
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +56,14 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         intent = new Intent();
     }
 
+    /**
+     * 只有在OAuthActivity结束之后才会执行该方法
+     * 获得从OAuthActivity传来的授权码，并根据授权进一步获取数据
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data        从OauthActivity传来的授权码
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -64,7 +72,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 if (resultCode == RESULT_OK) {
                     String authorizationCode = data.getStringExtra("result");
                     AuthorizationCodeHandle.saveAuthorizationCode(HomeActivity.this, authorizationCode);//保存authorizationCode到本地
-                    GetAccessToken.getAccessToken(HomeActivity.this, authorizationCode);//根据authorizationCode获得AccessToken并保存到本地
+                    GetAccessToken.getAccessToken(HomeActivity.this, authorizationCode);//根据authorizationCode获得AccessToken及用户信息并保存到本地
                     Toast.makeText(HomeActivity.this, "登录成功，尽情体验吧0.0", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(HomeActivity.this, "登录失败囧", Toast.LENGTH_SHORT).show();
@@ -123,6 +131,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     /**
      * 添加Fragment
+     *
      * @param fragment
      * @param addToBackStack
      * @param containerId
@@ -143,8 +152,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     /**
      * 监听按键
+     *
      * @param keyCode 正在点击的按键代码
-     * @param event 触发的事件
+     * @param event   触发的事件
      * @return
      */
     @Override
@@ -211,13 +221,19 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
             case 0://返回主界面
                 break;
             case 1:
+                ACache aCache = ACache.get(this);
+                user = (User) aCache.getAsObject("user");
                 if (TokenHandle.getAccessToken(HomeActivity.this) == null) {
-                    Toast.makeText(HomeActivity.this, "亲，你还木有登录哟0.0", Toast.LENGTH_LONG).show();
-                    intent.setClass(HomeActivity.this, OAuthActivity.class);
+                    Toast.makeText(HomeActivity.this, "亲，你还木有登录哟0.0", Toast.LENGTH_SHORT).show();
+                    intent.setClass(this, OAuthActivity.class);
+                    startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
+                } else if (user == null) {
+                    Toast.makeText(this, "缓存过期了，重新登录吧", Toast.LENGTH_SHORT).show();
+                    intent.setClass(this, OAuthActivity.class);
                     startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else {
-//                    RefreshToken.refreshToken(HomeActivity.this);//登录后每次进入都刷新Token，防止Token过期
-                    intent.setClass(HomeActivity.this, UserCenterActivity.class);
+                    intent.putExtra("user", user);
+                    intent.setClass(this, UserCenterActivity.class);
                     startActivity(intent);
                 }
                 break;
