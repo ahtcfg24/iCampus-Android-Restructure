@@ -1,4 +1,4 @@
-package org.iflab.icampus.ui;
+package org.iflab.icampus.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;

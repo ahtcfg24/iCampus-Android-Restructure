@@ -9,8 +9,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/menu_item_background"
+        android:layout_weight="2"
+        android:background="@drawable/gradient_blue"
         >
 
         <com.facebook.drawee.view.SimpleDraweeView
@@ -21,10 +21,19 @@
             android:layout_centerVertical="true"
             fresco:placeholderImageScaleType="fitCenter"
             fresco:roundAsCircle="true"
-            fresco:roundingBorderColor="@color/toolbar_color"
-            fresco:roundingBorderWidth="4dp"
+            fresco:roundingBorderColor="#ffffff"
+            fresco:roundingBorderWidth="2dp"
             />
 
+        <TextView
+            android:id="@+id/real_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
 
     </RelativeLayout>
 
@@ -32,23 +41,9 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="@color/transparent"
+        android:background="#ffffff"
         >
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="re"
-            android:text="刷新"
-            />
-
-        <TextView
-            android:id="@+id/textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button"
-            />
 
     </RelativeLayout>
 

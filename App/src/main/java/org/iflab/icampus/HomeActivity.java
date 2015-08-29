@@ -25,7 +25,7 @@ import org.iflab.icampus.model.User;
 import org.iflab.icampus.oauth.AuthorizationCodeHandle;
 import org.iflab.icampus.oauth.GetAccessToken;
 import org.iflab.icampus.oauth.TokenHandle;
-import org.iflab.icampus.ui.ACache;
+import org.iflab.icampus.utils.ACache;
 import org.iflab.icampus.utils.StaticVariable;
 
 import java.util.ArrayList;
@@ -228,7 +228,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                     intent.setClass(this, OAuthActivity.class);
                     startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else if (user == null) {
-                    Toast.makeText(this, "缓存过期了，重新登录吧", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "缓存过期了囧，重新登录吧", Toast.LENGTH_SHORT).show();
                     intent.setClass(this, OAuthActivity.class);
                     startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else {

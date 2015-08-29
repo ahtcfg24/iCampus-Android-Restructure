@@ -1,6 +1,7 @@
 package org.iflab.icampus.oauth;
 
 import android.content.Context;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -10,7 +11,7 @@ import org.apache.http.Header;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.User;
-import org.iflab.icampus.ui.ACache;
+import org.iflab.icampus.utils.ACache;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -27,7 +28,9 @@ public class GetUserInfo {
                         new AsyncHttpResponseHandler() {
                             @Override
                             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
                                 String userJsonData = new String(responseBody);
+                                Log.i("用户信息", "" + userJsonData);
                                 handleUserJson(user, userJsonData);
                                 ACache aCache = ACache.get(context);
                                 aCache.put("user", user, 31 * ACache.TIME_DAY);
