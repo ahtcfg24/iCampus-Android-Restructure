@@ -237,8 +237,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                     startActivity(intent);
                 }
                 break;
-            case 2:// TODO: 2015/8/25
-
+            case 2:
+                intent.setClass(this, AboutActivity.class);
+                startActivity(intent);
                 break;
             case 3:// TODO: 2015/8/25
 

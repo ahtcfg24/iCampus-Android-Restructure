@@ -22,7 +22,7 @@ import org.json.JSONObject;
 public class RefreshToken {
 
     /**
-     * 刷新AccessToken
+     * 刷新本地AccessToken
      *
      * @param context 保存到本地SharePreference需要的上下文环境
      */
