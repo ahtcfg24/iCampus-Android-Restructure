@@ -45,16 +45,21 @@ public class MyApplication extends Application {
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                 Log.i(getClass().getName(), "获取源数据失败");
             }
+
+            @Override
+            public void onFinish() {
+                super.onFinish();
+                /* 如果本地URL没有存储下来，就使用默认的URL*/
+                if (CAS == null) {
+                    CAS = sharedPreferences.getString("CAS", "https://auth.bistu.edu.cn");
+                    OAUTH2 = sharedPreferences.getString("OAUTH2", "https://222.249.250.89:8443");
+                    ANDROIDUPGRADE = sharedPreferences.getString("ANDROIDUPGRADE", "http://m.bistu.edu.cn/upgrade/Android.php");
+                    JWAPI = sharedPreferences.getString("JWAPI", "http://m.bistu.edu.cn/jiaowu");
+                    ICAMPUSAPI = sharedPreferences.getString("ICAMPUSAPI", "http://m.bistu.edu.cn/api");
+                    NEWSAPI = sharedPreferences.getString("NEWSAPI", "http://m.bistu.edu.cn/newsapi");
+                }
+            }
         });
-        /* 如果本地URL没有存储下来，就使用默认的URL*/
-        if (CAS == null) {
-            CAS = sharedPreferences.getString("CAS", "https://auth.bistu.edu.cn");
-            OAUTH2 = sharedPreferences.getString("OAUTH2", "https://222.249.250.89:8443");
-            ANDROIDUPGRADE = sharedPreferences.getString("ANDROIDUPGRADE", "http://m.bistu.edu.cn/upgrade/Android.php");
-            JWAPI = sharedPreferences.getString("JWAPI", "http://m.bistu.edu.cn/jiaowu");
-            ICAMPUSAPI = sharedPreferences.getString("ICAMPUSAPI", "http://m.bistu.edu.cn/api");
-            NEWSAPI = sharedPreferences.getString("NEWSAPI", "http://m.bistu.edu.cn/newsapi");
-        }
 
 
     }
