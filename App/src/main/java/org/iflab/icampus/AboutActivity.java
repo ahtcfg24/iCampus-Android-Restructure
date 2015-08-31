@@ -26,6 +26,7 @@ public class AboutActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         initAboutListView();
         setItemListener();
@@ -110,10 +111,12 @@ public class AboutActivity extends ActionBarActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-
+            if (convertView == null) {
                 /*绑定控件资源*/
-            convertView = LayoutInflater.from(context).inflate(R.layout.about_item, null);
-            aboutItemTextView = (TextView) findViewById(R.id.about_item_textView);
+                convertView = LayoutInflater.from(context).inflate(R.layout.about_item, null);
+                /*因为是要在convertView中找到TextView，因此不能省略前面的convertView，否则就是在Layout中找*/
+                aboutItemTextView = (TextView) convertView.findViewById(R.id.about_item_textView);
+            }
             /*填充列表文字*/
             aboutItemTextView.setText(aboutItemList.get(position));
             return convertView;

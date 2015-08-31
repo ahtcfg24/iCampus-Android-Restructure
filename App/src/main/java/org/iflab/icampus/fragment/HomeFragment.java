@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -85,7 +84,6 @@ public class HomeFragment extends Fragment {
          */
         @Override
         public int getCount() {
-            Log.i("getCount", "--调试->");
             return items.size();
         }
 
@@ -97,8 +95,6 @@ public class HomeFragment extends Fragment {
          */
         @Override
         public Object getItem(int position) {
-            Log.i("getItem", "--调试->" + position);
-
             return items.get(position);
         }
 
@@ -110,8 +106,6 @@ public class HomeFragment extends Fragment {
          */
         @Override
         public long getItemId(int position) {
-            Log.i("getItemId", "--调试->" + position);
-
             return position;
         }
 
@@ -134,8 +128,6 @@ public class HomeFragment extends Fragment {
             /**
              * 如果Recycle缓冲区里没有可用的View，那么就从资源加载
              */
-            Log.i("getView", "--调试->" + position + convertView);
-
             if (convertView == null) {
                 convertView = LayoutInflater.from(context).inflate(R.layout.home_item, null);
                 convertView.setTag("使convertView不为空");
