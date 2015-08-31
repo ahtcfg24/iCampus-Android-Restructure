@@ -1,1 +1,1 @@
-include ':App', ':iCampus-Android-Restructure'
+include ':App'
