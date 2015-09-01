@@ -109,6 +109,14 @@ public class AboutActivity extends ActionBarActivity {
             return position;
         }
 
+        /**
+         * 绘制每个item
+         *
+         * @param position    item的位置
+         * @param convertView 即将出缓冲区再度进入内存被重新利用的View,这里屏幕未占满，始终为空
+         * @param parent      item的父级容器
+         * @return 要显示的每个Item的View
+         */
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {

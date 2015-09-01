@@ -110,18 +110,12 @@ public class HomeFragment extends Fragment {
         }
 
         /**
-         * 通过传入的position，把需要绘制的View数据加工成我们想要的View，最后返回给父级容器使用
-         * 把数据和控件联系起来的关键方法，形成一个缓冲模型，屏幕上能显示的View都在内存里，
-         * 而把不能显示的放进缓冲区队列Recycle里，缓冲区占用总大小是一个屏幕能显示的所有View数量+2再整体
-         * 乘单个View所占的内存空间
+         * 绘制每个item
          *
-         * @param position    即将脱离屏幕边缘的位置，如果屏幕向上滑动就是最上端的View所在位置
-         * @param convertView 即将出缓冲区再度进入内存被重新利用的View，在屏幕未被占满时，该参数为空,
-         *                    此时可以为其新建一个View对象，也可以从XML布局文件中inflate出来一个View对象，
-         *                    当屏幕被占满，有View进入缓冲区时，这时该参数就是一个已经存在过但已经脱离屏幕
-         *                    范围时的View对象
-         * @param parent      item的父级容器，在这里就是指GridView
-         * @return 绑定了home_item控件之后的自定义的View
+         * @param position    item的位置
+         * @param convertView 即将出缓冲区再度进入内存被重新利用的View,这里屏幕未占满，始终为空
+         * @param parent      item的父级容器
+         * @return 要显示的每个Item的View
          */
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
