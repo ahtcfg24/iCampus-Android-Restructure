@@ -36,6 +36,14 @@ public class MyApplication extends Application {
        /*请求源数据不需要接参数，故设为null*/
         AsyncHttpIc.get(JSONSOURCE, null, new AsyncHttpResponseHandler() {
             @Override
+            public void onStart() {
+                super.onStart();
+                /*先把sharedPreferences对象给实例化，防止空指针异常*/
+                sharedPreferences = getApplicationContext()
+                        .getSharedPreferences("JSONURL", MODE_PRIVATE);
+            }
+
+            @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 String SourceJsonData = new String(responseBody);
                 saveURL(SourceJsonData);
@@ -80,8 +88,6 @@ public class MyApplication extends Application {
             JWAPI = jsonObject.getString("jwApi");
             ICAMPUSAPI = jsonObject.getString("icampusApi");
             NEWSAPI = jsonObject.getString("newsApi");
-            sharedPreferences = getApplicationContext()
-                    .getSharedPreferences("JSONURL", MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("CAS", CAS);
             editor.putString("OAUTH2", OAUTH2);
