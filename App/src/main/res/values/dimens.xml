@@ -7,4 +7,5 @@
     <dimen name="text_top_padding">25dp</dimen>
     <dimen name="title_text_size">26sp</dimen>
     <dimen name="tool_bar_height">57dp</dimen>
+    <dimen name="user_margin_left">10dp</dimen>
 </resources>

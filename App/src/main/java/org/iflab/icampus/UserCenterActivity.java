@@ -1,23 +1,30 @@
 package org.iflab.icampus;
 
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import org.iflab.icampus.model.User;
+import org.iflab.icampus.utils.ACache;
 
 public class UserCenterActivity extends ActionBarActivity {
     private SimpleDraweeView avatarImageView;
     private User user;
-    private TextView textView;
+    private TextView realNameTextView, userNameTextView, emailTextview, typeTextView, departmentTextView;
+    private Button logoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +40,34 @@ public class UserCenterActivity extends ActionBarActivity {
         initView();
         setContent();
 
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ACache aCache = ACache.get(getApplicationContext());
+                aCache.clear();//清除缓存
+                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("accessToken", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.clear();
+                editor.apply();//清除token
+                startActivity(new Intent(UserCenterActivity.this, HomeActivity.class));
+                finish();
+                Toast.makeText(getApplicationContext(), "退出成功", Toast.LENGTH_SHORT);
+            }
+        });
     }
 
     /**
      * 初始化控件
      */
     public void initView() {
+        logoutButton = (Button) findViewById(R.id.logout_button);
         avatarImageView = (SimpleDraweeView) findViewById(R.id.avatar_image_view);
-        textView = (TextView) findViewById(R.id.real_name_text_view);
+        realNameTextView = (TextView) findViewById(R.id.realName_textView);
+        userNameTextView = (TextView) findViewById(R.id.userName_textView);
+        emailTextview = (TextView) findViewById(R.id.email_textView);
+        typeTextView = (TextView) findViewById(R.id.type_textView);
+        departmentTextView = (TextView) findViewById(R.id.department_textView);
+
     }
 
     /**
@@ -48,7 +75,11 @@ public class UserCenterActivity extends ActionBarActivity {
      */
     public void setContent() {
         avatarImageView.setImageURI(Uri.parse(user.getAvatar()));
-        textView.setText(user.getRealName());
+        realNameTextView.setText(user.getRealName());
+        userNameTextView.setText(user.getUserName());
+        emailTextview.setText(user.getEmail());
+        typeTextView.setText(user.getUserType());
+        departmentTextView.setText(user.getDepartment());
     }
 
 

@@ -54,6 +54,8 @@ public class GetUserInfo {
     public static void handleUserJson(User user, String userJsonData) {
         try {
             JSONObject jsonObject = new JSONObject(userJsonData);
+            Log.i("----", "----》" + jsonObject);
+            String department = jsonObject.getString("department");
             String userName = jsonObject.getString("userName");
             String realName = jsonObject.getString("realName");
             String userType = jsonObject.getString("userType");
@@ -66,6 +68,7 @@ public class GetUserInfo {
             user.setEmail(email);
             user.setAvatar(avatar);
             user.setIdCard(idCard);
+            user.setDepartment(department);
         } catch (JSONException e) {
             e.printStackTrace();
         }
