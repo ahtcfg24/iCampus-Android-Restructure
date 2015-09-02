@@ -1,6 +1,7 @@
 package org.iflab.icampus;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -21,24 +22,16 @@ public class AboutActivity extends ActionBarActivity {
     private ArrayList<String> aboutItemList;
     private HashMap<String, String> aboutModMap;
     private ListView aboutListView;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        intent = new Intent();
         initAboutListView();
         setItemListener();
-    }
-
-    private void setItemListener() {
-        aboutListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "点击了" + aboutModMap.get(aboutItemList.get(position)), Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     /**
@@ -60,6 +53,20 @@ public class AboutActivity extends ActionBarActivity {
         aboutListView = (ListView) findViewById(R.id.about_listView);
         aboutListView.setAdapter(new AboutListViewAdapter(aboutItemList, this));
     }
+
+    private void setItemListener() {
+        aboutListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "点击了" + aboutModMap.get(aboutItemList.get(position)), Toast.LENGTH_SHORT).show();
+                intent.putExtra("mod_name", aboutModMap.get(aboutItemList.get(position)));//把所点击的模块的名称传入
+                intent.putExtra("title", aboutItemList.get(position));//把所点击的模块的标题传入
+                intent.setClass(AboutActivity.this, AboutDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

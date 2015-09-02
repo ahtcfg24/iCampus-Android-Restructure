@@ -47,6 +47,10 @@
             android:name=".AboutActivity"
             android:label="@string/title_activity_about">
         </activity>
+        <activity
+            android:name=".AboutDetailsActivity"
+            android:label="@string/title_activity_about_detials">
+        </activity>
     </application>
 
 </manifest>
