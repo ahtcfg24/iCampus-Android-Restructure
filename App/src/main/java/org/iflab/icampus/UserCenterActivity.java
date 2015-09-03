@@ -1,7 +1,6 @@
 package org.iflab.icampus;
 
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,12 +17,11 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import org.iflab.icampus.model.User;
-import org.iflab.icampus.utils.ACache;
 
 public class UserCenterActivity extends ActionBarActivity {
     private SimpleDraweeView avatarImageView;
     private User user;
-    private TextView realNameTextView, userNameTextView, emailTextview, typeTextView, departmentTextView;
+    private TextView realNameTextView, userNameTextView, emailTextView, typeTextView, departmentTextView;
     private Button logoutButton;
 
     @Override
@@ -43,15 +41,12 @@ public class UserCenterActivity extends ActionBarActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACache aCache = ACache.get(getApplicationContext());
-                aCache.clear();//清除缓存
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("accessToken", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.clear();
                 editor.apply();//清除token
-                startActivity(new Intent(UserCenterActivity.this, HomeActivity.class));
                 finish();
-                Toast.makeText(getApplicationContext(), "退出成功", Toast.LENGTH_SHORT);
+                Toast.makeText(getApplicationContext(), "退出成功", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -64,7 +59,7 @@ public class UserCenterActivity extends ActionBarActivity {
         avatarImageView = (SimpleDraweeView) findViewById(R.id.avatar_image_view);
         realNameTextView = (TextView) findViewById(R.id.realName_textView);
         userNameTextView = (TextView) findViewById(R.id.userName_textView);
-        emailTextview = (TextView) findViewById(R.id.email_textView);
+        emailTextView = (TextView) findViewById(R.id.email_textView);
         typeTextView = (TextView) findViewById(R.id.type_textView);
         departmentTextView = (TextView) findViewById(R.id.department_textView);
 
@@ -77,7 +72,7 @@ public class UserCenterActivity extends ActionBarActivity {
         avatarImageView.setImageURI(Uri.parse(user.getAvatar()));
         realNameTextView.setText(user.getRealName());
         userNameTextView.setText(user.getUserName());
-        emailTextview.setText(user.getEmail());
+        emailTextView.setText(user.getEmail());
         typeTextView.setText(user.getUserType());
         departmentTextView.setText(user.getDepartment());
     }

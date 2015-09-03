@@ -224,7 +224,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 ACache aCache = ACache.get(this);
                 user = (User) aCache.getAsObject("user");
                 if (TokenHandle.getAccessToken(HomeActivity.this) == null) {
-                    Toast.makeText(HomeActivity.this, "亲，你还木有登录哟0.0", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "亲，你还木有登录哟0.0", Toast.LENGTH_SHORT).show();
                     intent.setClass(this, OAuthActivity.class);
                     startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else if (user == null) {

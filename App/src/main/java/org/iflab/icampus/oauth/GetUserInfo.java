@@ -30,7 +30,7 @@ public class GetUserInfo {
                             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 
                                 String userJsonData = new String(responseBody);
-                                Log.i("用户信息", "" + userJsonData);
+                                Log.i("用户信息", "----->" + userJsonData);
                                 handleUserJson(user, userJsonData);
                                 ACache aCache = ACache.get(context);
                                 aCache.put("user", user, 31 * ACache.TIME_DAY);
