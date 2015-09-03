@@ -13,16 +13,6 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.loopj.android.http.AsyncHttpResponseHandler;
-
-import org.apache.http.Header;
-import org.iflab.icampus.http.AsyncHttpIc;
-import org.iflab.icampus.http.UrlStatic;
-import org.iflab.icampus.utils.ACache;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,8 +23,6 @@ public class AboutActivity extends ActionBarActivity {
     private ListView aboutListView;
     private Intent intent;
     private String modName;//mod的名字
-    private String url;//mod对应的网络URL
-    private String aboutDetailsData;//每个mod的详细内容
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,36 +55,7 @@ public class AboutActivity extends ActionBarActivity {
 
     }
 
-    /**
-     * 通过传入的URL获取网络上的每个mod的详情
-     *
-     * @param url 对应模块的URL
-     */
-    private void getAboutDetailsByUrl(String url) {
-        AsyncHttpIc.get(url, null,
-                        new AsyncHttpResponseHandler() {
-                            @Override
-                            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                                String introData = new String(responseBody);
-                                try {
-                                    /*因为传入的introData并不符合json格式，因此要先做处理*/
-                                    JSONObject jsonObject = new JSONObject(introData.substring(1, introData.length() - 1));
-                                    aboutDetailsData = jsonObject.getString("introCont");
-                                            /*获取到之后存入缓存里*/
-                                    ACache aCache = ACache.get(getApplicationContext());
-                                    aCache.put(modName, aboutDetailsData);
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
 
-                            }
-
-                            @Override
-                            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                                Toast.makeText(getApplicationContext(), "获取数据异常，请重试0.0", Toast.LENGTH_SHORT).show();
-                            }
-                        });
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -127,14 +86,7 @@ public class AboutActivity extends ActionBarActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             modName = aboutModMap.get(aboutItemList.get(position));
-            ACache aCache = ACache.get(getApplicationContext());
-            aboutDetailsData = aCache.getAsString(modName);
-            /*如果缓存里没有这个mod的内容，就从网络获取*/
-            if (aboutDetailsData == null) {
-                url = UrlStatic.ICAMPUSAPI + "/intro.php?mod=" + modName;//构造获取mod详细内容的url
-                getAboutDetailsByUrl(url);
-            }
-            intent.putExtra("aboutDetailsData", aboutDetailsData);//把所点击的模块的数据传入
+            intent.putExtra("modName", modName);//把模块的名字传入
             intent.putExtra("title", aboutItemList.get(position));//把所点击的模块的标题传入
             intent.setClass(AboutActivity.this, AboutDetailsActivity.class);
             startActivity(intent);

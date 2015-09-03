@@ -22,11 +22,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2853a0da-adec-4c53-b5fc-c3451ab97eac" name="Default" comment="fix a NullPointException of myApplication">
+    <list default="true" id="2853a0da-adec-4c53-b5fc-c3451ab97eac" name="Default" comment="maybe there is a bug&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/oauth/GetUserInfo.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/oauth/GetUserInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/HomeActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/HomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/UserCenterActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/UserCenterActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iCampus-Android-Restructure.iws" />
@@ -59,14 +57,14 @@
         <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="130" column="59" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
+              <caret line="98" column="57" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
               <folding>
-                <element signature="e#5908#5909#0" expanded="true" />
-                <element signature="e#5959#5960#0" expanded="true" />
-                <element signature="e#6024#6025#0" expanded="true" />
-                <element signature="e#6059#6060#0" expanded="true" />
-                <element signature="e#6124#6125#0" expanded="true" />
-                <element signature="e#6163#6164#0" expanded="true" />
+                <element signature="e#3924#3925#0" expanded="true" />
+                <element signature="e#3975#3976#0" expanded="true" />
+                <element signature="e#4040#4041#0" expanded="true" />
+                <element signature="e#4075#4076#0" expanded="true" />
+                <element signature="e#4140#4141#0" expanded="true" />
+                <element signature="e#4179#4180#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,8 +73,8 @@
       <file leaf-file-name="AboutDetailsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5787671">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state vertical-scroll-proportion="6.4372993">
+              <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -1800,7 +1798,6 @@
         <option value="$PROJECT_DIR$/App/src/main/res/layout/activity_about_detials.xml" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetialsActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/activity_about_details.xml" />
-        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/App/src/main/res/values/user_background.xml" />
         <option value="$PROJECT_DIR$/App/src/main/res/drawable/gradient_blue.xml" />
@@ -1815,6 +1812,7 @@
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/oauth/GetUserInfo.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/UserCenterActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutActivity.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java" />
       </list>
     </option>
   </component>
@@ -2436,12 +2434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1441190341363</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="maybe there is a bug&#10;">
+      <created>1441281691508</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1441281691508</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -2453,7 +2457,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44535074" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44535074" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24432677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2516,7 +2520,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/iCampus-Android-Restructure" />
     </ignored-roots>
-    <MESSAGE value="add ItemListener&#10;" />
     <MESSAGE value="Learn getView" />
     <MESSAGE value="Log" />
     <MESSAGE value="News Fragment" />
@@ -2541,7 +2544,8 @@
     <MESSAGE value="complete the module of about" />
     <MESSAGE value="complete the module of user" />
     <MESSAGE value="fix a NullPointException of myApplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix a NullPointException of myApplication" />
+    <MESSAGE value="maybe there is a bug&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="maybe there is a bug&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2942,22 +2946,22 @@
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="59" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
+          <caret line="98" column="57" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
           <folding>
-            <element signature="e#5908#5909#0" expanded="true" />
-            <element signature="e#5959#5960#0" expanded="true" />
-            <element signature="e#6024#6025#0" expanded="true" />
-            <element signature="e#6059#6060#0" expanded="true" />
-            <element signature="e#6124#6125#0" expanded="true" />
-            <element signature="e#6163#6164#0" expanded="true" />
+            <element signature="e#3924#3925#0" expanded="true" />
+            <element signature="e#3975#3976#0" expanded="true" />
+            <element signature="e#4040#4041#0" expanded="true" />
+            <element signature="e#4075#4076#0" expanded="true" />
+            <element signature="e#4140#4141#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5787671">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state vertical-scroll-proportion="6.4372993">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
           <folding />
         </state>
       </provider>
