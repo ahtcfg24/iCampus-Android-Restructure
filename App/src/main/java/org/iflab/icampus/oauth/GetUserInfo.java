@@ -2,7 +2,6 @@ package org.iflab.icampus.oauth;
 
 import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -38,7 +37,7 @@ public class GetUserInfo {
 
                             @Override
                             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                                Toast.makeText(context, "获取网络数据失败,请重试", Toast.LENGTH_SHORT).show();
+                                Log.i("GetUserInfo", "----->" + "获取失败");
 
                             }
                         });

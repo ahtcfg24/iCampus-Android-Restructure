@@ -3,16 +3,17 @@ package org.iflab.icampus;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
+import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.utils.ACache;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,6 +24,7 @@ public class AboutDetailsActivity extends ActionBarActivity {
     private String modName;//mod的名字
     private String url;//mod对应的网络URL
     private String aboutDetailsData;//每个mod的详细内容
+    private MyProgressDialog myProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,13 @@ public class AboutDetailsActivity extends ActionBarActivity {
         AsyncHttpIc.get(url, null,
                         new AsyncHttpResponseHandler() {
                             @Override
+                            public void onStart() {
+                                super.onStart();
+                                myProgressDialog = new MyProgressDialog(AboutDetailsActivity.this, "正在拼命加载咩。。。");
+                                myProgressDialog.show();
+                            }
+
+                            @Override
                             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                                 String introData = new String(responseBody);
                                 try {
@@ -63,7 +72,7 @@ public class AboutDetailsActivity extends ActionBarActivity {
                                     aboutDetailsData = jsonObject.getString("introCont");
                                     /*使用loadData会乱码，原因未知*/
                                     webView.loadDataWithBaseURL(null, aboutDetailsData, "text/html", "utf-8", null);
-                                            /*获取到之后存入缓存里*/
+                                    /*获取到之后存入缓存里*/
                                     ACache aCache = ACache.get(getApplicationContext());
                                     aCache.put(modName, aboutDetailsData);
                                 } catch (JSONException e) {
@@ -74,7 +83,14 @@ public class AboutDetailsActivity extends ActionBarActivity {
 
                             @Override
                             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                                Toast.makeText(getApplicationContext(), "获取数据异常，请重试0.0", Toast.LENGTH_SHORT).show();
+                                Log.i(modName, "----->" + "获取失败");
+                            }
+
+                            @Override
+                            public void onFinish() {
+                                super.onFinish();
+                                myProgressDialog.hide();
+                                myProgressDialog.dismiss();
                             }
                         });
     }
@@ -100,4 +116,5 @@ public class AboutDetailsActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

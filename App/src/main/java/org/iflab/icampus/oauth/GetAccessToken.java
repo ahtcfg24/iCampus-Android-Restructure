@@ -1,7 +1,7 @@
 package org.iflab.icampus.oauth;
 
 import android.content.Context;
-import android.widget.Toast;
+import android.util.Log;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -38,7 +38,8 @@ public class GetAccessToken {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(context, "获取AccessToken失败", Toast.LENGTH_SHORT).show();
+                Log.i("GetAccessToken", "----->" + "获取失败");
+
             }
         });
         return null;
