@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2">
+
+    <item
+        jar="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.lsjwzh\materialloadingprogressbar\0.5.6-RELEASE\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b7760c9799d4842e39492efb0957ed62e4c7c57a">
+        <dex
+            dex="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-2211d9cddd5a45c04e0a56cd94bb6c3564c5be5e.jar"/>
+    </item>
+
+</items>

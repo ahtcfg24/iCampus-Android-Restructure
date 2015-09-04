@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/HomeFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/src/main/res/layout/activity_news.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/App/src/main/res/layout/fragment_home.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/App/src/main/res/layout/toolbar.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/App/src/main/res/menu/menu_news.xml" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

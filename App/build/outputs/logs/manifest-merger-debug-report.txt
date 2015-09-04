@@ -1,0 +1,121 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:2:1-63:12
+	package
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:4:5-63
+	android:versionCode
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:6:22-64
+application
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:8:5-61:19
+MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.yalantis:contextmenu:1.0.4] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:12:9-41
+	android:allowBackup
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:10:9-35
+	android:icon
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:13:9-52
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:9:9-50
+activity#org.iflab.icampus.SplashActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:14:9-51
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:14:19-49
+activity#org.iflab.icampus.HomeActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:15:9-23:20
+	android:theme
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:17:13-63
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:16:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:19:17-68
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:21:17-76
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:21:27-74
+activity#org.iflab.icampus.OAuthActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:24:9-27:15
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:26:13-57
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:25:13-42
+activity#org.iflab.icampus.NewsActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:28:9-34:20
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:29:13-41
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:31:13-33:48
+	android:value
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:33:17-46
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:32:17-63
+activity#org.iflab.icampus.YellowPageActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:35:9-41:20
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:37:13-63
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:36:13-47
+activity#org.iflab.icampus.UserCenterActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:42:9-48:20
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:44:13-63
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:43:13-47
+activity#org.iflab.icampus.AboutActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:49:9-56:20
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:51:13-57
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:50:13-42
+activity#org.iflab.icampus.AboutDetailsActivity
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:57:9-60:20
+	android:label
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:59:13-65
+	android:name
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:58:13-49
+uses-sdk
+INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.yalantis:contextmenu:1.0.4] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.facebook.fresco:fresco:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.facebook.fresco:fbcore:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+	android:targetSdkVersion
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
