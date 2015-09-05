@@ -23,7 +23,7 @@ public class AboutDetailsActivity extends ActionBarActivity {
     private WebView webView;
     private Intent intent;
     private String modName;//mod的名字
-    private String abooutDetailsUrl;//mod对应的网络URL
+    private String aboutDetailsUrl;//mod对应的网络URL
     private String aboutDetailsData;//每个mod的详细内容
     private MyProgressDialog myProgressDialog;
     private ACache aCache;
@@ -42,8 +42,8 @@ public class AboutDetailsActivity extends ActionBarActivity {
         aboutDetailsData = aCache.getAsString(modName);
             /*如果缓存里没有这个mod的内容，就从网络获取*/
         if (aboutDetailsData == null) {
-            abooutDetailsUrl = UrlStatic.ICAMPUSAPI + "/intro.php?mod=" + modName;//构造获取mod详细内容的url
-            getAboutDetailsByUrl(abooutDetailsUrl);
+            aboutDetailsUrl = UrlStatic.ICAMPUSAPI + "/intro.php?mod=" + modName;//构造获取mod详细内容的url
+            getAboutDetailsByUrl(aboutDetailsUrl);
         } else {
             /*使用loadData会乱码，原因未知*/
             webView.loadDataWithBaseURL(null, aboutDetailsData, "text/html", "utf-8", null);

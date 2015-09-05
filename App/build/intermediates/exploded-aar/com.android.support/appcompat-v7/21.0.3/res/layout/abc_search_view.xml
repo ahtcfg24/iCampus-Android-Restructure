@@ -41,22 +41,22 @@
         style="?attr/actionButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
+            android:layout_gravity="center_vertical"
         android:contentDescription="@string/abc_searchview_description_search"
         android:focusable="true"/>
 
     <LinearLayout
         android:id="@+id/search_edit_frame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
         android:layout_marginBottom="4dip"
         android:layout_marginLeft="8dip"
         android:layout_marginRight="8dip"
         android:layout_marginTop="4dip"
-        android:layout_weight="1"
+            android:layout_weight="1"
         android:layoutDirection="locale"
-        android:orientation="horizontal">
+            android:orientation="horizontal">
 
         <android.support.v7.internal.widget.TintImageView
             android:id="@+id/search_mag_icon"
@@ -70,9 +70,9 @@
         <!-- Inner layout contains the app icon, button(s) and EditText -->
         <LinearLayout
             android:id="@+id/search_plate"
-            android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+                android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -111,8 +111,8 @@
 
         <LinearLayout
             android:id="@+id/submit_area"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <android.support.v7.internal.widget.TintImageView

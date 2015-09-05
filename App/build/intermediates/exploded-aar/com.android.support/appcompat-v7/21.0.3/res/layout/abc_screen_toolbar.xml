@@ -27,8 +27,8 @@
     <android.support.v7.internal.widget.ActionBarContainer
         android:id="@+id/action_bar_container"
         style="?attr/actionBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="top"
         android:touchscreenBlocksFocus="true">

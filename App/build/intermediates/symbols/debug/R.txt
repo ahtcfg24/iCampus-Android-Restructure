@@ -477,7 +477,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c002e
 int id action_mode_bar_stub 0x7f0c002d
 int id action_mode_close_button 0x7f0c0020
-int id action_settings 0x7f0c0058
+int id action_settings 0x7f0c0059
 int id activity_chooser_view_content 0x7f0c0021
 int id always 0x7f0c0016
 int id avatar_image_view 0x7f0c0045
@@ -485,7 +485,7 @@ int id beginning 0x7f0c0013
 int id checkbox 0x7f0c0029
 int id collapseActionView 0x7f0c0017
 int id container 0x7f0c0043
-int id context_menu 0x7f0c0059
+int id context_menu 0x7f0c005a
 int id decor_content_parent 0x7f0c002f
 int id default_activity_button 0x7f0c0024
 int id department_textView 0x7f0c004a
@@ -550,6 +550,7 @@ int id withText 0x7f0c001a
 int id wrap_content 0x7f0c001d
 int id wrapper_buttons 0x7f0c004f
 int id wrapper_text 0x7f0c0050
+int id yellowPage_item_textView 0x7f0c0058
 int id yellowPage_listView 0x7f0c004c
 int integer abc_max_action_buttons 0x7f090000
 int layout abc_action_bar_title_item 0x7f040000
@@ -594,6 +595,7 @@ int layout slector_menu 0x7f040026
 int layout support_simple_spinner_dropdown_item 0x7f040027
 int layout toast 0x7f040028
 int layout toolbar 0x7f040029
+int layout yellow_page_item 0x7f04002a
 int menu menu_about 0x7f0d0000
 int menu menu_about_details 0x7f0d0001
 int menu menu_home 0x7f0d0002

@@ -1591,7 +1591,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c002e;
         public static final int action_mode_bar_stub=0x7f0c002d;
         public static final int action_mode_close_button=0x7f0c0020;
-        public static final int action_settings=0x7f0c0058;
+        public static final int action_settings=0x7f0c0059;
         public static final int activity_chooser_view_content=0x7f0c0021;
         public static final int always=0x7f0c0016;
         public static final int avatar_image_view=0x7f0c0045;
@@ -1599,7 +1599,7 @@ containing a value of this type.
         public static final int checkbox=0x7f0c0029;
         public static final int collapseActionView=0x7f0c0017;
         public static final int container=0x7f0c0043;
-        public static final int context_menu=0x7f0c0059;
+        public static final int context_menu=0x7f0c005a;
         public static final int decor_content_parent=0x7f0c002f;
         public static final int default_activity_button=0x7f0c0024;
         public static final int department_textView=0x7f0c004a;
@@ -1664,6 +1664,7 @@ containing a value of this type.
         public static final int wrap_content=0x7f0c001d;
         public static final int wrapper_buttons=0x7f0c004f;
         public static final int wrapper_text=0x7f0c0050;
+        public static final int yellowPage_item_textView=0x7f0c0058;
         public static final int yellowPage_listView=0x7f0c004c;
     }
     public static final class integer {
@@ -1712,6 +1713,7 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040027;
         public static final int toast=0x7f040028;
         public static final int toolbar=0x7f040029;
+        public static final int yellow_page_item=0x7f04002a;
     }
     public static final class menu {
         public static final int menu_about=0x7f0d0000;
