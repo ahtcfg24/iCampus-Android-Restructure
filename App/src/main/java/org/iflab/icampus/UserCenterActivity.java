@@ -13,7 +13,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.backends.pipeline.PipelineDraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.facebook.imagepipeline.request.ImageRequest;
+import com.facebook.imagepipeline.request.ImageRequestBuilder;
 
 import org.iflab.icampus.model.User;
 import org.iflab.icampus.ui.MyToast;
@@ -69,7 +72,16 @@ public class UserCenterActivity extends ActionBarActivity {
      * 填充数据
      */
     public void setContent() {
-        avatarImageView.setImageURI(Uri.parse(user.getAvatar()));
+        Uri uri = Uri.parse(user.getAvatar());
+        ImageRequest request = ImageRequestBuilder
+                .newBuilderWithSource(uri)
+                .setProgressiveRenderingEnabled(true)
+                .build();
+        PipelineDraweeController controller = (PipelineDraweeController) Fresco.newDraweeControllerBuilder()
+                .setImageRequest(request)
+                .build();
+
+        avatarImageView.setController(controller);
         realNameTextView.setText(user.getRealName());
         userNameTextView.setText(user.getUserName());
         emailTextView.setText(user.getEmail());
