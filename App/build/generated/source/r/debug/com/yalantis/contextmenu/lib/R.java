@@ -403,7 +403,7 @@ public final class R {
 		public static final int progress_circular = 0x7f0c0005;
 		public static final int progress_horizontal = 0x7f0c0006;
 		public static final int radio = 0x7f0c002b;
-		public static final int root = 0x7f0c004d;
+		public static final int root = 0x7f0c004e;
 		public static final int search_badge = 0x7f0c0035;
 		public static final int search_bar = 0x7f0c0034;
 		public static final int search_button = 0x7f0c0036;
@@ -426,8 +426,8 @@ public final class R {
 		public static final int useLogo = 0x7f0c0012;
 		public static final int withText = 0x7f0c001a;
 		public static final int wrap_content = 0x7f0c001d;
-		public static final int wrapper_buttons = 0x7f0c004e;
-		public static final int wrapper_text = 0x7f0c004f;
+		public static final int wrapper_buttons = 0x7f0c004f;
+		public static final int wrapper_text = 0x7f0c0050;
 	}
 	public static final class integer {
 		public static final int abc_max_action_buttons = 0x7f090000;

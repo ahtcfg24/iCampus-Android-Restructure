@@ -15,12 +15,10 @@
     <dimen name="text_wrapper_right_margin">-8dp</dimen>
     <!-- From: file:/D:/workspace/ContextMenu/lib/src/main/res/values/styles.xml -->
     <eat-comment/>
-
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@android:color/white</item>
         <!-- Customize your theme here. -->
     </style>
-
     <style name="MenuFragmentStyle" parent="AppTheme">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:colorForeground">@android:color/transparent</item>
@@ -29,9 +27,7 @@
         <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-
     <style name="TextView"/>
-
     <style name="TextView.DefaultStyle">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">@dimen/menu_text_size</item>

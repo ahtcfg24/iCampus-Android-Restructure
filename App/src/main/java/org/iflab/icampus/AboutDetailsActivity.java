@@ -23,9 +23,10 @@ public class AboutDetailsActivity extends ActionBarActivity {
     private WebView webView;
     private Intent intent;
     private String modName;//mod的名字
-    private String url;//mod对应的网络URL
+    private String abooutDetailsUrl;//mod对应的网络URL
     private String aboutDetailsData;//每个mod的详细内容
     private MyProgressDialog myProgressDialog;
+    private ACache aCache;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +38,12 @@ public class AboutDetailsActivity extends ActionBarActivity {
         modName = intent.getStringExtra("modName");//获取传过来的模块的名字
         getSupportActionBar().setTitle(intent.getStringExtra("title"));//获取传过来的标题并设为activity的标题
 
-        ACache aCache = ACache.get(getApplicationContext());
+        aCache = ACache.get(getApplicationContext());
         aboutDetailsData = aCache.getAsString(modName);
             /*如果缓存里没有这个mod的内容，就从网络获取*/
         if (aboutDetailsData == null) {
-            url = UrlStatic.ICAMPUSAPI + "/intro.php?mod=" + modName;//构造获取mod详细内容的url
-            getAboutDetailsByUrl(url);
+            abooutDetailsUrl = UrlStatic.ICAMPUSAPI + "/intro.php?mod=" + modName;//构造获取mod详细内容的url
+            getAboutDetailsByUrl(abooutDetailsUrl);
         } else {
             /*使用loadData会乱码，原因未知*/
             webView.loadDataWithBaseURL(null, aboutDetailsData, "text/html", "utf-8", null);
@@ -55,20 +56,20 @@ public class AboutDetailsActivity extends ActionBarActivity {
      * @param url 对应模块的URL
      */
     private void getAboutDetailsByUrl(String url) {
-        myProgressDialog = new MyProgressDialog(AboutDetailsActivity.this, "正在拼命加载咩。。。");
+        myProgressDialog = new MyProgressDialog(AboutDetailsActivity.this);
         AsyncHttpIc.get(url, null,
                         new AsyncHttpResponseHandler() {
                             @Override
                             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                                 String introData = new String(responseBody);
                                 try {
-                                    /*因为传入的introData并不符合json格式，因此要先做处理*/
+                                    myProgressDialog.dismiss();
+                                    /*因为传入的introData是一个jsonArray包含一个jsonObject的格式，因此要先做处理使之成为jsonObject格式*/
                                     JSONObject jsonObject = new JSONObject(introData.substring(1, introData.length() - 1));
                                     aboutDetailsData = jsonObject.getString("introCont");
                                     /*使用loadData会乱码，原因未知*/
                                     webView.loadDataWithBaseURL(null, aboutDetailsData, "text/html", "utf-8", null);
                                     /*获取到之后存入缓存里*/
-                                    ACache aCache = ACache.get(getApplicationContext());
                                     aCache.put(modName, aboutDetailsData);
                                 } catch (JSONException e) {
                                     e.printStackTrace();

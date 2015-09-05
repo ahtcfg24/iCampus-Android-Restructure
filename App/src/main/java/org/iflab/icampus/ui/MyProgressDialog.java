@@ -15,14 +15,19 @@ import org.iflab.icampus.R;
  */
 
 public class MyProgressDialog extends Dialog {
-    /**
-     * @param context            要显示ProgressDialog的环境
-     * @param progressDialogText 要显示的文字
-     */
+
+    public MyProgressDialog(Context context) {
+        this(context, "正在拼命加载中。。。");
+    }
+
     public MyProgressDialog(Context context, String progressDialogText) {
         this(context, R.style.CustomProgressDialog, progressDialogText);
     }
-
+    /**
+     * @param context            要显示ProgressDialog的环境
+     * @param theme              自定义的Dialog样式
+     * @param progressDialogText 要显示的文字
+     */
     public MyProgressDialog(Context context, int theme, String progressDialogText) {
         super(context, theme);
         this.setContentView(R.layout.progress_dialog);
