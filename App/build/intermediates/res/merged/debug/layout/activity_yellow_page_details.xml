@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="org.iflab.icampus.YellowPageDetailsActivity">
+
+    <ListView
+        android:id="@+id/yellowPageDetails_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</RelativeLayout>
+<!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/App/src/main/res/layout/activity_yellow_page_details.xml -->
