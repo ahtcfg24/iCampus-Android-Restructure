@@ -10,6 +10,10 @@ public class YellowPageDepart {
     private String name;
     private String depart;
 
+    public YellowPageDepart() {
+
+    }
+
     public YellowPageDepart(String name, String depart) {
         this.name = name;
         this.depart = depart;

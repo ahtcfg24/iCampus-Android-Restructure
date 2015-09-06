@@ -36,7 +36,9 @@ public class YellowPageActivity extends ActionBarActivity {
     private MyProgressDialog myProgressDialog;
     private String YellowPageURl;
     private YellowPageDepart yellowPageDepart;
-    private List<YellowPageDepart> departNameList;
+    private String depart;
+    private String name;
+    private List<YellowPageDepart> yellowPageDepartList;
     private String yellowPageData;
     private ACache aCache;
     private Intent intent;
@@ -45,19 +47,24 @@ public class YellowPageActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yellow_page);
-        yellowPageListView = (ListView) findViewById(R.id.yellowPage_listView);
-        departNameList = new ArrayList<>();
-        YellowPageURl = UrlStatic.ICAMPUSAPI + "/yellowpage.php?action=cat";
-        aCache = ACache.get(getApplicationContext());
-        yellowPageData = aCache.getAsString("yellowPageData");
+        init();//初始化
         if (yellowPageData == null) {
             /*如果缓存没有就从网络获取*/
             getYellowPageDataByUrl(YellowPageURl);
         } else {
             jsonYellowPageData(yellowPageData);
-            yellowPageListView.setAdapter(new YellowPageAdapter(departNameList, YellowPageActivity.this));
+            yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
         }
         yellowPageListView.setOnItemClickListener(new yellowPageListListener());
+    }
+
+    private void init() {
+        yellowPageListView = (ListView) findViewById(R.id.yellowPage_listView);
+        yellowPageDepartList = new ArrayList<>();
+        aCache = ACache.get(getApplicationContext());
+        YellowPageURl = UrlStatic.ICAMPUSAPI + "/yellowpage.php?action=cat";
+        yellowPageData = aCache.getAsString("yellowPageData");
+
     }
 
     /**
@@ -68,11 +75,11 @@ public class YellowPageActivity extends ActionBarActivity {
         AsyncHttpIc.get(yellowPageURl, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                myProgressDialog.dismiss();
+                myProgressDialog.dismiss();//解除ProgressDialog
                 yellowPageData = new String(responseBody);
                 jsonYellowPageData(yellowPageData);
                 /*由于从网络获取是异步处理，所以需要在这里直接设置Adapter*/
-                yellowPageListView.setAdapter(new YellowPageAdapter(departNameList, YellowPageActivity.this));
+                yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
                 aCache.put("yellowPageData", yellowPageData);
             }
 
@@ -90,14 +97,16 @@ public class YellowPageActivity extends ActionBarActivity {
      * @param yellowPageData 转换成字符串后的json
      */
     private void jsonYellowPageData(String yellowPageData) {
-        yellowPageDepart = new YellowPageDepart();
         try {
             JSONArray jsonArray = new JSONArray(yellowPageData);
             for (int i = 0; i < jsonArray.length(); i++) {
+                yellowPageDepart = new YellowPageDepart();
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                yellowPageDepart.getName() = jsonObject.getString("name");
-                yellowPageDepart.getDepart() = jsonObject.getString("depart");
-                departNameList.add(yellowPageDepart);
+                depart = jsonObject.getString("depart");
+                name = jsonObject.getString("name");
+                yellowPageDepart.setName(name);
+                yellowPageDepart.setDepart(depart);
+                yellowPageDepartList.add(yellowPageDepart);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -133,18 +142,18 @@ public class YellowPageActivity extends ActionBarActivity {
      */
     private class YellowPageAdapter extends BaseAdapter {
 
-        private List<YellowPageDepart> departNameList;
+        private List<YellowPageDepart> yellowPageDepartList;
         private Context context;
         private ViewHolder viewHolder;
 
-        public YellowPageAdapter(List<String> departNameList, Context context) {
-            this.departNameList = departNameList;
+        public YellowPageAdapter(List<YellowPageDepart> yellowPageDepartList, Context context) {
+            this.yellowPageDepartList = yellowPageDepartList;
             this.context = context;
         }
 
         @Override
         public int getCount() {
-            return departNameList.size();
+            return yellowPageDepartList.size();
         }
 
         @Override
@@ -175,7 +184,7 @@ public class YellowPageActivity extends ActionBarActivity {
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            viewHolder.yellowPageItemTextView.setText(departNameList.get(position));
+            viewHolder.yellowPageItemTextView.setText(yellowPageDepartList.get(position).getName());
             return convertView;
         }
     }
@@ -191,7 +200,8 @@ public class YellowPageActivity extends ActionBarActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             intent = new Intent();
-            intent.putExtra("depart", );
+            intent.putExtra("depart", yellowPageDepartList.get(position).getDepart());
+            intent.putExtra("name", yellowPageDepartList.get(position).getName());
             intent.setClass(YellowPageActivity.this, YellowPageDetailsActivity.class);
             startActivity(intent);
         }

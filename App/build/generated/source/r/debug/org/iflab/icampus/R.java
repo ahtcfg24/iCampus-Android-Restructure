@@ -1591,7 +1591,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c002e;
         public static final int action_mode_bar_stub=0x7f0c002d;
         public static final int action_mode_close_button=0x7f0c0020;
-        public static final int action_settings=0x7f0c0059;
+        public static final int action_settings=0x7f0c005c;
         public static final int activity_chooser_view_content=0x7f0c0021;
         public static final int always=0x7f0c0016;
         public static final int avatar_image_view=0x7f0c0045;
@@ -1599,7 +1599,7 @@ containing a value of this type.
         public static final int checkbox=0x7f0c0029;
         public static final int collapseActionView=0x7f0c0017;
         public static final int container=0x7f0c0043;
-        public static final int context_menu=0x7f0c005a;
+        public static final int context_menu=0x7f0c005d;
         public static final int decor_content_parent=0x7f0c002f;
         public static final int default_activity_button=0x7f0c0024;
         public static final int department_textView=0x7f0c004a;
@@ -1611,11 +1611,11 @@ containing a value of this type.
         public static final int end=0x7f0c0014;
         public static final int expand_activities_button=0x7f0c0022;
         public static final int expanded_menu=0x7f0c0028;
-        public static final int gridView_home=0x7f0c004d;
+        public static final int gridView_home=0x7f0c004e;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c000d;
-        public static final int home_icon=0x7f0c0051;
-        public static final int home_name=0x7f0c0052;
+        public static final int home_icon=0x7f0c0052;
+        public static final int home_name=0x7f0c0053;
         public static final int icon=0x7f0c0026;
         public static final int ifRoom=0x7f0c0018;
         public static final int image=0x7f0c0023;
@@ -1627,13 +1627,13 @@ containing a value of this type.
         public static final int none=0x7f0c000e;
         public static final int normal=0x7f0c000a;
         public static final int oAuth_webView=0x7f0c0044;
-        public static final int progressDialog_imageView=0x7f0c0053;
-        public static final int progressDialog_textView=0x7f0c0054;
+        public static final int progressDialog_imageView=0x7f0c0054;
+        public static final int progressDialog_textView=0x7f0c0055;
         public static final int progress_circular=0x7f0c0005;
         public static final int progress_horizontal=0x7f0c0006;
         public static final int radio=0x7f0c002b;
         public static final int realName_textView=0x7f0c0046;
-        public static final int root=0x7f0c004e;
+        public static final int root=0x7f0c004f;
         public static final int search_badge=0x7f0c0035;
         public static final int search_bar=0x7f0c0034;
         public static final int search_button=0x7f0c0036;
@@ -1652,9 +1652,9 @@ containing a value of this type.
         public static final int submit_area=0x7f0c003c;
         public static final int tabMode=0x7f0c000b;
         public static final int title=0x7f0c0027;
-        public static final int toast_imageView=0x7f0c0055;
-        public static final int toast_textView=0x7f0c0056;
-        public static final int toolbar=0x7f0c0057;
+        public static final int toast_imageView=0x7f0c0056;
+        public static final int toast_textView=0x7f0c0057;
+        public static final int toolbar=0x7f0c0058;
         public static final int type_textView=0x7f0c0049;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
@@ -1662,9 +1662,12 @@ containing a value of this type.
         public static final int webView=0x7f0c0042;
         public static final int withText=0x7f0c001a;
         public static final int wrap_content=0x7f0c001d;
-        public static final int wrapper_buttons=0x7f0c004f;
-        public static final int wrapper_text=0x7f0c0050;
-        public static final int yellowPage_item_textView=0x7f0c0058;
+        public static final int wrapper_buttons=0x7f0c0050;
+        public static final int wrapper_text=0x7f0c0051;
+        public static final int yellowPageDetails_ListView=0x7f0c004d;
+        public static final int yellowPageDetails_item_textView1=0x7f0c0059;
+        public static final int yellowPageDetails_item_textView2=0x7f0c005a;
+        public static final int yellowPage_item_textView=0x7f0c005b;
         public static final int yellowPage_listView=0x7f0c004c;
     }
     public static final class integer {
@@ -1704,16 +1707,18 @@ containing a value of this type.
         public static final int activity_splash=0x7f04001e;
         public static final int activity_user_center=0x7f04001f;
         public static final int activity_yellow_page=0x7f040020;
-        public static final int fragment_home=0x7f040021;
-        public static final int fragment_menu=0x7f040022;
-        public static final int home_item=0x7f040023;
-        public static final int progress_dialog=0x7f040024;
-        public static final int selector_option_fold=0x7f040025;
-        public static final int slector_menu=0x7f040026;
-        public static final int support_simple_spinner_dropdown_item=0x7f040027;
-        public static final int toast=0x7f040028;
-        public static final int toolbar=0x7f040029;
-        public static final int yellow_page_item=0x7f04002a;
+        public static final int activity_yellow_page_details=0x7f040021;
+        public static final int fragment_home=0x7f040022;
+        public static final int fragment_menu=0x7f040023;
+        public static final int home_item=0x7f040024;
+        public static final int progress_dialog=0x7f040025;
+        public static final int selector_option_fold=0x7f040026;
+        public static final int slector_menu=0x7f040027;
+        public static final int support_simple_spinner_dropdown_item=0x7f040028;
+        public static final int toast=0x7f040029;
+        public static final int toolbar=0x7f04002a;
+        public static final int yellow_page_details_item=0x7f04002b;
+        public static final int yellow_page_item=0x7f04002c;
     }
     public static final class menu {
         public static final int menu_about=0x7f0d0000;
@@ -1722,6 +1727,7 @@ containing a value of this type.
         public static final int menu_news=0x7f0d0003;
         public static final int menu_user_center=0x7f0d0004;
         public static final int menu_yellow_page=0x7f0d0005;
+        public static final int menu_yellow_page_details=0x7f0d0006;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1754,6 +1760,7 @@ containing a value of this type.
         public static final int title_activity_oauth=0x7f060018;
         public static final int title_activity_user_center=0x7f060019;
         public static final int title_activity_yellow_page=0x7f06001a;
+        public static final int title_activity_yellow_page_details=0x7f06001b;
     }
     public static final class style {
         /**  Customize your theme here. 
