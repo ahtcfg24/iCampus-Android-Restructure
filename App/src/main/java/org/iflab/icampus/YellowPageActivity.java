@@ -1,6 +1,7 @@
 package org.iflab.icampus;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import org.apache.http.Header;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
+import org.iflab.icampus.model.YellowPageDepart;
 import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.utils.ACache;
@@ -33,10 +35,11 @@ public class YellowPageActivity extends ActionBarActivity {
     private ListView yellowPageListView;
     private MyProgressDialog myProgressDialog;
     private String YellowPageURl;
-    private String departName;
-    private List<String> departNameList;
+    private YellowPageDepart yellowPageDepart;
+    private List<YellowPageDepart> departNameList;
     private String yellowPageData;
     private ACache aCache;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,12 +90,14 @@ public class YellowPageActivity extends ActionBarActivity {
      * @param yellowPageData 转换成字符串后的json
      */
     private void jsonYellowPageData(String yellowPageData) {
+        yellowPageDepart = new YellowPageDepart();
         try {
             JSONArray jsonArray = new JSONArray(yellowPageData);
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                departName = jsonObject.getString("name");
-                departNameList.add(departName);
+                yellowPageDepart.getName() = jsonObject.getString("name");
+                yellowPageDepart.getDepart() = jsonObject.getString("depart");
+                departNameList.add(yellowPageDepart);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -128,7 +133,7 @@ public class YellowPageActivity extends ActionBarActivity {
      */
     private class YellowPageAdapter extends BaseAdapter {
 
-        private List<String> departNameList;
+        private List<YellowPageDepart> departNameList;
         private Context context;
         private ViewHolder viewHolder;
 
@@ -185,7 +190,10 @@ public class YellowPageActivity extends ActionBarActivity {
     private class yellowPageListListener implements OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            // TODO: 2015/9/6
+            intent = new Intent();
+            intent.putExtra("depart", );
+            intent.setClass(YellowPageActivity.this, YellowPageDetailsActivity.class);
+            startActivity(intent);
         }
     }
 }
