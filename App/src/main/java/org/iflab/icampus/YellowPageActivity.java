@@ -190,12 +190,15 @@ public class YellowPageActivity extends ActionBarActivity {
     }
 
     /**
-     * 起优化作用ListView的ViewHolder类
+     * 起优化作用ListView的ViewHolder类，避免多次加载TextView
      */
     private class ViewHolder {
         private TextView yellowPageItemTextView;
     }
 
+    /**
+     * 监听listview
+     */
     private class yellowPageListListener implements OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

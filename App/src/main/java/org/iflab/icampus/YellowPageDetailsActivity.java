@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import org.apache.http.Header;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
-import org.iflab.icampus.model.YellowPageDepartDetails;
+import org.iflab.icampus.model.YellowPageDepartBranch;
 import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.utils.ACache;
@@ -32,16 +33,16 @@ import java.util.List;
 public class YellowPageDetailsActivity extends ActionBarActivity {
     private ListView yellowPageDetailsListView;
     private String yellowPageDetailsUrl;
-    private String depart;
-    private String name;
+    private String depart;//部门网址的代号，用于构造URL
+    private String name;//部门的名称，用于设置ActionBar的标题
     private Intent intent;
     private ACache aCache;
-    private String yellowPageDetailsData;
-    private List<YellowPageDepartDetails> yellowPageDepartDetailsList;
+    private String yellowPageDepartDetailsData;//每个部门下面的所有的分支的json数组数据
+    private List<YellowPageDepartBranch> yellowPageDepartBranchList;
     private MyProgressDialog myProgressDialog;
-    private YellowPageDepartDetails yellowPageDepartDetails;
-    private String branchName;
-    private String telephoneNumber;
+    private YellowPageDepartBranch yellowPageDepartBranch;
+    private String branchName;//部门下分支的名字
+    private String telephoneNumber;//部门下分支的号码
 
 
     @Override
@@ -49,17 +50,19 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yellow_page_details);
         init();//初始化
-        if (yellowPageDetailsData == null) {
+        if (yellowPageDepartDetailsData == null) {
+            /*如果本地缓存没有该部门下的数据，就从网络获取*/
             getYellowPageDetailsDataByUrl(yellowPageDetailsUrl);
         } else {
-            jsonYellowPageDetailsData(yellowPageDetailsData);
-            yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartDetailsList));
+            jsonYellowPageDetailsData(yellowPageDepartDetailsData);
+            yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartBranchList));
         }
+        yellowPageDetailsListView.setOnItemClickListener(new BranchListListener());
 
     }
 
     private void init() {
-        yellowPageDepartDetailsList = new ArrayList<>();
+        yellowPageDepartBranchList = new ArrayList<>();
         intent = getIntent();
         depart = intent.getStringExtra("depart");
         name = intent.getStringExtra("name");
@@ -67,9 +70,8 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
         yellowPageDetailsListView = (ListView) findViewById(R.id.yellowPageDetails_ListView);
         yellowPageDetailsUrl = UrlStatic.ICAMPUSAPI + "/yellowpage.php?action=tel&catid=" + depart;
         aCache = ACache.get(getApplicationContext());
-        yellowPageDetailsData = aCache.getAsString(depart);
+        yellowPageDepartDetailsData = aCache.getAsString(depart);//从缓存获取该分支的数据
     }
-
 
     private void getYellowPageDetailsDataByUrl(String yellowPageDetailsUrl) {
         myProgressDialog = new MyProgressDialog(YellowPageDetailsActivity.this);
@@ -77,10 +79,11 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 myProgressDialog.dismiss();
-                yellowPageDetailsData = new String(responseBody);
-                jsonYellowPageDetailsData(yellowPageDetailsData);
-                yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartDetailsList));
-                aCache.put(depart, yellowPageDetailsData);
+                yellowPageDepartDetailsData = new String(responseBody);
+                jsonYellowPageDetailsData(yellowPageDepartDetailsData);
+                /*由于从网络获取是异步处理，所以需要在这里直接设置Adapter*/
+                yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartBranchList));
+                aCache.put(depart, yellowPageDepartDetailsData);//存放到缓存
             }
 
             @Override
@@ -91,17 +94,22 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
         });
     }
 
+    /**
+     * 解析部门下的详情数据
+     *
+     * @param yellowPageDetailsData 包含该部门的所有分支的json数据
+     */
     private void jsonYellowPageDetailsData(String yellowPageDetailsData) {
         try {
             JSONArray jsonArray = new JSONArray(yellowPageDetailsData);
             for (int i = 0; i < jsonArray.length(); i++) {
-                yellowPageDepartDetails = new YellowPageDepartDetails();
+                yellowPageDepartBranch = new YellowPageDepartBranch();
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 branchName = jsonObject.getString("name");
                 telephoneNumber = jsonObject.getString("telnum");
-                yellowPageDepartDetails.setBranchName(branchName);
-                yellowPageDepartDetails.setTelephoneNumber(telephoneNumber);
-                yellowPageDepartDetailsList.add(yellowPageDepartDetails);
+                yellowPageDepartBranch.setBranchName(branchName);
+                yellowPageDepartBranch.setTelephoneNumber(telephoneNumber);
+                yellowPageDepartBranchList.add(yellowPageDepartBranch);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -130,20 +138,33 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * 监听listview
+     */
+    private class BranchListListener implements AdapterView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            new MyToast(getApplicationContext(), "" + position);
+            // TODO: 2015/9/7
+        }
+    }
 
+    /**
+     * 绑定ListView适配器
+     */
     private class yellowPageDetailsAdapter extends BaseAdapter {
         private Context context;
-        private List<YellowPageDepartDetails> yellowPageDepartDetailsList;
+        private List<YellowPageDepartBranch> yellowPageDepartBranchList;
         private ViewHolder viewHolder;
 
-        public yellowPageDetailsAdapter(Context context, List<YellowPageDepartDetails> yellowPageDepartDetailsList) {
+        public yellowPageDetailsAdapter(Context context, List<YellowPageDepartBranch> yellowPageDepartBranchList) {
             this.context = context;
-            this.yellowPageDepartDetailsList = yellowPageDepartDetailsList;
+            this.yellowPageDepartBranchList = yellowPageDepartBranchList;
         }
 
         @Override
         public int getCount() {
-            return yellowPageDepartDetailsList.size();
+            return yellowPageDepartBranchList.size();
         }
 
         @Override
@@ -156,6 +177,14 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
             return 0;
         }
 
+        /**
+         * 绘制每个item
+         *
+         * @param position    点击的位置
+         * @param convertView item对应的View
+         * @param parent      可选的父控件
+         * @return 要显示的单个item的View
+         */
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
@@ -167,12 +196,15 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            viewHolder.telephoneNumberTextView.setText(yellowPageDepartDetailsList.get(position).getTelephoneNumber());
-            viewHolder.branchNameTextView.setText(yellowPageDepartDetailsList.get(position).getBranchName());
+            viewHolder.telephoneNumberTextView.setText(yellowPageDepartBranchList.get(position).getTelephoneNumber());
+            viewHolder.branchNameTextView.setText(yellowPageDepartBranchList.get(position).getBranchName());
             return convertView;
         }
     }
 
+    /**
+     * 起优化作用ListView的ViewHolder类，避免多次加载TextView
+     */
     private class ViewHolder {
         private TextView branchNameTextView;
         private TextView telephoneNumberTextView;

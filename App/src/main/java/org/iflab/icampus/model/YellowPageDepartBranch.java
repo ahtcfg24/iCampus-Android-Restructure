@@ -1,19 +1,19 @@
 package org.iflab.icampus.model;
 
 /**
- * 描述黄页各个部门详情的类
+ * 描述黄页各个部门下分支详情的类
  *
  * @date 2015/9/6
  * @time 22:26
  */
-public class YellowPageDepartDetails {
+public class YellowPageDepartBranch {
     private String branchName;
     private String telephoneNumber;
 
-    public YellowPageDepartDetails() {
+    public YellowPageDepartBranch() {
     }
 
-    public YellowPageDepartDetails(String branchName, String telephoneNumber) {
+    public YellowPageDepartBranch(String branchName, String telephoneNumber) {
         this.branchName = branchName;
         this.telephoneNumber = telephoneNumber;
     }
