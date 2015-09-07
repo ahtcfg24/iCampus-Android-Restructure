@@ -22,6 +22,7 @@ import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.YellowPageDepartBranch;
 import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.ui.MyToast;
+import org.iflab.icampus.ui.YellowPageDialog;
 import org.iflab.icampus.utils.ACache;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -139,13 +140,16 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
     }
 
     /**
-     * 监听listview
+     * 监听listView号码
      */
     private class BranchListListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            new MyToast(getApplicationContext(), "" + position);
-            // TODO: 2015/9/7
+            branchName=yellowPageDepartBranchList.get(position).getBranchName();
+            new YellowPageDialog(YellowPageDetailsActivity.this
+                    ,branchName
+                    ,yellowPageDepartBranchList
+                    ,position);
         }
     }
 
