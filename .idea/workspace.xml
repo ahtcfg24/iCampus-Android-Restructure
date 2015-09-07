@@ -25,6 +25,11 @@
           <theme>@style/CustomActionBarTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/App/src/main/res/layout/dial_dialog.xml">
+        <config>
+          <theme>@style/CustomActionBarTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/App/src/main/res/layout/progress_dialog.xml">
         <config>
           <theme>@style/CustomActionBarTheme</theme>
@@ -39,6 +44,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2853a0da-adec-4c53-b5fc-c3451ab97eac" name="Default" comment="complete notes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/YellowPageDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/res/layout/dial_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.6.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.6.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.6.0/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.6.0/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.6.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.6.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.6.0/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.6.0/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.6.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.6.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.6.0/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.6.0/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_title_item.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_title_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_up_container.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_up_container.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_view_list_nav_layout.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_view_list_nav_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_menu_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_menu_layout.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_menu_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_mode_bar.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_mode_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_mode_close_item_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_include.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_include.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_list_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_background_cache_hint_selector_material_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_background_cache_hint_selector_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_background_cache_hint_selector_material_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_background_cache_hint_selector_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_btn_check_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_btn_check_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_btn_radio_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_btn_radio_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_cab_background_internal_bg.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_cab_background_internal_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_cab_background_top_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_cab_background_top_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_edit_text_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_edit_text_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_expanded_menu_layout.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_expanded_menu_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_fade_in.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_fade_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_fade_out.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_fade_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_item_background_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_item_background_holo_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_item_background_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_checkbox.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_icon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_layout.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_radio.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_background_transition_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_background_transition_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_list_selector_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_popup_menu_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_disable_only_material_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_disable_only_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_disable_only_material_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_disable_only_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_material_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_material_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_primary_text_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_content_include.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout-v11/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout-v11/abc_screen_content_include.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_simple.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_simple.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_simple_overlay_action_mode.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_simple_overlay_action_mode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_toolbar.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_toolbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_search_dropdown_item_icons_2line.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_search_url_text.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_search_url_text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_search_view.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_search_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_secondary_text_material_dark.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_secondary_text_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_secondary_text_material_light.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/color/abc_secondary_text_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_simple_dropdown_hint.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_simple_dropdown_hint.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_in_bottom.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_in_bottom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_in_top.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_in_top.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_out_bottom.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_out_bottom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_out_top.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/anim/abc_slide_out_top.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_switch_thumb_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_switch_thumb_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_tab_indicator_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_tab_indicator_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_textfield_search_material.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable/abc_textfield_search_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/layout/fragment_menu.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/layout/fragment_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/support_simple_spinner_dropdown_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-large/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-large/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v14/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v14/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v21/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v21/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/res/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/res/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f5acadaf-41e9-450c-9472-0e6fcd9dad0d" name="Rejected commit: Default" comment="add CustomToast" />
@@ -68,28 +155,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YellowPageDetailsActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YellowPageDetailsActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3561644">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dial_dialog.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/dial_dialog.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.0666666">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YellowPageDialog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/YellowPageDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5136986">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding>
-                <element signature="e#6457#6458#0" expanded="true" />
-                <element signature="e#6521#6522#0" expanded="true" />
-                <element signature="e#6586#6587#0" expanded="true" />
-                <element signature="e#6621#6622#0" expanded="true" />
-                <element signature="e#6686#6687#0" expanded="true" />
-                <element signature="e#6718#6719#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YellowPageActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java">
+      <file leaf-file-name="YellowPageDepartBranch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/YellowPageDepartBranch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="210" column="5" selection-start-line="198" selection-start-column="3" selection-end-line="210" selection-end-column="5" />
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -103,8 +208,8 @@
         <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -1777,8 +1882,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/src/main/res/values/gradient_blue.xml" />
-        <option value="$PROJECT_DIR$/App/src/main/res/drawable-mdpi/gradient_blue.xml" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/http/UrlStatic.java" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/activity_about.xml" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/HomeFragment.java" />
@@ -1828,6 +1931,8 @@
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/YellowPageDepartBranch.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/App/src/main/res/layout/dial_dialog.xml" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/YellowPageDialog.java" />
       </list>
     </option>
   </component>
@@ -1837,7 +1942,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1879,6 +1984,59 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -1896,84 +2054,9 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org/iflab/icampus">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2011,6 +2094,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iCampus-Android-Restructure" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2064,7 +2165,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oauth" />
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2076,92 +2177,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2177,7 +2192,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="Project" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AndroidDemo" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="false" />
@@ -2681,7 +2696,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2690,25 +2705,25 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44535074" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2602428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27175573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2795,45 +2810,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_about.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1263537">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_about_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1263537">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.380137">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/drawable-hdpi/loading.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/drawable/progress_loading.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/drawable/progress_dialog_image.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13356164">
@@ -2842,14 +2818,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/progress_dialog.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5631769">
           <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://E:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-21/android/app/Dialog.java">
@@ -2917,14 +2893,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/toast.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42238268">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/oauth/AuthorizationCodeHandle.java">
@@ -3013,14 +2989,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_oauth.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/MyProgressDialog.java">
@@ -3038,14 +3014,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/about_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7978339">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutActivity.java">
@@ -3059,7 +3035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22841726">
           <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3071,14 +3046,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18772563">
           <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/AndroidManifest.xml">
@@ -3097,14 +3072,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_user_center.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/UserCenterActivity.java">
@@ -3129,51 +3104,42 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page_details.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42238268">
           <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/yellow_page_item.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/yellow_page_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37545127">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="49" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/yellow_page_details_item.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/AboutDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="53" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/YellowPageDepartBranch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13356164">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3181,29 +3147,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04452055">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66780823">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="210" column="5" selection-start-line="198" selection-start-column="3" selection-end-line="210" selection-end-column="5" />
+        <state vertical-scroll-proportion="2.4623287">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/res/drawable/splash.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/dial_dialog.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0666666">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3561644">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/YellowPageDepartBranch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/YellowPageDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5136986">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding>
-            <element signature="e#6457#6458#0" expanded="true" />
-            <element signature="e#6521#6522#0" expanded="true" />
-            <element signature="e#6586#6587#0" expanded="true" />
-            <element signature="e#6621#6622#0" expanded="true" />
-            <element signature="e#6686#6687#0" expanded="true" />
-            <element signature="e#6718#6719#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
