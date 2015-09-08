@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import org.iflab.icampus.R;
 import org.iflab.icampus.model.YellowPageDepartBranch;
@@ -20,6 +21,7 @@ import java.util.List;
  */
 public class YellowPageDialog extends Dialog {
     private Button dialButton, insertButton, cancelButton;
+    private TextView titleTextVeiw;
     private int position;
     private Context context;
     private List<YellowPageDepartBranch> yellowPageDepartBranchList;
@@ -42,7 +44,8 @@ public class YellowPageDialog extends Dialog {
         dialButton = (Button) findViewById(R.id.dial_button);
         insertButton = (Button) findViewById(R.id.insert_button);
         cancelButton = (Button) findViewById(R.id.cancel_button);
-        setTitle(title);//设置dialog标题
+        titleTextVeiw=(TextView)findViewById(R.id.dialog_title_textView);
+        titleTextVeiw.setText(title);
     }
 
     private void setListener() {

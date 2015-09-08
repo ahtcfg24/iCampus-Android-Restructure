@@ -379,7 +379,7 @@ int drawable abc_textfield_default_mtrl_alpha 0x7f020034
 int drawable abc_textfield_search_activated_mtrl_alpha 0x7f020035
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f020036
 int drawable abc_textfield_search_material 0x7f020037
-int drawable actionbar_background 0x7f02008a
+int drawable actionbar_background 0x7f02008c
 int drawable alarm 0x7f020038
 int drawable back1 0x7f020039
 int drawable back3 0x7f02003a
@@ -462,6 +462,8 @@ int drawable turn 0x7f020086
 int drawable user_background 0x7f020087
 int drawable wifi 0x7f020088
 int drawable yellowpage 0x7f020089
+int drawable yellowpage_button_background_cancel 0x7f02008a
+int drawable yellowpage_button_background_dial 0x7f02008b
 int id about_item_textView 0x7f0c003f
 int id about_listView 0x7f0c0041
 int id about_textView 0x7f0c0040

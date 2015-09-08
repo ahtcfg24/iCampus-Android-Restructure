@@ -1491,7 +1491,7 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020035;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020036;
         public static final int abc_textfield_search_material=0x7f020037;
-        public static final int actionbar_background=0x7f02008a;
+        public static final int actionbar_background=0x7f02008c;
         public static final int alarm=0x7f020038;
         public static final int back1=0x7f020039;
         public static final int back3=0x7f02003a;
@@ -1574,6 +1574,8 @@ containing a value of this type.
         public static final int user_background=0x7f020087;
         public static final int wifi=0x7f020088;
         public static final int yellowpage=0x7f020089;
+        public static final int yellowpage_button_background_cancel=0x7f02008a;
+        public static final int yellowpage_button_background_dial=0x7f02008b;
     }
     public static final class id {
         public static final int about_item_textView=0x7f0c003f;
