@@ -30,4 +30,6 @@ dependencies {
     compile 'com.yalantis:contextmenu:1.0.4'//动画菜单
     compile 'com.facebook.fresco:fresco:0.6.0+'//Fresco
 
+    compile project(':ViewPagerIndicatorlibrary')
+
 }

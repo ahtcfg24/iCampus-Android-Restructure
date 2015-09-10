@@ -26,6 +26,7 @@ MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\
 MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 	android:label
 		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:12:9-41
 	android:allowBackup
@@ -118,6 +119,8 @@ MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iC
 MERGED from [com.facebook.fresco:fbcore:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:0.6.0] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [iCampus-Android-Restructure:ViewPagerIndicatorlibrary:unspecified] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\AndroidManifest.xml:7:5-9:40
 MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
 	android:targetSdkVersion
 		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml

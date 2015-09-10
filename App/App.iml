@@ -106,5 +106,6 @@
     <orderEntry type="library" exported="" name="contextmenu-1.0.4" level="project" />
     <orderEntry type="library" exported="" name="drawee-0.6.0" level="project" />
     <orderEntry type="library" exported="" name="fbcore-0.6.0" level="project" />
+    <orderEntry type="module" module-name="ViewPagerIndicatorlibrary" exported="" />
   </component>
 </module>
