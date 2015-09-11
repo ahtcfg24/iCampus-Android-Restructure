@@ -5,7 +5,6 @@
         android:layout_height="fill_parent">
     <com.viewpagerindicator.TabPageIndicator
             android:id="@+id/indicator"
-            android:background="#6e747474"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             />

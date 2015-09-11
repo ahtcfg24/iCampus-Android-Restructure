@@ -287,6 +287,7 @@
         如果有任何建议请在新浪微博@ifLab,安卓版本功能问题可以直接联系QQ764951578</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">iCampus</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_about">关于我们</string>
     <string name="title_activity_about_detials">AboutDetialsActivity</string>
@@ -1309,7 +1310,7 @@
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/vpi__dark_theme</item>
+        <item name="android:textColor">#e9272727</item>
     </style>
     <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -1341,10 +1342,9 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
     <eat-comment/>
-    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
-        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+    <style name="Theme.PageIndicatorDefaults" parent="CustomActionBarTheme">
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
     <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->

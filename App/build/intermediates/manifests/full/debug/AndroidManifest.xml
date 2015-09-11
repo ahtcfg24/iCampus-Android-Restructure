@@ -31,7 +31,8 @@
             android:label="@string/title_activity_oauth" />
         <activity
             android:name="org.iflab.icampus.NewsActivity"
-            android:label="@string/title_activity_news" >
+            android:label="@string/title_activity_news"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomeActivity" />

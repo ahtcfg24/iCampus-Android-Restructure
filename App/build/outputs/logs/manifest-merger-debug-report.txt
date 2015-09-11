@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:2:1-65:12
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:2:1-67:12
 	package
 		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\An
 	android:name
 		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:8:5-63:19
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:8:5-65:19
 MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 MERGED from [com.yalantis:contextmenu:1.0.4] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\AndroidManifest.xml:11:5-12:19
@@ -64,47 +64,49 @@ ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\An
 	android:name
 		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:25:13-42
 activity#org.iflab.icampus.NewsActivity
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:27:9-33:20
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:27:9-35:20
 	android:label
 		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:29:13-56
+	android:theme
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:30:13-63
 	android:name
 		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:28:13-41
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:30:13-32:48
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:32:13-34:48
 	android:value
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:32:17-46
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:34:17-46
 	android:name
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:31:17-63
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:33:17-63
 activity#org.iflab.icampus.YellowPageActivity
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:34:9-40:20
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:36:9-42:20
 	android:label
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:36:13-63
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:38:13-63
 	android:name
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:35:13-47
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:37:13-47
 activity#org.iflab.icampus.UserCenterActivity
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:41:9-47:20
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:43:9-49:20
 	android:label
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:43:13-63
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:45:13-63
 	android:name
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:42:13-47
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:44:13-47
 activity#org.iflab.icampus.AboutActivity
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:48:9-54:20
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:50:9-56:20
 	android:label
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:50:13-57
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:52:13-57
 	android:name
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:49:13-42
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:51:13-42
 activity#org.iflab.icampus.AboutDetailsActivity
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:55:9-58:20
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:57:9-60:20
 	android:label
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:57:13-65
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:59:13-65
 	android:name
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:56:13-49
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:58:13-49
 activity#org.iflab.icampus.YellowPageDetailsActivity
-ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:59:9-62:20
+ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:61:9-64:20
 	android:label
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:61:13-71
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:63:13-71
 	android:name
-		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:60:13-54
+		ADDED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:62:13-54
 uses-sdk
 INJECTED from E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:21.0.3] E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42

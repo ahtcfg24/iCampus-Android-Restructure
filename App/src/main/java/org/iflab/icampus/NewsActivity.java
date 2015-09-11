@@ -6,11 +6,15 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
 import com.viewpagerindicator.TabPageIndicator;
+
+import org.iflab.icampus.fragment.NewsListFragment;
+import org.iflab.icampus.utils.StaticVariable;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,10 +24,8 @@ import java.util.Map;
  */
 public class NewsActivity extends ActionBarActivity {
 
-    final static String[] newsTabs = {"学校要闻", "人才培养", "教学科研", "文化活动",
-            "媒体关注", "校园人物"};//新闻类别
+
     private ViewPager newsPager;//每个类的新闻页
-    private FragmentPagerAdapter adapter;//适配器
     private TabPageIndicator indicator;//Tabs
     private Map<String, String> pathMap;//存放不同新闻的相对路径
     private Button button;
@@ -43,24 +45,25 @@ public class NewsActivity extends ActionBarActivity {
      * 初始化map
      */
     private void initMap() {
-        pathMap = new HashMap<String, String>();
-        pathMap.put(newsTabs[0], "/xw/zhxw");
-        pathMap.put(newsTabs[1], "/xw/rcpy");
-        pathMap.put(newsTabs[2], "/xw/jxky");
-        pathMap.put(newsTabs[3], "/xw/whhd");
-        pathMap.put(newsTabs[4], "/xw/mtgz");
-        pathMap.put(newsTabs[5], "/xw/xyrw");
+        pathMap = new HashMap<>();
+        pathMap.put(StaticVariable.NEWS_TABS[0], "/xw/zhxw");
+        pathMap.put(StaticVariable.NEWS_TABS[1], "/xw/rcpy");
+        pathMap.put(StaticVariable.NEWS_TABS[2], "/xw/jxky");
+        pathMap.put(StaticVariable.NEWS_TABS[3], "/xw/whhd");
+        pathMap.put(StaticVariable.NEWS_TABS[4], "/xw/mtgz");
+        pathMap.put(StaticVariable.NEWS_TABS[5], "/xw/xyrw");
     }
 
     /**
      * 初始化Tabs和页面
+     * 必须先添加adapter之后才能添加pager
      */
     private void initViewPager() {
+        newsPager = (ViewPager) findViewById(R.id.news_pager);//初始化pager
+        newsPager.setAdapter(new TabPageIndicatorAdapter(getSupportFragmentManager(), pathMap));//添加adapter
         indicator = (TabPageIndicator) findViewById(R.id.indicator);//初始化pagerIndicator
         indicator.setViewPager(newsPager);
-        newsPager = (ViewPager) findViewById(R.id.news_pager);//初始化pager
-        adapter = new TabPageIndicatorAdapter(getSupportFragmentManager(), pathMap);//适配器
-        newsPager.setAdapter(adapter);
+
     }
 
 
@@ -85,8 +88,11 @@ public class NewsActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+    /**
+     * ViewPager的适配器
+     */
     private class TabPageIndicatorAdapter extends FragmentPagerAdapter {
+        private NewsListFragment newsListFragment;
         private Map<String, String> pathMap;
 
         public TabPageIndicatorAdapter(FragmentManager supportFragmentManager, Map<String, String> pathMap) {
@@ -95,13 +101,24 @@ public class NewsActivity extends ActionBarActivity {
         }
 
         /**
+         * 每次点击tab，会把该tab以及左右边的tab绘制出来
          * @param position 指定的位置
          * @return 指定位置的fragment
          */
         @Override
         public Fragment getItem(int position) {
+            Log.i("newsactivity", "----->" + StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length]);
+            return NewsListFragment.newInstance(StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length]);
+        }
 
-            return null;
+        /**
+         *
+         * @param position 指定位置
+         * @return 指定页面的标题
+         */
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return StaticVariable.NEWS_TABS[position];
         }
 
         /**
@@ -109,45 +126,11 @@ public class NewsActivity extends ActionBarActivity {
          */
         @Override
         public int getCount() {
-            return pathMap.size();
+            return StaticVariable.NEWS_TABS.length;
         }
     }
 
-    /**
-     * ViewPagerIndicator的适配器
-     */
 
-//    private class TabPageIndicatorAdapter extends FragmentPagerAdapter {
-//        private Map<String, String> pathMap;
-//
-//        public TabPageIndicatorAdapter(FragmentManager fragmentManager, Map<String, String> pathMap) {
-//            super(fragmentManager);
-//            this.pathMap = pathMap;
-//        }
-//
-//        /**
-//         *
-//         * @param arg0
-//         * @return
-//         */
-//        @Override
-//        public Fragment getItem(int arg0) {
-//            Fragment fragment = new NewsItem();
-//            Bundle bundle = new Bundle();
-//            bundle.putString("bundle", NewsActivity.newsTabs[arg0]);
-//            bundle.putString("url", pathMap.get(NewsActivity.newsTabs[arg0]));
-//            fragment.setArguments(bundle);
-//            return fragment;
-//        }
-//
-//        @Override
-//        public CharSequence getPageTitle(int position) {
-//            return NewsActivity.newsTabs[position];
-//        }
-//
-//        @Override
-//        public int getCount() {
-//            return NewsActivity.newsTabs.length;
-//        }
-//    }
+
+
 }

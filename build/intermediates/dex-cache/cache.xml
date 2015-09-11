@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2">
+<items version="2" >
 
     <item
-        jar="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.lsjwzh\materialloadingprogressbar\0.5.6-RELEASE\jars\classes.jar"
+        jar="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\listSamples\build\intermediates\exploded-aar\iCampus-Android-Restructure\library\unspecified\jars\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="b7760c9799d4842e39492efb0957ed62e4c7c57a">
-        <dex
-            dex="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-2211d9cddd5a45c04e0a56cd94bb6c3564c5be5e.jar"/>
+        revision="19.1.0"
+        sha1="d760d8e85e84ebd041d33dadef75accb97c9facd">
+        <dex dex="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\listSamples\build\intermediates\pre-dexed\debug\classes-7647d3047c4f7d60ad45b6f366142af432cc5cd8.jar" />
+    </item>
+    <item
+        jar="E:\Android\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\listSamples\build\intermediates\pre-dexed\debug\support-v4-18.0.0-308aece5460d0ceb891fcdf9fda43a51ba3b0404.jar" />
     </item>
 
 </items>
