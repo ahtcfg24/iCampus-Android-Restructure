@@ -10,55 +10,229 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c3bc04-628e-4103-a6b5-ee64db7e6c5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build.gradle" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\android_async_http_1_4_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\appcompat_v7_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\bolts_android_1_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\contextmenu_1_0_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\drawee_0_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\fbcore_0_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\fresco_0_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\imagepipeline_0_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\library_2_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\support_annotations_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\support_v4_18_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\.idea\libraries\support_v4_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\build\intermediates\gradle_project_sync_data.bin" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutDetailsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutDetailsActivity.class" />
+    <list default="true" id="50c3bc04-628e-4103-a6b5-ee64db7e6c5b" name="Default" comment="start add data">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_async_http_1_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_21_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bolts_android_1_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/contextmenu_1_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/drawee_0_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fbcore_0_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fresco_0_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/imagepipeline_0_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/library_2_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_18_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-hdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-hdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-hdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-hdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-hdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-hdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-mdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-mdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-mdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-mdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-mdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-mdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-xhdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-xhdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-xhdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-xhdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-xhdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\res\drawable-xhdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-hdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-hdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-hdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-hdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-hdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-hdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-mdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-mdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-mdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-mdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-mdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-mdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-xhdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-xhdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-xhdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-xhdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-xhdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\App\build\intermediates\res\merged\debug\drawable-xhdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-hdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-hdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-hdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-hdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-hdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-hdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-mdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-mdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-mdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-mdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-mdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-mdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-hdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-hdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-hdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-hdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-hdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-hdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-mdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-mdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-mdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-mdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-mdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-mdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-xhdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-xhdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-xhdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-xhdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-xhdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\bundles\release\res\drawable-xhdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/HomeActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyProgressDialog.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyProgressDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/BuildConfig.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/BuildConfig.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/CirclePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IconPageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IconPageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IconPageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IconPageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IconPageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IconPageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IconPageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IconPageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IconPagerAdapter.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IconPagerAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IconPagerAdapter.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IconPagerAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IcsLinearLayout.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/IcsLinearLayout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IcsLinearLayout.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/IcsLinearLayout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/LinePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/PageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/PageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/PageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/PageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$attr.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$attr.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$bool.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$bool.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$color.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$color.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$dimen.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$dimen.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$drawable.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$drawable.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$id.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$id.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$integer.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$integer.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$style.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$style.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$styleable.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$styleable.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$2.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$2.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$OnTabReselectedListener.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$OnTabReselectedListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$OnTabReselectedListener.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$OnTabReselectedListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$TabView.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator$TabView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$TabView.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$TabView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TabPageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$IndicatorStyle.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$IndicatorStyle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$IndicatorStyle.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$IndicatorStyle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$LinePosition.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$LinePosition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$LinePosition.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$LinePosition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$OnCenterItemClickListener.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$OnCenterItemClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$OnCenterItemClickListener.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$OnCenterItemClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/TitlePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$2.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$2.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$SavedState$1.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$SavedState$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$SavedState.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$SavedState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/debug/com/viewpagerindicator/UnderlinePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator.class" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/outputs/aar/ViewPagerIndicatorlibrary-debug.aar" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/outputs/aar/ViewPagerIndicatorlibrary-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/outputs/aar/ViewPagerIndicatorlibrary-release.aar" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/outputs/aar/ViewPagerIndicatorlibrary-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/pre-dexed/debug/classes-f2d90c970553704cb01965a11eba963613e7c41a.jar" afterPath="$PROJECT_DIR$/App/build/intermediates/pre-dexed/debug/classes-f2d90c970553704cb01965a11eba963613e7c41a.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/release/classes.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/App.iml" afterPath="$PROJECT_DIR$/App/App.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/yalantis/contextmenu/lib/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/yalantis/contextmenu/lib/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/StaticVariable.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/StaticVariable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/activity_news.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/activity_news.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/layout/activity_news.xml" afterPath="$PROJECT_DIR$/App/src/main/res/layout/activity_news.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build.gradle" afterPath="$PROJECT_DIR$/App/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/androidTest/debug/com/viewpagerindicator/R.java" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/androidTest/debug/com/viewpagerindicator/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/androidTest/debug/com/viewpagerindicator/test/R.java" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/androidTest/debug/com/viewpagerindicator/test/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/debug/com/viewpagerindicator/R.java" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/debug/com/viewpagerindicator/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/release/com/viewpagerindicator/R.java" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/generated/source/r/release/com/viewpagerindicator/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/R.txt" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/debug/R.txt" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/release/R.txt" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/release/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/symbols/androidTest/debug/R.txt" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/symbols/androidTest/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/ViewPagerIndicatorlibrary.iml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/ViewPagerIndicatorlibrary.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build.gradle" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml" afterPath="$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iCampus-Android-Restructure.iml" afterPath="$PROJECT_DIR$/iCampus-Android-Restructure.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/App/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/incremental/mergeResourcesandroidTest/debug/merger.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/incremental/mergeResourcesandroidTest/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/incremental/packageResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/incremental/packageResourcesdebug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/incremental/packageResourcesrelease/merger.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/incremental/packageResourcesrelease/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/debug/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/release/res/values/values.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/bundles/release/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/build/intermediates/res/merged/androidTest/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/values/vpi__styles.xml" afterPath="$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/values/vpi__styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iCampus-Android-Restructure.iws" />
@@ -1869,7 +2043,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure" value="5767539801613" />
+        <entry key="E:\AndroidStudioWorkSpace\iCampus-Android-Restructure" value="5767545961655" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2574,14 +2748,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.102:5555" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="ViewPagerIndicatorlibrary" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RecentsManager">
@@ -2841,17 +3015,18 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3532423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34982935" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31316188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2865,7 +3040,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2881,9 +3055,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="start news" />
     <MESSAGE value="ViewPager and Fragment" />
-    <option name="LAST_COMMIT_MESSAGE" value="ViewPager and Fragment" />
+    <MESSAGE value="start add data" />
+    <option name="LAST_COMMIT_MESSAGE" value="start add data" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2913,6 +3092,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2951,6 +3131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2961,13 +3142,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42038217">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3013,14 +3188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.462908">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/java/com/viewpagerindicator/TabPageIndicator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9174147">
@@ -3035,6 +3202,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59203035">
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3049,6 +3217,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2064632">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3059,6 +3228,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.1625">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3080,6 +3250,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0094519">
           <caret line="2156" column="17" selection-start-line="2156" selection-start-column="17" selection-end-line="2156" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3087,37 +3258,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.26032317">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/values/vpi__styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33142856">
-          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.4914286">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.85714287">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="e#380#398#0" expanded="true" />
-            <element signature="e#934#964#0" expanded="true" />
-            <element signature="e#1052#1081#0" expanded="true" />
-            <element signature="e#1404#1440#0" expanded="true" />
-            <element signature="e#1687#1723#0" expanded="true" />
-            <element signature="e#1965#1995#0" expanded="true" />
-            <element signature="e#2244#2282#0" expanded="true" />
-            <element signature="e#2402#2446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3125,6 +3266,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.93142855">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/drawable-hdpi/vpi__tab_unselected_holo.9.png">
+      <provider editor-type-id="images">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="ninepatcheditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/drawable-hdpi/vpi__tab_unselected_pressed_holo.9.png">
+      <provider editor-type-id="images">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="ninepatcheditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/drawable/vpi__tab_indicator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8125">
+          <caret line="32" column="132" selection-start-line="32" selection-start-column="132" selection-end-line="32" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/res/values/vpi__styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1079545">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4034091">
+          <caret line="47" column="68" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66477275">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewPagerIndicatorlibrary/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2556819">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
