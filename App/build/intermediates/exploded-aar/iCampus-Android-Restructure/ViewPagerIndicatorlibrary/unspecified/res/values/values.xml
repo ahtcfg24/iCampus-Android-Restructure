@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__attrs.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__attrs.xml -->
     <eat-comment/>
-    <attr name="centered" format="boolean" />
-    <attr name="selectedColor" format="color" />
-    <attr name="strokeWidth" format="dimension" />
-    <attr name="unselectedColor" format="color" />
-    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__defaults.xml -->
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
@@ -22,7 +22,7 @@
     <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
-    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__colors.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__colors.xml -->
     <eat-comment/>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
@@ -32,66 +32,12 @@
     <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
     <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
     <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
-    <declare-styleable name="CirclePageIndicator">
-        <attr name="centered" />
-        <attr name="fillColor" format="color" />
-        <attr name="pageColor" format="color" />
-        <attr name="android:orientation" />
-        <attr name="radius" format="dimension" />
-        <attr name="snap" format="boolean" />
-        <attr name="strokeColor" format="color" />
-        <attr name="strokeWidth" />
-        <attr name="android:background" />
-    </declare-styleable>
-    <declare-styleable name="LinePageIndicator">
-        <attr name="centered" />
-        <attr name="unselectedColor" />
-        <attr name="selectedColor" />
-        <attr name="lineWidth" format="dimension" />
-        <attr name="strokeWidth" />
-        <attr name="gapWidth" format="dimension" />
-        <attr name="android:background" />
-    </declare-styleable>
-    <declare-styleable name="TitlePageIndicator">
-        <attr name="clipPadding" format="dimension" />
-        <attr name="footerColor" format="color" />
-        <attr name="footerLineHeight" format="dimension" />
-        <attr name="footerIndicatorStyle">
-            <enum name="none" value="0" />
-            <enum name="triangle" value="1" />
-            <enum name="underline" value="2" />
-        </attr>
-        <attr name="footerIndicatorHeight" format="dimension" />
-        <attr name="footerIndicatorUnderlinePadding" format="dimension" />
-        <attr name="footerPadding" format="dimension" />
-        <attr name="linePosition">
-            <enum name="bottom" value="0" />
-            <enum name="top" value="1" />
-        </attr>
-        <attr name="selectedColor" />
-        <attr name="selectedBold" format="boolean" />
-        <attr name="android:textColor" />
-        <attr name="android:textSize" />
-        <attr name="titlePadding" format="dimension" />
-        <attr name="topPadding" format="dimension" />
-        <attr name="android:background" />
-    </declare-styleable>
-    <declare-styleable name="UnderlinePageIndicator">
-        <attr name="fades" format="boolean" />
-        <attr name="fadeDelay" format="integer" />
-        <attr name="fadeLength" format="integer" />
-        <attr name="selectedColor" />
-        <attr name="android:background" />
-    </declare-styleable>
-    <declare-styleable name="ViewPagerIndicator">
-        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
-        <attr name="vpiIconPageIndicatorStyle" format="reference" />
-        <attr name="vpiLinePageIndicatorStyle" format="reference" />
-        <attr name="vpiTitlePageIndicatorStyle" format="reference" />
-        <attr name="vpiTabPageIndicatorStyle" format="reference" />
-        <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
-    </declare-styleable>
-    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__defaults.xml -->
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
@@ -111,7 +57,7 @@
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/E:/AndroidStudioWorkSpace/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__styles.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/values/vpi__styles.xml -->
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>
