@@ -148,6 +148,7 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
             branchName=yellowPageDepartBranchList.get(position).getBranchName();
             new YellowPageDialog(YellowPageDetailsActivity.this
                     ,branchName
+                    ,telephoneNumber
                     ,yellowPageDepartBranchList
                     ,position);
         }

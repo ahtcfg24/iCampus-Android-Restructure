@@ -12,19 +12,31 @@
         android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="20dp"
-        android:layout_weight="2"
+        android:layout_weight="5"
         android:orientation="vertical"
         >
 
         <TextView
-            android:id="@+id/dialog_title_textView"
+        android:id="@+id/dialog_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="测试"
+        android:textColor="@color/toolbar_color"
+        android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_num_textView"
+            android:text="000000"
+            android:textSize="17sp"
+            android:textColor="@color/toolbar_color"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-
-            android:text="测试"
-            android:textColor="#000"
-            android:textSize="20sp"/>
+            />
 
     </LinearLayout>
 
@@ -47,7 +59,7 @@
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="3"
-            android:background="@drawable/yellowpage_button_background_dial"
+            android:background="#fff"
             android:text="拨号"
             android:textColor="#8b8b8b"
             android:textSize="17sp"/>
@@ -64,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="4"
-            android:background="#eeeeee"
+            android:background="#fff"
             android:text="加入通讯录"
             android:textColor="#8b8b8b"
 
@@ -84,7 +96,7 @@
 
             android:layout_height="100dp"
             android:layout_weight="3"
-            android:background="@drawable/yellowpage_button_background_cancel"
+            android:background="#fff"
             android:text="取消"
             android:textSize="17sp"/>
     </LinearLayout>

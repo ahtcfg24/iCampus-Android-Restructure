@@ -21,31 +21,33 @@ import java.util.List;
  */
 public class YellowPageDialog extends Dialog {
     private Button dialButton, insertButton, cancelButton;
-    private TextView titleTextVeiw;
+    private TextView titleTextVeiw,numTextView;
     private int position;
     private Context context;
     private List<YellowPageDepartBranch> yellowPageDepartBranchList;
 
-    public YellowPageDialog(Context context, String title
+    public YellowPageDialog(Context context, String title,String num
             , List<YellowPageDepartBranch> yellowPageDepartBranchList
             , int position) {
         super(context,R.style.YellowPageDialog);
         this.context = context;
         this.position = position;
         this.yellowPageDepartBranchList=yellowPageDepartBranchList;
-        init(title);//初始化布局
+        init(title,num);//初始化布局
         setListener();//设置监听器
         show();//显示Dialog
     }
 
 
-    private void init(String title) {
+    private void init(String title,String num) {
         setContentView(R.layout.dial_dialog);
         dialButton = (Button) findViewById(R.id.dial_button);
         insertButton = (Button) findViewById(R.id.insert_button);
         cancelButton = (Button) findViewById(R.id.cancel_button);
         titleTextVeiw=(TextView)findViewById(R.id.dialog_title_textView);
+        numTextView = (TextView)findViewById(R.id.dialog_num_textView);
         titleTextVeiw.setText(title);
+        numTextView.setText(num);
     }
 
     private void setListener() {
