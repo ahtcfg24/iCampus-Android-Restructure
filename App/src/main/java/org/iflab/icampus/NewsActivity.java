@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -93,6 +92,7 @@ public class NewsActivity extends ActionBarActivity {
      */
     private class TabPageIndicatorAdapter extends FragmentPagerAdapter {
         private NewsListFragment newsListFragment;
+        private String fragmentName;//每个Fragment对应的Tab名称
         private Map<String, String> pathMap;
 
         public TabPageIndicatorAdapter(FragmentManager supportFragmentManager, Map<String, String> pathMap) {
@@ -101,14 +101,19 @@ public class NewsActivity extends ActionBarActivity {
         }
 
         /**
-         * 每次点击tab，会把该tab以及左右边的tab绘制出来
+         * 每次点击tab，会把该tab以及左右边的tab绘制出来,同时向fragment传递数据
          * @param position 指定的位置
          * @return 指定位置的fragment
          */
         @Override
         public Fragment getItem(int position) {
-            Log.i("newsactivity", "----->" + StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length]);
-            return NewsListFragment.newInstance(StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length]);
+            fragmentName=StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length];
+            newsListFragment = new NewsListFragment();
+            Bundle fragmentBundle = new Bundle();
+            fragmentBundle.putString("fragmentName", fragmentName);
+            fragmentBundle.putString("newsPath", pathMap.get(fragmentName));
+            newsListFragment.setArguments(fragmentBundle);
+            return newsListFragment;
         }
 
         /**

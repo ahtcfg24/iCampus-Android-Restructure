@@ -27,7 +27,7 @@ import java.util.List;
 public class HomeFragment extends Fragment {
     private GridView gridView;//主界面宫格
     private List<HomeItem> modules;//存放所有模块的列表
-    private View rootView;
+    private View rootView;//fragment的主界面
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
