@@ -2,74 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-a120d149990d1dde4aa07690a290a1c1d1374860.jar" />
-    </item>
-    <item
-        jar="C:\Users\ahtcfg24\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-0760f1221a79399e339c257df8a536563fa87b7b.jar" />
-    </item>
-    <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4812670dcffa70f6e3b2dc5f191837a2db7d4cd9">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-18c93db2996695a4acfa70067cfbd99869149921.jar" />
-    </item>
-    <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="87bffaacf21eb2c6fc61cf01930ff96ae175e798">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-ec5288178746b261f1d3f726a8b1de73ccc68db6.jar" />
-    </item>
-    <item
         jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.6.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5eb6c5f132d34f7ece3fbae25feb43e4ea9d6aa">
         <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-2dd2577aaa6953823f5725af76ff327c73259537.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-5cdf4646ec99caea214aa392744f86b7762cf2d9.jar" />
-    </item>
-    <item
-        jar="C:\Users\ahtcfg24\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.6\a845a88238be0b5be9d238652c1bc0605ef91f52\android-async-http-1.4.6.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-a428d0ffeca64b8678b8ecd484acee1af19df9f6.jar" />
-    </item>
-    <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.6.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d572f92ecb6ae3b66e807550b07e4a6cca1f737f">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-18f3052ab0577cc4bd6b27e21b5184bbe82b77fe.jar" />
-    </item>
-    <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-2d8742c56e1bc4c25cd20db7232b661c1d3aa3bf.jar" />
-    </item>
-    <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3d9319e815d728bc03a51840481f11e4c06ef308">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-481818f4714b4a47cfbb29516300aebd5b7c7e11.jar" />
     </item>
     <item
         jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.6.0\jars\classes.jar"
@@ -79,11 +16,11 @@
         <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-c9f28164b49e4a2c195cf6e2e0a13d3febd434c3.jar" />
     </item>
     <item
-        jar="C:\Users\ahtcfg24\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jar="C:\Users\ahtcfg24\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.6\a845a88238be0b5be9d238652c1bc0605ef91f52\android-async-http-1.4.6.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\library-2.4.0-717f73d42c82ac519be1ace0cfc85912396e51e2.jar" />
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-a428d0ffeca64b8678b8ecd484acee1af19df9f6.jar" />
     </item>
     <item
         jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
@@ -91,6 +28,69 @@
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
         <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-e0e46fd6e86ea0c65512b3c6327ee095b236477d.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-a120d149990d1dde4aa07690a290a1c1d1374860.jar" />
+    </item>
+    <item
+        jar="C:\Users\ahtcfg24\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\library-2.4.0-717f73d42c82ac519be1ace0cfc85912396e51e2.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="30d9ea455610bd1c3107440e7af19595e97e6e93">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-481818f4714b4a47cfbb29516300aebd5b7c7e11.jar" />
+    </item>
+    <item
+        jar="C:\Users\ahtcfg24\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-0760f1221a79399e339c257df8a536563fa87b7b.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="87bffaacf21eb2c6fc61cf01930ff96ae175e798">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-ec5288178746b261f1d3f726a8b1de73ccc68db6.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-2d8742c56e1bc4c25cd20db7232b661c1d3aa3bf.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.6.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d572f92ecb6ae3b66e807550b07e4a6cca1f737f">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-18f3052ab0577cc4bd6b27e21b5184bbe82b77fe.jar" />
+    </item>
+    <item
+        jar="D:\AndroidSDK\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-5cdf4646ec99caea214aa392744f86b7762cf2d9.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4812670dcffa70f6e3b2dc5f191837a2db7d4cd9">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-18c93db2996695a4acfa70067cfbd99869149921.jar" />
     </item>
 
 </items>
