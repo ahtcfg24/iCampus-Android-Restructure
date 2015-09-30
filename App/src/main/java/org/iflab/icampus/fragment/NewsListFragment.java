@@ -11,15 +11,16 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.yalantis.phoenix.PullToRefreshView;
 
 import org.apache.http.Header;
 import org.iflab.icampus.R;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.NewsItem;
+import org.iflab.icampus.ui.MyToast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,15 +28,19 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import medusa.theone.waterdroplistview.view.WaterDropListView;
+
+//import com.yalantis.phoenix.PullToRefreshView;
+
 
 /**
  * 新闻列表
  */
-public class NewsListFragment extends Fragment {
+public class NewsListFragment extends Fragment implements WaterDropListView.IWaterDropListViewListener{
     private static final String KEY_CONTENT = "TestFragment:Content";
     private String mContent;
     private ListView newsListView;
-    private PullToRefreshView mPullToRefreshView;//下拉刷新控件
+//    private PullToRefreshView mPullToRefreshView;//下拉刷新控件
     private View rootView;//Fragment的界面
     private String fragmentName;
     private String newsPath;//对应Fragment的相对路径
@@ -73,19 +78,19 @@ public class NewsListFragment extends Fragment {
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;// TODO:currentPage未定义，未实现一次加载三个路径 2015/9/29
         //下拉刷新
-        mPullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
-        mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                mPullToRefreshView.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        mPullToRefreshView.setRefreshing(false);
-                        getNewsListDataByURL(newsListURL);
-                    }
-                }, 1000);
-            }
-        });
+//        mPullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
+//        mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                mPullToRefreshView.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        mPullToRefreshView.setRefreshing(false);
+//                        getNewsListDataByURL(newsListURL);
+//                    }
+//                }, 1000);
+//            }
+//        });
 
 
     }
@@ -146,6 +151,22 @@ public class NewsListFragment extends Fragment {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString(KEY_CONTENT, mContent);
+    }
+
+    /**
+     * 上拉刷新
+     */
+    @Override
+    public void onRefresh() {
+        getNewsListDataByURL(newsListURL);
+    }
+
+    /**
+     * 下拉加载
+     */
+    @Override
+    public void onLoadMore() {
+        MyToast.makeText(getActivity(), "hah", Toast.LENGTH_SHORT);
     }
 
     /**
