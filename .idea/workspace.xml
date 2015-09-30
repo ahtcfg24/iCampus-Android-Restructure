@@ -19,8 +19,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3909f95c-a74f-4035-ab80-9ddb22289844" name="Default" comment="trying to pull to refresh">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/res/layout/news_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/trinea_android_common_4_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" />
+      <change type="DELETED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\.idea\libraries\support_annotations_21_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\.idea\libraries\support_v4_21_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-a120d149990d1dde4aa07690a290a1c1d1374860.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-e0e46fd6e86ea0c65512b3c6327ee095b236477d.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-5cdf4646ec99caea214aa392744f86b7762cf2d9.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity$AboutListViewAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity$AboutListViewAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutDetailsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutDetailsActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" />
@@ -33,34 +39,37 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/NewsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/NewsActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/OAuthActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/OAuthActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$attr.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$attr.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$attr.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$attr.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$attr.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$bool.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$color.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$color.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$color.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$color.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$dimen.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$dimen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$dimen.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$dimen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$drawable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$drawable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$id.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$id.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$id.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$integer.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$menu.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$menu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$mipmap.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$string.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$style.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$styleable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$styleable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$styleable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/UserCenterActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/UserCenterActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity$YellowPageAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity$YellowPageAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity$yellowPageDetailsAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity$yellowPageDetailsAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/YellowPageDialog$ButtonClickListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/YellowPageDialog$ButtonClickListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/YellowPageDialog.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/YellowPageDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
@@ -83,11 +92,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\.idea\libraries\trinea_android_common_4_2_15.xml" afterPath="$PROJECT_DIR$/.idea/libraries/phoenix_1_2_2.xml" />
     </list>
     <ignored path="iCampus-Android-Restructure.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,8 +127,8 @@
       <file leaf-file-name="fragment_news_list.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.533334">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.133333">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -131,10 +140,14 @@
       <file leaf-file-name="NewsListFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5714285">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state vertical-scroll-proportion="5.571429">
+              <caret line="209" column="7" selection-start-line="209" selection-start-column="7" selection-end-line="209" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2552#2985#0" expanded="true" />
+                <element signature="e#2703#2953#0" expanded="true" />
+                <element signature="e#2952#2953#0" expanded="true" />
+                <element signature="e#2984#2985#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -600,19 +613,14 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare cn.trinea.android.common:trinea-android-common:4.2.15" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareCnTrineaAndroidCommonTrineaAndroidCommon4215Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:21.0.3" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72103Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:21.0.3" />
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42103Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.facebook.fresco:drawee:0.6.0" />
@@ -638,6 +646,11 @@
                 <option name="description" value="Prepare com.yalantis:contextmenu:1.0.4" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComYalantisContextmenu104Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.yalantis:phoenix:1.2.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComYalantisPhoenix122Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1225,19 +1238,14 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare cn.trinea.android.common:trinea-android-common:4.2.15" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/App" />
-                <option name="name" value="prepareCnTrineaAndroidCommonTrineaAndroidCommon4215Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:21.0.3" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/App" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72103Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:21.0.3" />
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/App" />
-                <option name="name" value="prepareComAndroidSupportSupportV42103Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.facebook.fresco:drawee:0.6.0" />
@@ -1263,6 +1271,11 @@
                 <option name="description" value="Prepare com.yalantis:contextmenu:1.0.4" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/App" />
                 <option name="name" value="prepareComYalantisContextmenu104Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.yalantis:phoenix:1.2.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/App" />
+                <option name="name" value="prepareComYalantisPhoenix122Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/App" />
@@ -1939,7 +1952,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="D:\WorkSpaceAS\iCampus-Android-Restructure" value="5769539928792" />
+        <entry key="D:\WorkSpaceAS\iCampus-Android-Restructure" value="5769547485049" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2121,14 +2134,14 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.6/a845a88238be0b5be9d238652c1bc0605ef91f52/android-async-http-1.4.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yalantis/contextmenu/1.0.4/40af81935a4cf5230abfeff2bdbd01f27b49c3c0/contextmenu-1.0.4.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/fresco/0.6.0/3cdf8ae1f07727121a68d89b247f760e9aa558df/fresco-0.6.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.trinea.android.common/trinea-android-common/4.2.15/5706717fe81235501915249da55efa7de72d7b92/trinea-android-common-4.2.15.aar" />
-                            <option value="D:/AndroidSDK/sdk/extras/android/m2repository/com/android/support/support-v4/21.0.3/support-v4-21.0.3.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yalantis/phoenix/1.2.2/1db4fca49eb1c56d04f7bf25636c622809d16039/phoenix-1.2.2.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/drawee/0.6.0/81e238f0087d84dba1584081d4a6a3712364510c/drawee-0.6.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/fbcore/0.6.0/631ec463d86e4d42bd3a6b7cf69f84dfa8c606f9/fbcore-0.6.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/imagepipeline/0.6.0/bd2f4658b91651907b7a4b0775973b6d835d1679/imagepipeline-0.6.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar" />
-                            <option value="D:/AndroidSDK/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar" />
+                            <option value="D:/AndroidSDK/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.0/support-v4-22.2.0.aar" />
+                            <option value="D:/AndroidSDK/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/App" />
@@ -2368,9 +2381,9 @@
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/news_tem.xml" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/DropDownListView.java" />
-        <option value="$PROJECT_DIR$/App/build.gradle" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/news_item.xml" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml" />
+        <option value="$PROJECT_DIR$/App/build.gradle" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" />
       </list>
     </option>
@@ -2423,92 +2436,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="iCampus-Android-Restructure" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2752,7 +2679,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443543482770</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="trying to pull to refresh">
+      <created>1443602604455</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1443602604455</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2829,6 +2762,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2552#2985#0" expanded="true" />
+            <element signature="e#2703#2953#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2858,6 +2795,10 @@
           <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2552#2985#0" expanded="true" />
+            <element signature="e#2703#2953#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2952,6 +2893,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2552#2985#0" expanded="true" />
+            <element signature="e#2703#2953#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3046,6 +2991,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2552#2985#0" expanded="true" />
+            <element signature="e#2703#2953#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3383,25 +3332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2857143">
-          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.533334">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://D:/AndroidSDK/sdk/sources/android-21/android/view/LayoutInflater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="34.832417">
@@ -3410,12 +3340,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.133333">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4945055">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5714285">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state vertical-scroll-proportion="5.571429">
+          <caret line="209" column="7" selection-start-line="209" selection-start-column="7" selection-end-line="209" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2552#2985#0" expanded="true" />
+            <element signature="e#2703#2953#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
           </folding>
         </state>
       </provider>

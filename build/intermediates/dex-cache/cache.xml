@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\cn.trinea.android.common\trinea-android-common\4.2.15\jars\classes.jar"
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\phoenix\1.2.2\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b93ac952ea9e308e5bdd789c88c9eb8dc92054e6">
-        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-3c5cb10cd8e7d06d88acc4675483a973e5574f57.jar" />
+        sha1="94afda1ba995209d097bf14edf601330e0597f1d">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-bdecd936359a9f65bddc424da14936a215465873.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-67ca3ba420b65b813680e5a27baa521171c75ce4.jar" />
+    </item>
+    <item
+        jar="D:\AndroidSDK\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-6292451676120e6b65a6c00d20d0c27104e4aad0.jar" />
+    </item>
+    <item
+        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-bb98b61251a94ef0c3f9c17cb86d4dc6bdd7f941.jar" />
     </item>
 
 </items>

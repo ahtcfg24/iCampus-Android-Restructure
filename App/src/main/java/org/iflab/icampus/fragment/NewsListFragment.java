@@ -9,9 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.yalantis.phoenix.PullToRefreshView;
 
 import org.apache.http.Header;
 import org.iflab.icampus.R;
@@ -25,7 +27,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.trinea.android.common.view.DropDownListView;
 
 /**
  * 新闻列表
@@ -33,7 +34,8 @@ import cn.trinea.android.common.view.DropDownListView;
 public class NewsListFragment extends Fragment {
     private static final String KEY_CONTENT = "TestFragment:Content";
     private String mContent;
-    private DropDownListView newsListView;
+    private ListView newsListView;
+    private PullToRefreshView mPullToRefreshView;//下拉刷新控件
     private View rootView;//Fragment的界面
     private String fragmentName;
     private String newsPath;//对应Fragment的相对路径
@@ -64,15 +66,26 @@ public class NewsListFragment extends Fragment {
      */
     private void init() {
         newsList = new ArrayList<>();
-        newsListView = (DropDownListView) rootView.findViewById(R.id.newsListView);
-        newsListView.setOnDropDownListener(new DropDownListener());
-        newsListView.setOnBottomListener(new BottomListener());
+        newsListView = (ListView) rootView.findViewById(R.id.newsListView);
         Bundle bundle = getArguments();
         fragmentName = bundle.getString("fragmentName");
         newsPath = bundle.getString("newsPath");
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;// TODO:currentPage未定义，未实现一次加载三个路径 2015/9/29
-
+        //下拉刷新
+        mPullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
+        mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mPullToRefreshView.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mPullToRefreshView.setRefreshing(false);
+                        getNewsListDataByURL(newsListURL);
+                    }
+                }, 1000);
+            }
+        });
 
 
     }
@@ -144,8 +157,8 @@ public class NewsListFragment extends Fragment {
         private ViewHolder viewHolder;
 
         public NewsListAdapter(List<NewsItem> newsList, Context context) {
-            this.newsList=newsList;
-            this.context=context;
+            this.newsList = newsList;
+            this.context = context;
         }
 
         @Override
@@ -179,7 +192,7 @@ public class NewsListFragment extends Fragment {
                 viewHolder.newsListTitle = (TextView) convertView.findViewById(R.id.newsList_title);
                 viewHolder.newsListPreview = (TextView) convertView.findViewById(R.id.newsList_preview);
                 viewHolder.newsListTime = (TextView) convertView.findViewById(R.id.newsList_time);
-                viewHolder.newsListIcon=(ImageView)convertView.findViewById(R.id.newsList_icon);
+                viewHolder.newsListIcon = (ImageView) convertView.findViewById(R.id.newsList_icon);
                 convertView.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
@@ -197,26 +210,8 @@ public class NewsListFragment extends Fragment {
      */
     private class ViewHolder {
         private ImageView newsListIcon;
-        private TextView newsListTitle,newsListPreview, newsListTime;
+        private TextView newsListTitle, newsListPreview, newsListTime;
     }
 
-    /**
-     * ListView下拉监听器
-     */
-    private class DropDownListener implements DropDownListView.OnDropDownListener {
-        @Override
-        public void onDropDown() {
 
-        }
-    }
-
-    /**
-     * ListView滑动到底部监听器
-     */
-    private class BottomListener implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
-
-        }
-    }
 }

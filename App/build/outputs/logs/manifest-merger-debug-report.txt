@@ -20,14 +20,15 @@ ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManife
 application
 ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:8:5-65:19
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.yalantis:contextmenu:1.0.4] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
-MERGED from [cn.trinea.android.common:trinea-android-common:4.2.15] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\cn.trinea.android.common\trinea-android-common\4.2.15\AndroidManifest.xml:11:5-12:19
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.yalantis:phoenix:1.2.2] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\phoenix\1.2.2\AndroidManifest.xml:11:5-47
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:12:9-41
 	android:allowBackup
@@ -111,21 +112,22 @@ ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManife
 uses-sdk
 INJECTED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.yalantis:contextmenu:1.0.4] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.fresco:fresco:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:drawee:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.fresco:fbcore:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
-MERGED from [cn.trinea.android.common:trinea-android-common:4.2.15] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\cn.trinea.android.common\trinea-android-common\4.2.15\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.yalantis:phoenix:1.2.2] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\phoenix\1.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [iCampus-Android-Restructure:ViewPagerIndicatorlibrary:unspecified] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v4:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
 		INJECTED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
