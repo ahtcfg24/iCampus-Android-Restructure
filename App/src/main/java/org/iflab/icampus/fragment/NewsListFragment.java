@@ -1,13 +1,15 @@
 package org.iflab.icampus.fragment;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -16,7 +18,6 @@ import org.iflab.icampus.R;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.NewsItem;
-import org.iflab.icampus.utils.ACache;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,21 +25,21 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.trinea.android.common.view.DropDownListView;
+
 /**
  * 新闻列表
  */
 public class NewsListFragment extends Fragment {
     private static final String KEY_CONTENT = "TestFragment:Content";
     private String mContent;
-    private ListView newsListView;
+    private DropDownListView newsListView;
     private View rootView;//Fragment的界面
     private String fragmentName;
     private String newsPath;//对应Fragment的相对路径
-    private int currentPage;//（滑动scroll时）当前所在的屏幕范围编号
+    private int currentPage;//分页加载的当前页编号
     private String newsListData;//新闻列表数据
     private String newsListURL;
-    private ACache aCache;
-    //    private List<String> urlList;
     private List<NewsItem> newsList;
 
     @Override
@@ -47,22 +48,14 @@ public class NewsListFragment extends Fragment {
         if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
             mContent = savedInstanceState.getString(KEY_CONTENT);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_news_list, container, false);
         init();
-        if (newsListData == null) {
-            /*如果缓存没有就从网络获取*/
-            getNewsListDataByURL(newsListURL);
-        } else {
-            jsonNewsListData(newsListData);
-            newsListView.setAdapter(new NewsListAdapter(newsList, NewsListFragment.this));
-        }
-        for (int i = 0; i < newsList.size(); i++) {
-            System.out.println("-!!!!" + newsList.get(i));
-        }
+        getNewsListDataByURL(newsListURL);
         return rootView;
     }
 
@@ -71,17 +64,16 @@ public class NewsListFragment extends Fragment {
      */
     private void init() {
         newsList = new ArrayList<>();
-        newsListView = (ListView) rootView.findViewById(R.id.newsListView);
+        newsListView = (DropDownListView) rootView.findViewById(R.id.newsListView);
+        newsListView.setOnDropDownListener(new DropDownListener());
+        newsListView.setOnBottomListener(new BottomListener());
         Bundle bundle = getArguments();
         fragmentName = bundle.getString("fragmentName");
         newsPath = bundle.getString("newsPath");
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;// TODO:currentPage未定义，未实现一次加载三个路径 2015/9/29
-        aCache = ACache.get(NewsListFragment.this.getActivity());
-        newsListData = aCache.getAsString("newsListData");
 
 
-//        urlList=new ArrayList<>();
 
     }
 
@@ -91,8 +83,7 @@ public class NewsListFragment extends Fragment {
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 newsListData = new String(responseBody);
                 jsonNewsListData(newsListData);
-                newsListView.setAdapter(new NewsListAdapter(newsList, NewsListFragment.this));
-                aCache.put("newsListData", newsListData, ACache.TIME_HOUR);
+                newsListView.setAdapter(new NewsListAdapter(newsList, NewsListFragment.this.getActivity()));
             }
 
             @Override
@@ -108,7 +99,6 @@ public class NewsListFragment extends Fragment {
             JSONObject jsonObject1 = new JSONObject(newsListData);
             newsListData1 = jsonObject1.getString("d");
         } catch (JSONException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         try {
@@ -119,21 +109,15 @@ public class NewsListFragment extends Fragment {
                 String attributes = jsonObject.getString("attributes");
                 JSONObject jsonObject2 = new JSONObject(attributes);
                 newsItem.setPassageId(jsonObject2.getString("id"));
-                newsItem.setTitle(jsonObject2.getString("n").replaceAll("\\|br\\|", ""));
-                newsItem.setPreview(jsonObject2.getString("ab").replaceAll("\\|br\\|", ""));
+                newsItem.setTitle(jsonObject2.getString("n"));
+                newsItem.setPreview(jsonObject2.getString("ab"));
                 newsItem.setAuthor(jsonObject2.getString("au"));
                 newsItem.setUpdateTime(jsonObject2.getString("rt"));
-                //	if (jsonObject2.getString("ic").indexOf(".") != -1) {
-                //newsListType.setIcon(add_120(jsonObject2.getString("ic")));
                 newsItem.setIcon(jsonObject2.getString("ic"));
-                //	}else {
-                //		newsListType.setIcon(jsonObject2.getString("ic"));
-                //}
                 newsItem.setDetailUrl(filterUrl(jsonObject2.getString("url")));
                 newsList.add(newsItem);
             }
         } catch (JSONException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -151,19 +135,27 @@ public class NewsListFragment extends Fragment {
         outState.putString(KEY_CONTENT, mContent);
     }
 
-
+    /**
+     * 新闻listView的适配器
+     */
     private class NewsListAdapter extends BaseAdapter {
-        public NewsListAdapter(List<NewsItem> newsList, NewsListFragment newsListFragment) {
+        private List<NewsItem> newsList;
+        private Context context;
+        private ViewHolder viewHolder;
+
+        public NewsListAdapter(List<NewsItem> newsList, Context context) {
+            this.newsList=newsList;
+            this.context=context;
         }
 
         @Override
         public int getCount() {
-            return 0;
+            return newsList.size();
         }
 
         @Override
         public Object getItem(int position) {
-            return null;
+            return position;
         }
 
         @Override
@@ -171,9 +163,60 @@ public class NewsListFragment extends Fragment {
             return 0;
         }
 
+        /**
+         * 绘制每个item
+         *
+         * @param position    点击的位置
+         * @param convertView item对应的View
+         * @param parent      可选的父控件
+         * @return 要显示的单个item的View
+         */
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            return null;
+            if (convertView == null) {
+                convertView = LayoutInflater.from(context).inflate(R.layout.news_item, null);
+                viewHolder = new ViewHolder();
+                viewHolder.newsListTitle = (TextView) convertView.findViewById(R.id.newsList_title);
+                viewHolder.newsListPreview = (TextView) convertView.findViewById(R.id.newsList_preview);
+                viewHolder.newsListTime = (TextView) convertView.findViewById(R.id.newsList_time);
+                viewHolder.newsListIcon=(ImageView)convertView.findViewById(R.id.newsList_icon);
+                convertView.setTag(viewHolder);
+            } else {
+                viewHolder = (ViewHolder) convertView.getTag();
+            }
+            viewHolder.newsListTitle.setText(newsList.get(position).getTitle());
+            viewHolder.newsListPreview.setText(newsList.get(position).getPreview());
+            viewHolder.newsListTime.setText(newsList.get(position).getUpdateTime());
+//            viewHolder.newsListIcon.setImageBitmap(new Bitmap(newsList.get(position).getIcon()));
+            return convertView;
+        }
+    }
+
+    /**
+     * 起优化作用ListView的ViewHolder类，避免多次加载TextView
+     */
+    private class ViewHolder {
+        private ImageView newsListIcon;
+        private TextView newsListTitle,newsListPreview, newsListTime;
+    }
+
+    /**
+     * ListView下拉监听器
+     */
+    private class DropDownListener implements DropDownListView.OnDropDownListener {
+        @Override
+        public void onDropDown() {
+
+        }
+    }
+
+    /**
+     * ListView滑动到底部监听器
+     */
+    private class BottomListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+
         }
     }
 }
