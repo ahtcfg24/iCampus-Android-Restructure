@@ -3,11 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--<com.yalantis.phoenix.PullToRefreshView-->
-        <!--android:id="@+id/pull_to_refresh"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-        <medusa.theone.waterdroplistview.view.WaterDropListView
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
             android:id="@+id/newsListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -15,18 +16,6 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:scrollbarStyle="outsideInset"
-            >
-        </medusa.theone.waterdroplistview.view.WaterDropListView>
-
-        <!--<ListView-->
-            <!--android:id="@+id/newsListView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_marginLeft="5dp"-->
-            <!--android:layout_marginRight="5dp"-->
-            <!--android:scrollbarStyle="outsideInset" />-->
-    <!--</com.yalantis.phoenix.PullToRefreshView>-->
+            android:scrollbarStyle="outsideInset" />
+    </com.yalantis.phoenix.PullToRefreshView>
 </RelativeLayout>

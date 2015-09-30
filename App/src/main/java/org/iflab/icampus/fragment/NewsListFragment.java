@@ -2,18 +2,22 @@ package org.iflab.icampus.fragment;
 
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.view.SimpleDraweeView;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.yalantis.phoenix.PullToRefreshView;
 
 import org.apache.http.Header;
 import org.iflab.icampus.R;
@@ -28,26 +32,26 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import medusa.theone.waterdroplistview.view.WaterDropListView;
-
-//import com.yalantis.phoenix.PullToRefreshView;
-
 
 /**
  * 新闻列表
  */
-public class NewsListFragment extends Fragment implements WaterDropListView.IWaterDropListViewListener{
+public class NewsListFragment extends Fragment {
     private static final String KEY_CONTENT = "TestFragment:Content";
     private String mContent;
     private ListView newsListView;
-//    private PullToRefreshView mPullToRefreshView;//下拉刷新控件
+    private PullToRefreshView mPullToRefreshView;//下拉刷新控件
+    private View loadMoreView;//上拉加载更多控件
     private View rootView;//Fragment的界面
     private String fragmentName;
     private String newsPath;//对应Fragment的相对路径
     private int currentPage;//分页加载的当前页编号
     private String newsListData;//新闻列表数据
     private String newsListURL;
+    private NewsListAdapter newsListAdapter;
     private List<NewsItem> newsList;
+    private TextView loadMoreTextView;
+    private LinearLayout progressLayout;//footer布局
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +64,7 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Fresco.initialize(getActivity());
         rootView = inflater.inflate(R.layout.fragment_news_list, container, false);
         init();
         getNewsListDataByURL(newsListURL);
@@ -72,36 +77,59 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
     private void init() {
         newsList = new ArrayList<>();
         newsListView = (ListView) rootView.findViewById(R.id.newsListView);
+        loadMoreView = getActivity().getLayoutInflater().inflate(R.layout.load_more_item, null);
+        loadMoreTextView = (TextView) loadMoreView.findViewById(R.id.load_more_textView);
+        progressLayout = (LinearLayout) loadMoreView.findViewById(R.id.progress_layout);
+        newsListView.addFooterView(loadMoreView);
+
         Bundle bundle = getArguments();
         fragmentName = bundle.getString("fragmentName");
         newsPath = bundle.getString("newsPath");
-        currentPage = 1;
-        newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;// TODO:currentPage未定义，未实现一次加载三个路径 2015/9/29
-        //下拉刷新
-//        mPullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
-//        mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
-//            @Override
-//            public void onRefresh() {
-//                mPullToRefreshView.postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        mPullToRefreshView.setRefreshing(false);
-//                        getNewsListDataByURL(newsListURL);
-//                    }
-//                }, 1000);
-//            }
-//        });
 
+
+        currentPage = 1;
+        newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
+        //下拉刷新
+        mPullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
+        mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mPullToRefreshView.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mPullToRefreshView.setRefreshing(false);
+                        getNewsListDataByURL(newsListURL);
+                    }
+                }, 1000);
+            }
+        });
+
+        newsListView.setOnScrollListener(new ScrollListener());
 
     }
 
-    private void getNewsListDataByURL(String newsURL) {
-        AsyncHttpIc.get(newsURL, null, new AsyncHttpResponseHandler() {
+    private void getNewsListDataByURL(String URL) {
+        AsyncHttpIc.get(URL, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 newsListData = new String(responseBody);
-                jsonNewsListData(newsListData);
-                newsListView.setAdapter(new NewsListAdapter(newsList, NewsListFragment.this.getActivity()));
+                if (newsListData.equals("-1")) {
+                    new MyToast(getActivity(),"后面已经没有内容啦！");
+                    progressLayout.setVisibility(View.INVISIBLE);
+                } else {
+                    jsonNewsListData(newsListData);
+                    if (currentPage == 1) {
+                        newsListAdapter = new NewsListAdapter(NewsListFragment.this.getActivity());
+                        newsListAdapter.addItem(newsList);
+                        newsListView.setAdapter(newsListAdapter);
+                        currentPage++;
+                    } else {
+                        newsListAdapter.addItem(newsList);
+                        newsListAdapter.notifyDataSetChanged();
+                        currentPage++;
+                    }
+                    newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
+                }
             }
 
             @Override
@@ -153,21 +181,6 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
         outState.putString(KEY_CONTENT, mContent);
     }
 
-    /**
-     * 上拉刷新
-     */
-    @Override
-    public void onRefresh() {
-        getNewsListDataByURL(newsListURL);
-    }
-
-    /**
-     * 下拉加载
-     */
-    @Override
-    public void onLoadMore() {
-        MyToast.makeText(getActivity(), "hah", Toast.LENGTH_SHORT);
-    }
 
     /**
      * 新闻listView的适配器
@@ -177,9 +190,14 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
         private Context context;
         private ViewHolder viewHolder;
 
-        public NewsListAdapter(List<NewsItem> newsList, Context context) {
-            this.newsList = newsList;
+//        public NewsListAdapter(List<NewsItem> newsList, Context context) {
+//            this.newsList = newsList;
+//            this.context = context;
+//        }
+
+        public NewsListAdapter(Context context) {
             this.context = context;
+            this.newsList = new ArrayList<>();
         }
 
         @Override
@@ -213,7 +231,7 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
                 viewHolder.newsListTitle = (TextView) convertView.findViewById(R.id.newsList_title);
                 viewHolder.newsListPreview = (TextView) convertView.findViewById(R.id.newsList_preview);
                 viewHolder.newsListTime = (TextView) convertView.findViewById(R.id.newsList_time);
-                viewHolder.newsListIcon = (ImageView) convertView.findViewById(R.id.newsList_icon);
+                viewHolder.newsListIcon = (SimpleDraweeView) convertView.findViewById(R.id.newsList_icon);
                 convertView.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
@@ -221,8 +239,19 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
             viewHolder.newsListTitle.setText(newsList.get(position).getTitle());
             viewHolder.newsListPreview.setText(newsList.get(position).getPreview());
             viewHolder.newsListTime.setText(newsList.get(position).getUpdateTime());
-//            viewHolder.newsListIcon.setImageBitmap(new Bitmap(newsList.get(position).getIcon()));
+            viewHolder.newsListIcon.setImageURI(Uri.parse(newsList.get(position).getIcon()));
             return convertView;
+        }
+
+        /**
+         * 添加新加载的item
+         *
+         * @param list 新加载出来的item的列表
+         */
+        public void addItem(List<NewsItem> list) {
+            for (NewsItem newsItem : list) {
+                newsList.add(newsItem);
+            }
         }
     }
 
@@ -230,9 +259,53 @@ public class NewsListFragment extends Fragment implements WaterDropListView.IWat
      * 起优化作用ListView的ViewHolder类，避免多次加载TextView
      */
     private class ViewHolder {
-        private ImageView newsListIcon;
+        private SimpleDraweeView newsListIcon;
         private TextView newsListTitle, newsListPreview, newsListTime;
     }
 
+    /**
+     * listView的滑动监听器
+     */
+    private class ScrollListener implements AbsListView.OnScrollListener {
+        boolean isLastRow = false;//是否滚动到最后一行
 
+        /**
+         * 滚动时一直回调，直到停止滚动时才停止回调。单击时回调一次。
+         *
+         * @param view
+         * @param firstVisibleItem 当前能看见的第一个列表项ID（从0开始）
+         * @param visibleItemCount 当前能看见的列表项个数（小半个也算）
+         * @param totalItemCount   列表项共数
+         */
+        @Override
+        public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+            //判断是否滚到最后一行
+            if (firstVisibleItem + visibleItemCount == totalItemCount && totalItemCount > 0) {
+                isLastRow = true;
+            }
+        }
+
+        /**
+         * 正在滚动时回调，回调2-3次，手指没抛则回调2次。scrollState = 2的这次不回调
+         * 回调顺序如下
+         * 第1次：scrollState = SCROLL_STATE_TOUCH_SCROLL(1) 正在滚动
+         * 第2次：scrollState = SCROLL_STATE_FLING(2) 手指做了抛的动作（手指离开屏幕前，用力滑了一下）
+         * 第3次：scrollState = SCROLL_STATE_IDLE(0) 停止滚动
+         * 当屏幕停止滚动时为0；当屏幕滚动且用户使用的触碰或手指还在屏幕上时为1；
+         * 由于用户的操作，屏幕产生惯性滑动时为2
+         *
+         * @param view
+         * @param scrollState 滚动状态
+         */
+        @Override
+        public void onScrollStateChanged(AbsListView view, int scrollState) {
+            //当滚到最后一行且停止滚动时，执行加载
+            if (isLastRow && scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) {
+                loadMoreTextView.setVisibility(View.INVISIBLE);
+                progressLayout.setVisibility(View.VISIBLE);
+                getNewsListDataByURL(newsListURL);
+                isLastRow = false;
+            }
+        }
+    }
 }

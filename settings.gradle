@@ -1,1 +1,1 @@
-include ':App', ':WaterDropListView' ,'ViewPagerIndicatorlibrary'
+include ':App','ViewPagerIndicatorlibrary'
