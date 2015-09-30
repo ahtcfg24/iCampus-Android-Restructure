@@ -114,13 +114,15 @@ public class NewsListFragment extends Fragment {
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 newsListData = new String(responseBody);
                 if (newsListData.equals("-1")) {
-                    new MyToast(getActivity(),"后面已经没有内容啦！");
-                    progressLayout.setVisibility(View.INVISIBLE);
-                } else {
+                    new MyToast(getActivity(), "后面已经没有内容啦！");
+                } else if (newsListData.equals("0")) {
+                    new MyToast(getActivity(), "网络访问失败啦，请检查网络再试吧~");
+                } else if(newsListData.equals("1")){
+                    new MyToast(getActivity(),"服务器出问题了，解析不出数据啦！请重试！");
+                }else {
                     jsonNewsListData(newsListData);
                     if (currentPage == 1) {
-                        newsListAdapter = new NewsListAdapter(NewsListFragment.this.getActivity());
-                        newsListAdapter.addItem(newsList);
+                        newsListAdapter = new NewsListAdapter(newsList,NewsListFragment.this.getActivity());
                         newsListView.setAdapter(newsListAdapter);
                         currentPage++;
                     } else {
@@ -130,6 +132,8 @@ public class NewsListFragment extends Fragment {
                     }
                     newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
                 }
+                progressLayout.setVisibility(View.INVISIBLE);
+                loadMoreTextView.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -190,15 +194,12 @@ public class NewsListFragment extends Fragment {
         private Context context;
         private ViewHolder viewHolder;
 
-//        public NewsListAdapter(List<NewsItem> newsList, Context context) {
-//            this.newsList = newsList;
-//            this.context = context;
-//        }
-
-        public NewsListAdapter(Context context) {
+        public NewsListAdapter(List<NewsItem> newsList, Context context) {
+            this.newsList = newsList;
             this.context = context;
-            this.newsList = new ArrayList<>();
         }
+
+
 
         @Override
         public int getCount() {
@@ -249,9 +250,12 @@ public class NewsListFragment extends Fragment {
          * @param list 新加载出来的item的列表
          */
         public void addItem(List<NewsItem> list) {
+            //临时存放传进来的新数据
+            List<NewsItem> list1 =new ArrayList<>();
             for (NewsItem newsItem : list) {
-                newsList.add(newsItem);
+                list1.add(newsItem);
             }
+            newsList=list1;
         }
     }
 
