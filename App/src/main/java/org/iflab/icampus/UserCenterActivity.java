@@ -31,7 +31,6 @@ public class UserCenterActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        Fresco.initialize(this);//初始化Fresco
         setContentView(R.layout.activity_user_center);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -49,7 +48,7 @@ public class UserCenterActivity extends ActionBarActivity {
                 editor.clear();
                 editor.apply();//清除token
                 finish();
-                new MyToast(getApplicationContext(), "退出成功");
+                new MyToast("退出成功");
             }
         });
     }

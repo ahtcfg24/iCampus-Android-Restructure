@@ -73,9 +73,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                     String authorizationCode = data.getStringExtra("result");
                     AuthorizationCodeHandle.saveAuthorizationCode(HomeActivity.this, authorizationCode);//保存authorizationCode到本地
                     GetAccessToken.getAccessToken(HomeActivity.this, authorizationCode);//根据authorizationCode获得AccessToken及用户信息并保存到本地
-                    new MyToast(getBaseContext(), "登录成功啦^_^");
+                    new MyToast("登录成功啦^_^");
                 } else {
-                    new MyToast(getBaseContext(), "登录失败囧");
+                    new MyToast("登录失败囧");
                 }
                 break;
         }
@@ -206,7 +206,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
     @Override
     public void onBackPressed() {
         if ((System.currentTimeMillis() - exitTime) > 2000) {
-            new MyToast(getApplicationContext(), "再按一次退出程序");
+            new MyToast("再按一次退出程序");
             exitTime = System.currentTimeMillis();
         } else {
             if (menuDialogFragment != null && menuDialogFragment.isAdded()) {
@@ -226,11 +226,11 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 ACache aCache = ACache.get(this);
                 user = (User) aCache.getAsObject("user");
                 if (TokenHandle.getAccessToken(HomeActivity.this) == null) {
-                    new MyToast(getApplicationContext(), "亲，你还木有登录哟0.0");
+                    new MyToast("亲，你还木有登录哟0.0");
                     intent.setClass(this, OAuthActivity.class);
                     startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else if (user == null) {
-                    new MyToast(getApplicationContext(), "缓存失效了，请重新登录吧");
+                    new MyToast("缓存失效了，请重新登录吧");
                     intent.setClass(this, OAuthActivity.class);
                     startActivityForResult(intent, StaticVariable.GET_AUTHORIZATION_CODE);
                 } else {
@@ -244,7 +244,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
                 startActivity(intent);
                 break;
             case 3:
-                new MyToast(getApplicationContext(), "正在检查更新。。。");
+                new MyToast("正在检查更新。。。");
                 break;
         }
 

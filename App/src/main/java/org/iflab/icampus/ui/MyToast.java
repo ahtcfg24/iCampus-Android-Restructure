@@ -7,6 +7,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.iflab.icampus.R;
+import org.iflab.icampus.application.MyApplication;
 
 /**
  * 自定义的Toast类,直接建立对象就可以显示
@@ -17,6 +18,14 @@ import org.iflab.icampus.R;
 public class MyToast extends Toast {
     private TextView toastTextView;
     private View toastView;
+
+    /**
+     * 自定义显示文字的toast
+     * @param toastString 要显示的文字
+     */
+    public MyToast(String toastString) {
+        this(MyApplication.getContext(), toastString);
+    }
 
     /**
      * 短时间显示的toast

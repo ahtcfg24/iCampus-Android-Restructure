@@ -39,7 +39,7 @@ public class GetAccessToken {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                new MyToast(context, "获取授权失败，请重试");
+                new MyToast("获取授权失败，请重试");
                 Log.i("GetAccessToken", "----->" + "获取失败");
 
             }

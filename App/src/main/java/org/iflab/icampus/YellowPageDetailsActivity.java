@@ -86,7 +86,7 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                 myProgressDialog.dismiss();
-                new MyToast(getApplicationContext(), "获取部门号码失败，请重试");
+                new MyToast("获取部门号码失败，请重试");
             }
         });
     }

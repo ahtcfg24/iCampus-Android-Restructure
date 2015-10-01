@@ -70,6 +70,7 @@ public class NewsListAdapter extends BaseAdapter {
         viewHolder.newsListPreview.setText(newsList.get(position).getPreview());
         viewHolder.newsListTime.setText(newsList.get(position).getUpdateTime());
         viewHolder.newsListIcon.setImageURI(Uri.parse(newsList.get(position).getIcon()));
+        System.out.println(newsList.get(position).getIcon() + "==-=");
         return convertView;
     }
 

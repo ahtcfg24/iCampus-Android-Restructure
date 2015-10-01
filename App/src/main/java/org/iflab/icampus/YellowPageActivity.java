@@ -74,7 +74,7 @@ public class YellowPageActivity extends ActionBarActivity {
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 yellowPageData = new String(responseBody);
                 if (yellowPageData.contains("<HTML>")) {
-                    new MyToast(getApplicationContext(), "你的WiFI还没有登录哦~");
+                    new MyToast("你的WiFI还没有登录哦~");
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://1.1.1.1/login.html")));
                 } else {
                     jsonYellowPageData(yellowPageData);
@@ -88,7 +88,7 @@ public class YellowPageActivity extends ActionBarActivity {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                 myProgressDialog.dismiss();
-                new MyToast(getApplicationContext(), "获取黄页数据失败啦，请重试吧= =");
+                new MyToast("获取黄页数据失败啦，请重试吧= =");
             }
         });
     }

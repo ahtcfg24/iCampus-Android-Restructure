@@ -14,7 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.yalantis.phoenix.PullToRefreshView;
 
@@ -56,7 +55,6 @@ public class NewsListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Fresco.initialize(getActivity());
         rootView = inflater.inflate(R.layout.fragment_news_list, container, false);
         init();
         initView();
@@ -104,7 +102,7 @@ public class NewsListFragment extends Fragment {
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 newsListData = new String(responseBody);
                 if (newsListData.contains("<HTML>")) {
-                    new MyToast(getActivity(), "你的WiFI还没有登录哦~");
+                    new MyToast("你的WiFI还没有登录哦~");
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://1.1.1.1/login.html")));
                 } else {
                     switch (newsListData) {
@@ -113,10 +111,10 @@ public class NewsListFragment extends Fragment {
                             loadToLastTextView.setVisibility(View.VISIBLE);
                             break;
                         case "0":
-                            new MyToast(getActivity(), "服务器出问题了，请稍后再试吧~");
+                            new MyToast("服务器出问题了，请稍后再试吧~");
                             break;
                         case "1":
-                            new MyToast(getActivity(), "解析不出数据啦！请重试！");
+                            new MyToast("解析不出数据啦！请重试！");
                             break;
                         default:
                             String newsListData1 = null;
@@ -136,7 +134,7 @@ public class NewsListFragment extends Fragment {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
 
-                new MyToast(NewsListFragment.this.getActivity(), "网络连接失败，请检查网络吧！");
+                new MyToast("网络连接失败，请检查网络吧！");
             }
 
         });
@@ -272,7 +270,7 @@ public class NewsListFragment extends Fragment {
                     currentPage = 1;
                     newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
                     getNewsListDataByURL(newsListURL);
-                    new MyToast(getActivity(), "刷新完成");
+                    new MyToast("刷新完成");
                 }
             }, 1000);
 

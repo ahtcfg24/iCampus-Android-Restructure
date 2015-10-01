@@ -80,7 +80,7 @@ public class AboutDetailsActivity extends ActionBarActivity {
                     @Override
                     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                         myProgressDialog.dismiss();
-                        new MyToast(getApplicationContext(), "获取网络数据失败，请重试");
+                        new MyToast("获取网络数据失败，请重试");
                         Log.i(modName, "----->" + "获取失败");
                     }
                 });

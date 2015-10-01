@@ -37,7 +37,7 @@ public class GetUserInfo {
 
                     @Override
                     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                        new MyToast(context, "获取用户信息失败，请重试");
+                        new MyToast("获取用户信息失败，请重试");
 
                     }
                 });

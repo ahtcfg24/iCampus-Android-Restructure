@@ -1,9 +1,11 @@
 package org.iflab.icampus.application;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
@@ -28,11 +30,23 @@ import static org.iflab.icampus.http.UrlStatic.OAUTH2;
  * @time 8:16
  */
 public class MyApplication extends Application {
+    private static Context context;
     private SharedPreferences sharedPreferences;
+
+    /**
+     * 获得最高生命周期的Context，方便别的类中使用
+     *
+     * @return Context
+     */
+    public static Context getContext() {
+        return context;
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
+        context = getApplicationContext();
+        Fresco.initialize(getApplicationContext());//初始化Fresco库，程序中会多处用到
        /*请求源数据不需要接参数，故设为null*/
         AsyncHttpIc.get(JSONSOURCE, null, new AsyncHttpResponseHandler() {
             @Override
@@ -72,7 +86,6 @@ public class MyApplication extends Application {
 
     }
 
-
     /**
      * 把JsonURl存储到本地SharedPreferences
      *
@@ -100,5 +113,4 @@ public class MyApplication extends Application {
             e.printStackTrace();
         }
     }
-
 }

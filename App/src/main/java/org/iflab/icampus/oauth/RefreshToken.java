@@ -45,7 +45,7 @@ public class RefreshToken {
 
                     @Override
                     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                        new MyToast(context, "刷新数据失败，请重试");
+                        new MyToast("刷新数据失败，请重试");
                     }
                 });
     }
