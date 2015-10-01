@@ -71,7 +71,6 @@ public class NewsListFragment extends Fragment {
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
         aCache = ACache.get(getActivity());
-
     }
 
     /**
@@ -88,7 +87,6 @@ public class NewsListFragment extends Fragment {
         pullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
         pullToRefreshView.setOnRefreshListener(new RefreshListener());
         newsListView.setOnScrollListener(new ScrollListener());//下拉刷新
-
     }
 
     /**
