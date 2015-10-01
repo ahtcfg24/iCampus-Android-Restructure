@@ -4,10 +4,35 @@
     android:layout_height="match_parent"
     android:background="#fff">
 
+   <LinearLayout
+       android:id="@+id/list_progress_layout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       >
+
+       <ProgressBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="15dp"
+           android:indeterminateDrawable="@drawable/progress_dialog_image"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:text="拼命加载中。。。"
+           android:textSize="18dp"
+           />
+   </LinearLayout>
+
     <com.yalantis.phoenix.PullToRefreshView
         android:id="@+id/pull_to_refresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <ListView
             android:id="@+id/newsListView"

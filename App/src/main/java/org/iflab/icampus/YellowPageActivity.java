@@ -1,6 +1,7 @@
 package org.iflab.icampus;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -71,12 +72,17 @@ public class YellowPageActivity extends ActionBarActivity {
         AsyncHttpIc.get(yellowPageURl, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                myProgressDialog.dismiss();//解除ProgressDialog
                 yellowPageData = new String(responseBody);
-                jsonYellowPageData(yellowPageData);
+                if (yellowPageData.contains("<HTML>")) {
+                    new MyToast(getApplicationContext(), "你的WiFI还没有登录哦~");
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://1.1.1.1/login.html")));
+                } else {
+                    jsonYellowPageData(yellowPageData);
+                    myProgressDialog.dismiss();//解除ProgressDialog
                 /*由于从网络获取是异步处理，所以需要在这里直接设置Adapter*/
-                yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
-                aCache.put("yellowPageData", yellowPageData);
+                    yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
+                    aCache.put("yellowPageData", yellowPageData);
+                }
             }
 
             @Override

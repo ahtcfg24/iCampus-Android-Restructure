@@ -6,7 +6,7 @@
     android:padding="10dp">
 
     <LinearLayout
-        android:id="@+id/progress_layout"
+        android:id="@+id/footer_progress_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

@@ -1,8 +1,11 @@
 package org.iflab.icampus.fragment;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +51,7 @@ public class NewsListFragment extends Fragment {
     private NewsListAdapter newsListAdapter;
     private List<NewsItem> newsList;
     private TextView loadMoreTextView, loadToLastTextView;
-    private LinearLayout progressLayout;//footer布局
+    private LinearLayout footerProgressLayout, listProgressLayout;//两个progressBar
 
 
     @Override
@@ -56,6 +59,7 @@ public class NewsListFragment extends Fragment {
         Fresco.initialize(getActivity());
         rootView = inflater.inflate(R.layout.fragment_news_list, container, false);
         init();
+        initView();
         loadData();
         return rootView;
     }
@@ -69,16 +73,24 @@ public class NewsListFragment extends Fragment {
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
         aCache = ACache.get(getActivity());
+
+    }
+
+    /**
+     * 初始化布局控件
+     */
+    private void initView() {
         newsListView = (ListView) rootView.findViewById(R.id.newsListView);
         loadMoreView = getActivity().getLayoutInflater().inflate(R.layout.load_more_item, null);
         loadMoreTextView = (TextView) loadMoreView.findViewById(R.id.load_more_textView);
         loadToLastTextView = (TextView) loadMoreView.findViewById(R.id.load_to_last_textView);
-        progressLayout = (LinearLayout) loadMoreView.findViewById(R.id.progress_layout);
+        footerProgressLayout = (LinearLayout) loadMoreView.findViewById(R.id.footer_progress_layout);
+        listProgressLayout = (LinearLayout) rootView.findViewById(R.id.list_progress_layout);
         newsListView.addFooterView(loadMoreView);
         pullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
-        //下拉刷新
         pullToRefreshView.setOnRefreshListener(new RefreshListener());
-        newsListView.setOnScrollListener(new ScrollListener());
+        newsListView.setOnScrollListener(new ScrollListener());//下拉刷新
+
     }
 
     /**
@@ -91,34 +103,40 @@ public class NewsListFragment extends Fragment {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 newsListData = new String(responseBody);
-                switch (newsListData) {
-                    case "-1":
-                        progressLayout.setVisibility(View.INVISIBLE);
-                        loadToLastTextView.setVisibility(View.VISIBLE);
-                        break;
-                    case "0":
-                        new MyToast(getActivity(), "服务器出问题了，请稍后再试吧~");
-                        break;
-                    case "1":
-                        new MyToast(getActivity(), "解析不出数据啦！请重试！");
-                        break;
-                    default:
-                        String newsListData1 = null;
-                        try {
-                            JSONObject jsonObject1 = new JSONObject(newsListData);
-                            newsListData1 = jsonObject1.getString("d");
-                            aCache.put(newsListURL, newsListData1, 1000);//存入缓存,过期时间1000秒
-                        } catch (JSONException e1) {
-                            e1.printStackTrace();
-                        }
-                        handleNewsListData(newsListData1);
-                        break;
+                if (newsListData.contains("<HTML>")) {
+                    new MyToast(getActivity(), "你的WiFI还没有登录哦~");
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://1.1.1.1/login.html")));
+                } else {
+                    switch (newsListData) {
+                        case "-1":
+                            footerProgressLayout.setVisibility(View.INVISIBLE);
+                            loadToLastTextView.setVisibility(View.VISIBLE);
+                            break;
+                        case "0":
+                            new MyToast(getActivity(), "服务器出问题了，请稍后再试吧~");
+                            break;
+                        case "1":
+                            new MyToast(getActivity(), "解析不出数据啦！请重试！");
+                            break;
+                        default:
+                            String newsListData1 = null;
+                            try {
+                                JSONObject jsonObject1 = new JSONObject(newsListData);
+                                newsListData1 = jsonObject1.getString("d");
+                                aCache.put(newsListURL, newsListData1, 1000);//存入缓存,过期时间1000秒
+                            } catch (JSONException e1) {
+                                e1.printStackTrace();
+                            }
+                            handleNewsListData(newsListData1);
+                            break;
+                    }
                 }
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                new MyToast(getActivity(), "网络连接失败，请检查网络吧！");
+
+                new MyToast(NewsListFragment.this.getActivity(), "网络连接失败，请检查网络吧！");
             }
 
         });
@@ -150,7 +168,11 @@ public class NewsListFragment extends Fragment {
             }
         } catch (JSONException e) {
             e.printStackTrace();
+        } catch (NullPointerException e) {
+            Log.i("handleNewsListData", "空指针异常");
         }
+
+        listProgressLayout.setVisibility(View.INVISIBLE);
 
         if (currentPage == 1) {
             newsListAdapter = new NewsListAdapter(newsList, NewsListFragment.this.getActivity());
@@ -162,9 +184,10 @@ public class NewsListFragment extends Fragment {
             currentPage++;
         }
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
-        progressLayout.setVisibility(View.INVISIBLE);
+        footerProgressLayout.setVisibility(View.INVISIBLE);
         loadMoreTextView.setVisibility(View.VISIBLE);
     }
+
 
     /**
      * @param url
@@ -229,7 +252,7 @@ public class NewsListFragment extends Fragment {
             if (isLastRow && scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) {
                 loadMoreTextView.setVisibility(View.INVISIBLE);
                 loadToLastTextView.setVisibility(View.INVISIBLE);
-                progressLayout.setVisibility(View.VISIBLE);
+                footerProgressLayout.setVisibility(View.VISIBLE);
                 loadData();
                 isLastRow = false;
             }
