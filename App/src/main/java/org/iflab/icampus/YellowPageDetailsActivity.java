@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -16,7 +17,6 @@ import org.iflab.icampus.adapter.yellowPageDetailsAdapter;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.YellowPageDepartBranch;
-import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.ui.YellowPageDialog;
 import org.iflab.icampus.utils.ACache;
@@ -36,7 +36,7 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
     private ACache aCache;
     private String yellowPageDepartDetailsData;//每个部门下面的所有的分支的json数组数据
     private List<YellowPageDepartBranch> yellowPageDepartBranchList;
-    private MyProgressDialog myProgressDialog;
+    private LinearLayout progressLayout;
     private YellowPageDepartBranch yellowPageDepartBranch;
     private String branchName;//部门下分支的名字
     private String telephoneNumber;//部门下分支的号码
@@ -52,13 +52,13 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
             getYellowPageDetailsDataByUrl(yellowPageDetailsUrl);
         } else {
             jsonYellowPageDetailsData(yellowPageDepartDetailsData);
-            yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartBranchList));
         }
         yellowPageDetailsListView.setOnItemClickListener(new BranchListListener());
 
     }
 
     private void init() {
+        progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
         yellowPageDepartBranchList = new ArrayList<>();
         intent = getIntent();
         depart = intent.getStringExtra("depart");
@@ -71,21 +71,17 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
     }
 
     private void getYellowPageDetailsDataByUrl(String yellowPageDetailsUrl) {
-        myProgressDialog = new MyProgressDialog(YellowPageDetailsActivity.this);
         AsyncHttpIc.get(yellowPageDetailsUrl, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                myProgressDialog.dismiss();
                 yellowPageDepartDetailsData = new String(responseBody);
-                jsonYellowPageDetailsData(yellowPageDepartDetailsData);
-                /*由于从网络获取是异步处理，所以需要在这里直接设置Adapter*/
-                yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartBranchList));
                 aCache.put(depart, yellowPageDepartDetailsData);//存放到缓存
+                jsonYellowPageDetailsData(yellowPageDepartDetailsData);
+
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                myProgressDialog.dismiss();
                 new MyToast("获取部门号码失败，请重试");
             }
         });
@@ -108,6 +104,8 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
                 yellowPageDepartBranch.setTelephoneNumber(telephoneNumber);
                 yellowPageDepartBranchList.add(yellowPageDepartBranch);
             }
+            progressLayout.setVisibility(View.INVISIBLE);//解除progressLayout
+            yellowPageDetailsListView.setAdapter(new yellowPageDetailsAdapter(YellowPageDetailsActivity.this, yellowPageDepartBranchList));
         } catch (JSONException e) {
             e.printStackTrace();
         }

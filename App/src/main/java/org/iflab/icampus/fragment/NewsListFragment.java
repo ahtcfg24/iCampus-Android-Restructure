@@ -50,7 +50,7 @@ public class NewsListFragment extends Fragment {
     private NewsListAdapter newsListAdapter;
     private List<NewsItem> newsList;
     private TextView loadMoreTextView, loadToLastTextView;
-    private LinearLayout footerProgressLayout, listProgressLayout;//两个progressBar
+    private LinearLayout footerProgressLayout, progressLayout;//两个progressBar
 
 
     @Override
@@ -82,7 +82,7 @@ public class NewsListFragment extends Fragment {
         loadMoreTextView = (TextView) loadMoreView.findViewById(R.id.load_more_textView);
         loadToLastTextView = (TextView) loadMoreView.findViewById(R.id.load_to_last_textView);
         footerProgressLayout = (LinearLayout) loadMoreView.findViewById(R.id.footer_progress_layout);
-        listProgressLayout = (LinearLayout) rootView.findViewById(R.id.list_progress_layout);
+        progressLayout = (LinearLayout) rootView.findViewById(R.id.progress_layout);
         newsListView.addFooterView(loadMoreView);
         pullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
         pullToRefreshView.setOnRefreshListener(new RefreshListener());
@@ -168,7 +168,7 @@ public class NewsListFragment extends Fragment {
             Log.i("handleNewsListData", "空指针异常");
         }
 
-        listProgressLayout.setVisibility(View.INVISIBLE);
+        progressLayout.setVisibility(View.INVISIBLE);
 
         if (currentPage == 1) {
             newsListAdapter = new NewsListAdapter(newsList, NewsListFragment.this.getActivity());

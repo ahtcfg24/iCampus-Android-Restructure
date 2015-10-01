@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -18,7 +19,6 @@ import org.iflab.icampus.adapter.YellowPageAdapter;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.YellowPageDepart;
-import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.utils.ACache;
 import org.json.JSONArray;
@@ -30,7 +30,7 @@ import java.util.List;
 
 public class YellowPageActivity extends ActionBarActivity {
     private ListView yellowPageListView;
-    private MyProgressDialog myProgressDialog;
+    private LinearLayout progressLayout;
     private String YellowPageURl;
     private YellowPageDepart yellowPageDepart;
     private String depart;
@@ -39,6 +39,7 @@ public class YellowPageActivity extends ActionBarActivity {
     private String yellowPageData;
     private ACache aCache;
     private Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +51,13 @@ public class YellowPageActivity extends ActionBarActivity {
             getYellowPageDataByUrl(YellowPageURl);
         } else {
             jsonYellowPageData(yellowPageData);
-            yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
+
         }
         yellowPageListView.setOnItemClickListener(new yellowPageListListener());
     }
 
     private void init() {
+        progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
         yellowPageListView = (ListView) findViewById(R.id.yellowPage_listView);
         yellowPageDepartList = new ArrayList<>();
         aCache = ACache.get(getApplicationContext());
@@ -68,7 +70,7 @@ public class YellowPageActivity extends ActionBarActivity {
      * 从网络获取黄页数据
      */
     public void getYellowPageDataByUrl(String yellowPageURl) {
-        myProgressDialog = new MyProgressDialog(YellowPageActivity.this);
+
         AsyncHttpIc.get(yellowPageURl, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
@@ -77,17 +79,13 @@ public class YellowPageActivity extends ActionBarActivity {
                     new MyToast("你的WiFI还没有登录哦~");
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://1.1.1.1/login.html")));
                 } else {
-                    jsonYellowPageData(yellowPageData);
-                    myProgressDialog.dismiss();//解除ProgressDialog
-                /*由于从网络获取是异步处理，所以需要在这里直接设置Adapter*/
-                    yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
                     aCache.put("yellowPageData", yellowPageData);
+                    jsonYellowPageData(yellowPageData);
                 }
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                myProgressDialog.dismiss();
                 new MyToast("获取黄页数据失败啦，请重试吧= =");
             }
         });
@@ -110,6 +108,8 @@ public class YellowPageActivity extends ActionBarActivity {
                 yellowPageDepart.setDepart(depart);
                 yellowPageDepartList.add(yellowPageDepart);
             }
+            progressLayout.setVisibility(View.INVISIBLE);//解除progressLayout
+            yellowPageListView.setAdapter(new YellowPageAdapter(yellowPageDepartList, YellowPageActivity.this));
         } catch (JSONException e) {
             e.printStackTrace();
         }
