@@ -288,7 +288,6 @@
         如果有任何建议请在新浪微博@ifLab,安卓版本功能问题可以直接联系QQ764951578</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">iCampus</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_about">关于我们</string>
     <string name="title_activity_about_detials">AboutDetialsActivity</string>

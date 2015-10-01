@@ -1,12 +1,13 @@
 package org.iflab.icampus.utils;
 
 /**
- * Created by hcjcch on 2015/2/12.
+ * Created at 2015/2/12 13:00.
  */
 public final class StaticVariable {
     public static final int GET_AUTHORIZATION_CODE = 1;//OAuth认证的requestCode
     public final static String[] NEWS_TABS = {"学校要闻", "人才培养", "教学科研", "文化活动",
             "媒体关注", "校园人物"};//新闻类别
+
     public static final class OauthStaticVariable {
         public static final String CLIENT_ID = "0b97ad49e755de0d210a8bab3d310046";
         public static final String CLIENT_SECRET = "6c4347eb6d23825f1586d8a67784d29b";

@@ -24,23 +24,23 @@ public class GetUserInfo {
         final User user = new User();
         //先从文件中读取出刷新后的AccessToken,然后根据AccessToken来获取数据
         AsyncHttpIc.get(UrlStatic.GET_PERSONAL_INFORMATION,
-                        createAccessTokenParams(TokenHandle.getAccessToken(context)),
-                        new AsyncHttpResponseHandler() {
-                            @Override
-                            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                createAccessTokenParams(TokenHandle.getAccessToken(context)),
+                new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 
-                                String userJsonData = new String(responseBody);
-                                handleUserJson(user, userJsonData);
-                                ACache aCache = ACache.get(context);
-                                aCache.put("user", user, 31 * ACache.TIME_DAY);
-                            }
+                        String userJsonData = new String(responseBody);
+                        handleUserJson(user, userJsonData);
+                        ACache aCache = ACache.get(context);
+                        aCache.put("user", user, 31 * ACache.TIME_DAY);
+                    }
 
-                            @Override
-                            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                                new MyToast(context, "获取用户信息失败，请重试");
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                        new MyToast(context, "获取用户信息失败，请重试");
 
-                            }
-                        });
+                    }
+                });
     }
 
 

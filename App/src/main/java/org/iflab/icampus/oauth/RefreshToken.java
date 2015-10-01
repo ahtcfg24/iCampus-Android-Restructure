@@ -29,25 +29,25 @@ public class RefreshToken {
      */
     public static void refreshToken(final Context context) {
         AsyncHttpIc.post(UrlStatic.GET_ACCESS_TOKEN, createRefreshTokenParams(context),
-                         new AsyncHttpResponseHandler() {
-                             @Override
-                             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                                 try {
-                                     JSONObject jsonObject = new JSONObject(new String(responseBody));
-                                     String access_token = jsonObject.getString("access_token");
-                                     String refresh_token = jsonObject.getString("refresh_token");
-                                     TokenHandle.saveAccessToken(context, access_token);
-                                     TokenHandle.saveRefreshToken(context, refresh_token);
-                                 } catch (JSONException e) {
-                                     e.printStackTrace();
-                                 }
-                             }
+                new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(new String(responseBody));
+                            String access_token = jsonObject.getString("access_token");
+                            String refresh_token = jsonObject.getString("refresh_token");
+                            TokenHandle.saveAccessToken(context, access_token);
+                            TokenHandle.saveRefreshToken(context, refresh_token);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
 
-                             @Override
-                             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                                 new MyToast(context, "刷新数据失败，请重试");
-                             }
-                         });
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                        new MyToast(context, "刷新数据失败，请重试");
+                    }
+                });
     }
 
 

@@ -2100,16 +2100,15 @@ containing a value of this type.
         public static final int aboutString=0x7f060010;
         public static final int action_settings=0x7f060011;
         public static final int app_name=0x7f060012;
-        public static final int hello_blank_fragment=0x7f060013;
-        public static final int hello_world=0x7f060014;
-        public static final int title_activity_about=0x7f060015;
-        public static final int title_activity_about_detials=0x7f060016;
-        public static final int title_activity_home=0x7f060017;
-        public static final int title_activity_news=0x7f060018;
-        public static final int title_activity_oauth=0x7f060019;
-        public static final int title_activity_user_center=0x7f06001a;
-        public static final int title_activity_yellow_page=0x7f06001b;
-        public static final int title_activity_yellow_page_details=0x7f06001c;
+        public static final int hello_world=0x7f060013;
+        public static final int title_activity_about=0x7f060014;
+        public static final int title_activity_about_detials=0x7f060015;
+        public static final int title_activity_home=0x7f060016;
+        public static final int title_activity_news=0x7f060017;
+        public static final int title_activity_oauth=0x7f060018;
+        public static final int title_activity_user_center=0x7f060019;
+        public static final int title_activity_yellow_page=0x7f06001a;
+        public static final int title_activity_yellow_page_details=0x7f06001b;
     }
     public static final class style {
         /**  Customize your theme here. 

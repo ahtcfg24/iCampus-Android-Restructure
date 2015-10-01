@@ -20,17 +20,18 @@ public class TabPageIndicatorAdapter extends FragmentPagerAdapter {
 
     public TabPageIndicatorAdapter(FragmentManager supportFragmentManager, Map<String, String> pathMap) {
         super(supportFragmentManager);
-        this.pathMap=pathMap;
+        this.pathMap = pathMap;
     }
 
     /**
      * 每次点击tab，会把该tab以及左右边的tab绘制出来,同时向fragment传递数据
+     *
      * @param position 指定的位置
      * @return 指定位置的fragment
      */
     @Override
     public Fragment getItem(int position) {
-        fragmentName= StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length];
+        fragmentName = StaticVariable.NEWS_TABS[position % StaticVariable.NEWS_TABS.length];
         newsListFragment = new NewsListFragment();
         Bundle fragmentBundle = new Bundle();
         fragmentBundle.putString("fragmentName", fragmentName);
@@ -40,7 +41,6 @@ public class TabPageIndicatorAdapter extends FragmentPagerAdapter {
     }
 
     /**
-     *
      * @param position 指定位置
      * @return 指定页面的标题
      */

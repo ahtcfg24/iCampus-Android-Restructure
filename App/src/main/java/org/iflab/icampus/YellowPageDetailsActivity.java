@@ -141,12 +141,12 @@ public class YellowPageDetailsActivity extends ActionBarActivity {
     private class BranchListListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            branchName=yellowPageDepartBranchList.get(position).getBranchName();
+            branchName = yellowPageDepartBranchList.get(position).getBranchName();
             new YellowPageDialog(YellowPageDetailsActivity.this
-                    ,branchName
-                    ,telephoneNumber
-                    ,yellowPageDepartBranchList
-                    ,position);
+                    , branchName
+                    , telephoneNumber
+                    , yellowPageDepartBranchList
+                    , position);
         }
     }
 

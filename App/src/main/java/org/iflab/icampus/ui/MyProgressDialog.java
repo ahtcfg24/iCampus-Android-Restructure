@@ -23,6 +23,7 @@ public class MyProgressDialog extends Dialog {
     public MyProgressDialog(Context context, String progressDialogText) {
         this(context, R.style.CustomProgressDialog, progressDialogText);
     }
+
     /**
      * @param context            要显示ProgressDialog的环境
      * @param theme              自定义的Dialog样式
@@ -41,7 +42,7 @@ public class MyProgressDialog extends Dialog {
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-        if (! hasFocus) {
+        if (!hasFocus) {
             dismiss();
         }
     }

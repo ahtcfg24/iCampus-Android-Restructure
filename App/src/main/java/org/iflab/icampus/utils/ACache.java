@@ -46,13 +46,13 @@ public class ACache {
     public static final int TIME_DAY = TIME_HOUR * 24;
     private static final int MAX_SIZE = 1000 * 1000 * 50; // 50 mb
     private static final int MAX_COUNT = Integer.MAX_VALUE; // 不限制存放数据的数量
-    private static Map<String, ACache> mInstanceMap = new HashMap<String, ACache>();
+    private static Map<String, ACache> mInstanceMap = new HashMap<>();
     private ACacheManager mCache;
 
     private ACache(File cacheDir, long max_size, int max_count) {
-        if (! cacheDir.exists() && ! cacheDir.mkdirs()) {
+        if (!cacheDir.exists() && !cacheDir.mkdirs()) {
             throw new RuntimeException("can't make dirs in "
-                                               + cacheDir.getAbsolutePath());
+                    + cacheDir.getAbsolutePath());
         }
         mCache = new ACacheManager(cacheDir, max_size, max_count);
     }
@@ -133,12 +133,12 @@ public class ACache {
     /**
      * 读取 String数据
      *
-     * @param key
+     * @param key key
      * @return String 数据
      */
     public String getAsString(String key) {
         File file = mCache.get(key);
-        if (! file.exists())
+        if (!file.exists())
             return null;
         boolean removeFile = false;
         BufferedReader in = null;
@@ -149,7 +149,7 @@ public class ACache {
             while ((currentLine = in.readLine()) != null) {
                 readString += currentLine;
             }
-            if (! Utils.isDue(readString)) {
+            if (!Utils.isDue(readString)) {
                 return Utils.clearDateInfo(readString);
             } else {
                 removeFile = true;
@@ -199,14 +199,13 @@ public class ACache {
     /**
      * 读取JSONObject数据
      *
-     * @param key
+     * @param key key
      * @return JSONObject数据
      */
     public JSONObject getAsJSONObject(String key) {
         String JSONString = getAsString(key);
         try {
-            JSONObject obj = new JSONObject(JSONString);
-            return obj;
+            return new JSONObject(JSONString);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -241,14 +240,13 @@ public class ACache {
     /**
      * 读取JSONArray数据
      *
-     * @param key
+     * @param key key
      * @return JSONArray数据
      */
     public JSONArray getAsJSONArray(String key) {
         String JSONString = getAsString(key);
         try {
-            JSONArray obj = new JSONArray(JSONString);
-            return obj;
+            return new JSONArray(JSONString);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -300,7 +298,7 @@ public class ACache {
     /**
      * 获取 byte 数据
      *
-     * @param key
+     * @param key key
      * @return byte 数据
      */
     public byte[] getAsBinary(String key) {
@@ -308,12 +306,12 @@ public class ACache {
         boolean removeFile = false;
         try {
             File file = mCache.get(key);
-            if (! file.exists())
+            if (!file.exists())
                 return null;
             RAFile = new RandomAccessFile(file, "r");
             byte[] byteArray = new byte[(int) RAFile.length()];
             RAFile.read(byteArray);
-            if (! Utils.isDue(byteArray)) {
+            if (!Utils.isDue(byteArray)) {
                 return Utils.clearDateInfo(byteArray);
             } else {
                 removeFile = true;
@@ -346,7 +344,7 @@ public class ACache {
      * @param value 保存的value
      */
     public void put(String key, Serializable value) {
-        put(key, value, - 1);
+        put(key, value, -1);
     }
 
     /**
@@ -357,14 +355,14 @@ public class ACache {
      * @param saveTime 保存的时间，单位：秒
      */
     public void put(String key, Serializable value, int saveTime) {
-        ByteArrayOutputStream baos = null;
+        ByteArrayOutputStream baos;
         ObjectOutputStream oos = null;
         try {
             baos = new ByteArrayOutputStream();
             oos = new ObjectOutputStream(baos);
             oos.writeObject(value);
             byte[] data = baos.toByteArray();
-            if (saveTime != - 1) {
+            if (saveTime != -1) {
                 put(key, data, saveTime);
             } else {
                 put(key, data);
@@ -373,8 +371,10 @@ public class ACache {
             e.printStackTrace();
         } finally {
             try {
-                oos.close();
-            } catch (IOException e) {
+                if (oos != null) {
+                    oos.close();
+                }
+            } catch (IOException ignored) {
             }
         }
     }
@@ -382,7 +382,7 @@ public class ACache {
     /**
      * 读取 Serializable数据
      *
-     * @param key
+     * @param key key
      * @return Serializable 数据
      */
     public Object getAsObject(String key) {
@@ -393,8 +393,7 @@ public class ACache {
             try {
                 bais = new ByteArrayInputStream(data);
                 ois = new ObjectInputStream(bais);
-                Object reObject = ois.readObject();
-                return reObject;
+                return ois.readObject();
             } catch (Exception e) {
                 e.printStackTrace();
                 return null;
@@ -445,7 +444,7 @@ public class ACache {
     /**
      * 读取 bitmap 数据
      *
-     * @param key
+     * @param key key
      * @return bitmap 数据
      */
     public Bitmap getAsBitmap(String key) {
@@ -483,7 +482,7 @@ public class ACache {
     /**
      * 读取 Drawable 数据
      *
-     * @param key
+     * @param key key
      * @return Drawable 数据
      */
     public Drawable getAsDrawable(String key) {
@@ -496,7 +495,7 @@ public class ACache {
     /**
      * 获取缓存文件
      *
-     * @param key
+     * @param key key
      * @return value 缓存的文件
      */
     public File file(String key) {
@@ -509,7 +508,7 @@ public class ACache {
     /**
      * 移除某个key
      *
-     * @param key
+     * @param key key
      * @return 是否移除成功
      */
     public boolean remove(String key) {
@@ -526,7 +525,7 @@ public class ACache {
     /**
      * @author 杨福海（michael） www.yangfuhai.com
      * @version 1.0
-     * @title 时间计算工具类
+     * 时间计算工具类
      */
     private static class Utils {
 
@@ -580,7 +579,7 @@ public class ACache {
         private static String clearDateInfo(String strInfo) {
             if (strInfo != null && hasDateInfo(strInfo.getBytes())) {
                 strInfo = strInfo.substring(strInfo.indexOf(mSeparator) + 1,
-                                            strInfo.length());
+                        strInfo.length());
             }
             return strInfo;
         }
@@ -588,7 +587,7 @@ public class ACache {
         private static byte[] clearDateInfo(byte[] data) {
             if (hasDateInfo(data)) {
                 return copyOfRange(data, indexOf(data, mSeparator) + 1,
-                                   data.length);
+                        data.length);
             }
             return data;
         }
@@ -602,8 +601,8 @@ public class ACache {
             if (hasDateInfo(data)) {
                 String saveDate = new String(copyOfRange(data, 0, 13));
                 String deleteAfter = new String(copyOfRange(data, 14,
-                                                            indexOf(data, mSeparator)));
-                return new String[] {saveDate, deleteAfter};
+                        indexOf(data, mSeparator)));
+                return new String[]{saveDate, deleteAfter};
             }
             return null;
         }
@@ -614,7 +613,7 @@ public class ACache {
                     return i;
                 }
             }
-            return - 1;
+            return -1;
         }
 
         private static byte[] copyOfRange(byte[] original, int from, int to) {
@@ -623,7 +622,7 @@ public class ACache {
                 throw new IllegalArgumentException(from + " > " + to);
             byte[] copy = new byte[newLength];
             System.arraycopy(original, from, copy, 0,
-                             Math.min(original.length - from, newLength));
+                    Math.min(original.length - from, newLength));
             return copy;
         }
 
@@ -731,7 +730,7 @@ public class ACache {
                             size += calculateSize(cachedFile);
                             count += 1;
                             lastUsageDates.put(cachedFile,
-                                               cachedFile.lastModified());
+                                    cachedFile.lastModified());
                         }
                         cacheSize.set(size);
                         cacheCount.set(count);
@@ -744,9 +743,9 @@ public class ACache {
             int curCacheCount = cacheCount.get();
             while (curCacheCount + 1 > countLimit) {
                 long freedSize = removeNext();
-                cacheSize.addAndGet(- freedSize);
+                cacheSize.addAndGet(-freedSize);
 
-                curCacheCount = cacheCount.addAndGet(- 1);
+                curCacheCount = cacheCount.addAndGet(-1);
             }
             cacheCount.addAndGet(1);
 
@@ -754,7 +753,7 @@ public class ACache {
             long curCacheSize = cacheSize.get();
             while (curCacheSize + valueSize > sizeLimit) {
                 long freedSize = removeNext();
-                curCacheSize = cacheSize.addAndGet(- freedSize);
+                curCacheSize = cacheSize.addAndGet(-freedSize);
             }
             cacheSize.addAndGet(valueSize);
 
@@ -821,8 +820,10 @@ public class ACache {
             }
 
             long fileSize = calculateSize(mostLongUsedFile);
-            if (mostLongUsedFile.delete()) {
-                lastUsageDates.remove(mostLongUsedFile);
+            if (mostLongUsedFile != null) {
+                if (mostLongUsedFile.delete()) {
+                    lastUsageDates.remove(mostLongUsedFile);
+                }
             }
             return fileSize;
         }

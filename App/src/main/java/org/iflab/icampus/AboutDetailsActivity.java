@@ -58,32 +58,32 @@ public class AboutDetailsActivity extends ActionBarActivity {
     private void getAboutDetailsByUrl(String url) {
         myProgressDialog = new MyProgressDialog(AboutDetailsActivity.this);
         AsyncHttpIc.get(url, null,
-                        new AsyncHttpResponseHandler() {
-                            @Override
-                            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                                String introData = new String(responseBody);
-                                try {
-                                    myProgressDialog.dismiss();
+                new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                        String introData = new String(responseBody);
+                        try {
+                            myProgressDialog.dismiss();
                                     /*因为传入的introData是一个jsonArray包含一个jsonObject的格式，因此要先做处理使之成为jsonObject格式*/
-                                    JSONObject jsonObject = new JSONObject(introData.substring(1, introData.length() - 1));
-                                    aboutDetailsData = jsonObject.getString("introCont");
+                            JSONObject jsonObject = new JSONObject(introData.substring(1, introData.length() - 1));
+                            aboutDetailsData = jsonObject.getString("introCont");
                                     /*使用loadData会乱码，原因未知*/
-                                    webView.loadDataWithBaseURL(null, aboutDetailsData, "text/html", "utf-8", null);
+                            webView.loadDataWithBaseURL(null, aboutDetailsData, "text/html", "utf-8", null);
                                     /*获取到之后存入缓存里*/
-                                    aCache.put(modName, aboutDetailsData);
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
+                            aCache.put(modName, aboutDetailsData);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
 
-                            }
+                    }
 
-                            @Override
-                            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                                myProgressDialog.dismiss();
-                                new MyToast(getApplicationContext(), "获取网络数据失败，请重试");
-                                Log.i(modName, "----->" + "获取失败");
-                            }
-                        });
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                        myProgressDialog.dismiss();
+                        new MyToast(getApplicationContext(), "获取网络数据失败，请重试");
+                        Log.i(modName, "----->" + "获取失败");
+                    }
+                });
     }
 
     @Override

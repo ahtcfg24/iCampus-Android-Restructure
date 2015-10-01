@@ -8,11 +8,10 @@ public class OAuthURLUtil {
     /**
      * 创建URL
      *
-     * @param baseUrl
-     * @param addParams
-     * @return
+     * @param baseUrl baseUrl
+     * @param addParams add Params
+     * @return uri
      * @throws Exception
-     * @author hcjcch
      */
     //url生成器
     //例https://auth.bistu.edu.cn/cas/oauth/authorize?redirect_uri=http%3A%2F%2Fwww.baidu.com%2F&client_id=b2ab76c05627d30ef61992dbfc25af38
@@ -24,7 +23,7 @@ public class OAuthURLUtil {
             uriBuffer.append("?");
             Set<String> keySet = addParams.keySet();
             for (String key : keySet) {
-                if (! uriBuffer.toString().equals(baseUrl + "?")) {
+                if (!uriBuffer.toString().equals(baseUrl + "?")) {
                     uriBuffer.append("&");
                 }
                 if (addParams.get(key) != null) {

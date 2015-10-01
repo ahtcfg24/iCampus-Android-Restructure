@@ -134,7 +134,6 @@ public class YellowPageActivity extends ActionBarActivity {
     }
 
 
-
     /**
      * 监听listview
      */

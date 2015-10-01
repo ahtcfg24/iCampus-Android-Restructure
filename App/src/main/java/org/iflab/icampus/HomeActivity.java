@@ -18,6 +18,7 @@ import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
 import com.yalantis.contextmenu.lib.MenuObject;
 import com.yalantis.contextmenu.lib.MenuParams;
 import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
+import com.yalantis.contextmenu.lib.interfaces.OnMenuItemLongClickListener;
 
 import org.iflab.icampus.fragment.HomeFragment;
 import org.iflab.icampus.model.User;
@@ -34,7 +35,7 @@ import java.util.List;
 /**
  * 主页
  */
-public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener {
+public class HomeActivity extends ActionBarActivity implements OnMenuItemClickListener, OnMenuItemLongClickListener {
 
     private FragmentManager fragmentManager;
     private DialogFragment menuDialogFragment;
@@ -60,8 +61,8 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
      * 只有在OAuthActivity结束之后才会执行该方法
      * 获得从OAuthActivity传来的授权码，并根据授权进一步获取数据
      *
-     * @param requestCode
-     * @param resultCode
+     * @param requestCode requestCode
+     * @param resultCode resultCode
      * @param data        从OauthActivity传来的授权码
      */
     @Override
@@ -81,6 +82,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         }
     }
 
+    /**
+     * 初始化菜单Fragment
+     */
     private void initMenuFragment() {
         MenuParams menuParams = new MenuParams();
         menuParams.setActionBarSize((int) getResources().getDimension(R.dimen.tool_bar_height));
@@ -90,12 +94,10 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     /**
      * 添加菜单选项对象
-     *
-     * @return
+     * @return 包含选项的集合
      */
     private List<MenuObject> getMenuObjects() {
         List<MenuObject> menuObjects = new ArrayList<>();
-
 
         MenuObject cancelOption = new MenuObject();
         cancelOption.setResource(R.layout.selector_option_fold);
@@ -132,18 +134,18 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
     /**
      * 添加Fragment
      *
-     * @param fragment
-     * @param addToBackStack
-     * @param containerId
+     * @param fragment fragment
+     * @param addToBackStack addToBackStack
+     * @param containerId containerId
      */
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
         invalidateOptionsMenu();
         String backStackName = fragment.getClass().getName();
         boolean fragmentPopped = fragmentManager.popBackStackImmediate(backStackName, 0);
-        if (! fragmentPopped) {
+        if (!fragmentPopped) {
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             transaction.add(containerId, fragment, backStackName)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
             if (addToBackStack)
                 transaction.addToBackStack(backStackName);
             transaction.commit();
@@ -155,7 +157,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
      *
      * @param keyCode 正在点击的按键代码
      * @param event   触发的事件
-     * @return
+     * @return onKeyDown
      */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -248,4 +250,8 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     }
 
+    @Override
+    public void onMenuItemLongClick(View view, int i) {
+
+    }
 }

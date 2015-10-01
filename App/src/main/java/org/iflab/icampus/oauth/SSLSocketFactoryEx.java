@@ -39,7 +39,7 @@ public class SSLSocketFactoryEx extends SSLSocketFactory {
                     throws CertificateException {
             }
         };
-        sslContext.init(null, new TrustManager[] {trustManager}, null);
+        sslContext.init(null, new TrustManager[]{trustManager}, null);
     }
 
     @Override

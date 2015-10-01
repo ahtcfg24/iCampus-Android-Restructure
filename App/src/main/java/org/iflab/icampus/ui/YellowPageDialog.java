@@ -16,36 +16,37 @@ import java.util.List;
 
 /**
  * 点击黄页中的号码后弹出的Dialog
+ *
  * @date 2015/9/7
  * @time 23:41
  */
 public class YellowPageDialog extends Dialog {
     private Button dialButton, insertButton, cancelButton;
-    private TextView titleTextVeiw,numTextView;
+    private TextView titleTextVeiw, numTextView;
     private int position;
     private Context context;
     private List<YellowPageDepartBranch> yellowPageDepartBranchList;
 
-    public YellowPageDialog(Context context, String title,String num
+    public YellowPageDialog(Context context, String title, String num
             , List<YellowPageDepartBranch> yellowPageDepartBranchList
             , int position) {
-        super(context,R.style.YellowPageDialog);
+        super(context, R.style.YellowPageDialog);
         this.context = context;
         this.position = position;
-        this.yellowPageDepartBranchList=yellowPageDepartBranchList;
-        init(title,num);//初始化布局
+        this.yellowPageDepartBranchList = yellowPageDepartBranchList;
+        init(title, num);//初始化布局
         setListener();//设置监听器
         show();//显示Dialog
     }
 
 
-    private void init(String title,String num) {
+    private void init(String title, String num) {
         setContentView(R.layout.dial_dialog);
         dialButton = (Button) findViewById(R.id.dial_button);
         insertButton = (Button) findViewById(R.id.insert_button);
         cancelButton = (Button) findViewById(R.id.cancel_button);
-        titleTextVeiw=(TextView)findViewById(R.id.dialog_title_textView);
-        numTextView = (TextView)findViewById(R.id.dialog_num_textView);
+        titleTextVeiw = (TextView) findViewById(R.id.dialog_title_textView);
+        numTextView = (TextView) findViewById(R.id.dialog_num_textView);
         titleTextVeiw.setText(title);
         numTextView.setText(num);
     }

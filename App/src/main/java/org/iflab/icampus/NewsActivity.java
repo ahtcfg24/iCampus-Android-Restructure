@@ -84,7 +84,4 @@ public class NewsActivity extends ActionBarActivity {
     }
 
 
-
-
-
 }
