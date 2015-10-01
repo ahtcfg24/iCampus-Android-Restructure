@@ -53,7 +53,6 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
         initToolbar();
         initMenuFragment();
         addFragment(new HomeFragment(), true, R.id.container);
-
         intent = new Intent();
     }
 
@@ -62,7 +61,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
      * 获得从OAuthActivity传来的授权码，并根据授权进一步获取数据
      *
      * @param requestCode requestCode
-     * @param resultCode resultCode
+     * @param resultCode  resultCode
      * @param data        从OauthActivity传来的授权码
      */
     @Override
@@ -94,6 +93,7 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
 
     /**
      * 添加菜单选项对象
+     *
      * @return 包含选项的集合
      */
     private List<MenuObject> getMenuObjects() {
@@ -134,9 +134,9 @@ public class HomeActivity extends ActionBarActivity implements OnMenuItemClickLi
     /**
      * 添加Fragment
      *
-     * @param fragment fragment
+     * @param fragment       fragment
      * @param addToBackStack addToBackStack
-     * @param containerId containerId
+     * @param containerId    containerId
      */
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
         invalidateOptionsMenu();

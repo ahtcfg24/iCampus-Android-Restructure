@@ -13,7 +13,6 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import org.iflab.icampus.R;
 import org.iflab.icampus.model.NewsItem;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -75,17 +74,14 @@ public class NewsListAdapter extends BaseAdapter {
     }
 
     /**
-     * 添加新加载的item
+     * 添加新加载的item到原新闻列表的尾部
      *
      * @param list 新加载出来的item的列表
      */
     public void addItem(List<NewsItem> list) {
-        //临时存放传进来的新数据
-        List<NewsItem> list1 = new ArrayList<>();
         for (NewsItem newsItem : list) {
-            list1.add(newsItem);
+            newsList.add(newsItem);
         }
-        newsList = list1;
     }
 
     /**

@@ -1908,7 +1908,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0033;
         public static final int action_mode_bar_stub=0x7f0c0032;
         public static final int action_mode_close_button=0x7f0c0025;
-        public static final int action_settings=0x7f0c0072;
+        public static final int action_settings=0x7f0c0073;
         public static final int activity_chooser_view_content=0x7f0c0026;
         public static final int always=0x7f0c0016;
         public static final int avatar_image_view=0x7f0c004c;
@@ -1918,7 +1918,7 @@ containing a value of this type.
         public static final int checkbox=0x7f0c002e;
         public static final int collapseActionView=0x7f0c0017;
         public static final int container=0x7f0c0048;
-        public static final int context_menu=0x7f0c0073;
+        public static final int context_menu=0x7f0c0074;
         public static final int decor_content_parent=0x7f0c0034;
         public static final int default_activity_button=0x7f0c0029;
         public static final int department_textView=0x7f0c0051;
@@ -1946,22 +1946,23 @@ containing a value of this type.
         public static final int listMode=0x7f0c0009;
         public static final int list_item=0x7f0c002a;
         public static final int load_more_textView=0x7f0c0065;
+        public static final int load_to_last_textView=0x7f0c0066;
         public static final int loading_progressbar=0x7f0c0063;
         public static final int loading_textView=0x7f0c0064;
         public static final int logout_button=0x7f0c0052;
         public static final int middle=0x7f0c0015;
         public static final int never=0x7f0c0019;
         public static final int newsListView=0x7f0c005f;
-        public static final int newsList_icon=0x7f0c0066;
-        public static final int newsList_preview=0x7f0c0068;
-        public static final int newsList_time=0x7f0c0069;
-        public static final int newsList_title=0x7f0c0067;
+        public static final int newsList_icon=0x7f0c0067;
+        public static final int newsList_preview=0x7f0c0069;
+        public static final int newsList_time=0x7f0c006a;
+        public static final int newsList_title=0x7f0c0068;
         public static final int news_pager=0x7f0c004a;
         public static final int none=0x7f0c000e;
         public static final int normal=0x7f0c000a;
         public static final int oAuth_webView=0x7f0c004b;
-        public static final int progressDialog_imageView=0x7f0c006a;
-        public static final int progressDialog_textView=0x7f0c006b;
+        public static final int progressDialog_imageView=0x7f0c006b;
+        public static final int progressDialog_textView=0x7f0c006c;
         public static final int progress_circular=0x7f0c0005;
         public static final int progress_horizontal=0x7f0c0006;
         public static final int progress_layout=0x7f0c0062;
@@ -1988,9 +1989,9 @@ containing a value of this type.
         public static final int sun=0x7f0c001b;
         public static final int tabMode=0x7f0c000b;
         public static final int title=0x7f0c002c;
-        public static final int toast_imageView=0x7f0c006c;
-        public static final int toast_textView=0x7f0c006d;
-        public static final int toolbar=0x7f0c006e;
+        public static final int toast_imageView=0x7f0c006d;
+        public static final int toast_textView=0x7f0c006e;
+        public static final int toolbar=0x7f0c006f;
         public static final int top=0x7f0c0022;
         public static final int triangle=0x7f0c001f;
         public static final int type_textView=0x7f0c0050;
@@ -2004,9 +2005,9 @@ containing a value of this type.
         public static final int wrapper_buttons=0x7f0c005c;
         public static final int wrapper_text=0x7f0c005d;
         public static final int yellowPageDetails_ListView=0x7f0c0054;
-        public static final int yellowPageDetails_item_textView1=0x7f0c006f;
-        public static final int yellowPageDetails_item_textView2=0x7f0c0070;
-        public static final int yellowPage_item_textView=0x7f0c0071;
+        public static final int yellowPageDetails_item_textView1=0x7f0c0070;
+        public static final int yellowPageDetails_item_textView2=0x7f0c0071;
+        public static final int yellowPage_item_textView=0x7f0c0072;
         public static final int yellowPage_listView=0x7f0c0053;
     }
     public static final class integer {

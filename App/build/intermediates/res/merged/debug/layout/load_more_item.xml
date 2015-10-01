@@ -30,11 +30,20 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/load_more_textView"
+    android:id="@+id/load_more_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="查看更多"
+    />
+
+    <TextView
+        android:id="@+id/load_to_last_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="查看更多"
+        android:visibility="invisible"
+        android:text="已至最后"
         />
 </RelativeLayout>
 <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/layout/load_more_item.xml -->

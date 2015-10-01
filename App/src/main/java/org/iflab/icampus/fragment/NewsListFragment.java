@@ -21,7 +21,6 @@ import org.iflab.icampus.adapter.NewsListAdapter;
 import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.NewsItem;
-import org.iflab.icampus.ui.MyProgressDialog;
 import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.utils.ACache;
 import org.json.JSONArray;
@@ -48,9 +47,8 @@ public class NewsListFragment extends Fragment {
     private String newsListURL;
     private NewsListAdapter newsListAdapter;
     private List<NewsItem> newsList;
-    private TextView loadMoreTextView;
+    private TextView loadMoreTextView, loadToLastTextView;
     private LinearLayout progressLayout;//footer布局
-    private MyProgressDialog myProgressDialog;
 
 
     @Override
@@ -71,10 +69,10 @@ public class NewsListFragment extends Fragment {
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
         aCache = ACache.get(getActivity());
-        newsList = new ArrayList<>();
         newsListView = (ListView) rootView.findViewById(R.id.newsListView);
         loadMoreView = getActivity().getLayoutInflater().inflate(R.layout.load_more_item, null);
         loadMoreTextView = (TextView) loadMoreView.findViewById(R.id.load_more_textView);
+        loadToLastTextView = (TextView) loadMoreView.findViewById(R.id.load_to_last_textView);
         progressLayout = (LinearLayout) loadMoreView.findViewById(R.id.progress_layout);
         newsListView.addFooterView(loadMoreView);
         pullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
@@ -89,35 +87,37 @@ public class NewsListFragment extends Fragment {
      * @param URL 按页分的数据URL
      */
     private void getNewsListDataByURL(String URL) {
-        myProgressDialog = new MyProgressDialog(getActivity());
         AsyncHttpIc.get(URL, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                myProgressDialog.dismiss();
                 newsListData = new String(responseBody);
-                if (newsListData.equals("-1")) {
-                    new MyToast(getActivity(), "没有可刷新的咯~");
-                    progressLayout.setVisibility(View.INVISIBLE);
-                } else if (newsListData.equals("0")) {
-                    new MyToast(getActivity(), "服务器出问题了，请稍后再试吧~");
-                } else if (newsListData.equals("1")) {
-                    new MyToast(getActivity(), "解析不出数据啦！请重试！");
-                } else {
-                    String newsListData1 = null;
-                    try {
-                        JSONObject jsonObject1 = new JSONObject(newsListData);
-                        newsListData1 = jsonObject1.getString("d");
-                        aCache.put(newsListURL, newsListData1, 1000);//存入缓存,过期时间1000秒
-                    } catch (JSONException e1) {
-                        e1.printStackTrace();
-                    }
-                    handleNewsListData(newsListData1);
+                switch (newsListData) {
+                    case "-1":
+                        progressLayout.setVisibility(View.INVISIBLE);
+                        loadToLastTextView.setVisibility(View.VISIBLE);
+                        break;
+                    case "0":
+                        new MyToast(getActivity(), "服务器出问题了，请稍后再试吧~");
+                        break;
+                    case "1":
+                        new MyToast(getActivity(), "解析不出数据啦！请重试！");
+                        break;
+                    default:
+                        String newsListData1 = null;
+                        try {
+                            JSONObject jsonObject1 = new JSONObject(newsListData);
+                            newsListData1 = jsonObject1.getString("d");
+                            aCache.put(newsListURL, newsListData1, 1000);//存入缓存,过期时间1000秒
+                        } catch (JSONException e1) {
+                            e1.printStackTrace();
+                        }
+                        handleNewsListData(newsListData1);
+                        break;
                 }
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                myProgressDialog.dismiss();
                 new MyToast(getActivity(), "网络连接失败，请检查网络吧！");
             }
 
@@ -130,6 +130,8 @@ public class NewsListFragment extends Fragment {
      * @param newsListData1 分页存放的数据
      */
     private void handleNewsListData(String newsListData1) {
+        //不让新刷新的数据存到newsList的尾部，而是整个替代原来的newsList，然后在适配器里添加到原来newsList的尾部
+        newsList = new ArrayList<>();
         try {
             JSONArray jsonArray = new JSONArray(newsListData1);
             for (int i = 0; i < jsonArray.length(); i++) {
@@ -156,7 +158,7 @@ public class NewsListFragment extends Fragment {
             currentPage++;
         } else {
             newsListAdapter.addItem(newsList);
-            newsListAdapter.notifyDataSetChanged();
+            newsListAdapter.notifyDataSetChanged();//更新列表视图
             currentPage++;
         }
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
@@ -226,6 +228,7 @@ public class NewsListFragment extends Fragment {
             //当滚到最后一行且停止滚动时，执行加载
             if (isLastRow && scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) {
                 loadMoreTextView.setVisibility(View.INVISIBLE);
+                loadToLastTextView.setVisibility(View.INVISIBLE);
                 progressLayout.setVisibility(View.VISIBLE);
                 loadData();
                 isLastRow = false;
@@ -234,7 +237,7 @@ public class NewsListFragment extends Fragment {
     }
 
     /**
-     * 上拉刷新监听器
+     * 下拉刷新监听器
      */
     private class RefreshListener implements PullToRefreshView.OnRefreshListener {
         @Override
@@ -243,10 +246,13 @@ public class NewsListFragment extends Fragment {
                 @Override
                 public void run() {
                     pullToRefreshView.setRefreshing(false);
-                    newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + 1;
+                    currentPage = 1;
+                    newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
                     getNewsListDataByURL(newsListURL);
+                    new MyToast(getActivity(), "刷新完成");
                 }
             }, 1000);
+
         }
     }
 }
