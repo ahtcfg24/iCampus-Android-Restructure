@@ -2,5 +2,8 @@
 <resources>
     <color name="toolbar_color">#0099CC</color>
     <color name="transparent">#00ffffff</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="grey">#86000000</color>
 
 </resources>

@@ -39,7 +39,7 @@ public class NewsDetailActivity extends ActionBarActivity {
     private String detailURL;//新闻详情的相对路径
     private String newsURL;//新闻详情的绝对路径
     private TextView newsTitleTextView, newsTimeTextView, newsContentTextView;
-    private ConvenientBanner newsBannerView;//新闻图片Banner
+    private ConvenientBanner<String> newsBannerView;//新闻图片Banner
     private LinearLayout progressLayout;//加载进度控件
 
     @Override
@@ -70,7 +70,7 @@ public class NewsDetailActivity extends ActionBarActivity {
         newsTimeTextView = (TextView) findViewById(R.id.newsDetailTime_textView);
         newsContentTextView = (TextView) findViewById(R.id.newsContent_textView);
         progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
-        newsBannerView = (ConvenientBanner) findViewById(R.id.newsDetail_bannerView);
+        newsBannerView = (ConvenientBanner<String>) findViewById(R.id.newsDetail_bannerView);
 
     }
 
@@ -91,7 +91,7 @@ public class NewsDetailActivity extends ActionBarActivity {
                     List<NewsRes> newsResList = new ArrayList<>();
 
                     if (!newsResData.contains("a")) {
-                        newsBannerView.setVisibility(View.GONE);
+                        newsBannerView.setVisibility(View.GONE);//如果新闻没有资源数据，就隐藏图片区域
                     } else {
                         jsonNewsResData(newsResData, newsResList);//解析新闻资源
                     }
@@ -130,10 +130,29 @@ public class NewsDetailActivity extends ActionBarActivity {
                 public ImageHolderView createHolder() {
                     return new ImageHolderView();
                 }
-            }, newsImageURLList);
+            }, newsImageURLList)
+                    //设置翻页的效果，不需要翻页效果可用不设
+                    .setPageTransformer(ConvenientBanner.Transformer.DefaultTransformer);
         }
     }
 
+    /**
+     * 设置图片自动滚动
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        newsBannerView.startTurning(2000);
+    }
+
+    /**
+     * 停止滚动
+     */
+    @Override
+    protected void onPause() {
+        super.onPause();
+        newsBannerView.stopTurning();
+    }
 
     /**
      * 解析新闻详情
@@ -178,29 +197,39 @@ public class NewsDetailActivity extends ActionBarActivity {
             if (!newsResArray.contains("[")) {
                 JSONObject jsonObject0 = new JSONObject(newsResArray);
                 String newsSubResData = jsonObject0.getString("attributes");
-                JSONObject jsonObject4 = new JSONObject(newsSubResData);
-                NewsRes newsRes = new NewsRes();
-                newsRes.setResName(jsonObject4.getString("n"));
-                newsRes.setResType(jsonObject4.getString("t"));
-                newsRes.setResLink(jsonObject4.getString("url"));
-                newsResList.add(newsRes);
+                jsonNewsResArray(newsSubResData, newsResList);
             } else {
                 JSONArray jsonArray = new JSONArray(newsResArray);
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonObject3 = jsonArray.getJSONObject(i);
                     String newsSubResData = jsonObject3.getString("attributes");
-                    JSONObject jsonObject4 = new JSONObject(newsSubResData);
-                    NewsRes newsRes = new NewsRes();
-                    newsRes.setResName(jsonObject4.getString("n"));
-                    newsRes.setResType(jsonObject4.getString("t"));
-                    newsRes.setResLink(jsonObject4.getString("url"));
-                    newsResList.add(newsRes);
+                    jsonNewsResArray(newsSubResData, newsResList);
                 }
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 解析新闻资源数组
+     *
+     * @param newsSubResData
+     * @param newsResList
+     */
+    private void jsonNewsResArray(String newsSubResData, List<NewsRes> newsResList) {
+        try {
+            JSONObject jsonObject4 = new JSONObject(newsSubResData);
+            NewsRes newsRes = new NewsRes();
+            newsRes.setResName(jsonObject4.getString("n"));
+            newsRes.setResType(jsonObject4.getString("t"));
+            newsRes.setResLink(jsonObject4.getString("url"));
+            newsResList.add(newsRes);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -239,10 +268,15 @@ public class NewsDetailActivity extends ActionBarActivity {
             return imageView;
         }
 
+        /**
+         * 结合Fresco加载图片
+         *
+         * @param context
+         * @param position
+         * @param data     图片从图片链接线性表中遍历出的一条图片地址
+         */
         @Override
         public void UpdateUI(Context context, final int position, String data) {
-            System.out.println(data);
-//            imageView.setImageResource(R.drawable.logo_bistu);//设置默认图片
             DraweeController controller = Fresco.newDraweeControllerBuilder()
                     .setUri(Uri.parse(data))
                     .build();
