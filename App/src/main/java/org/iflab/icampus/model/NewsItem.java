@@ -8,18 +8,18 @@ import java.io.Serializable;
  */
 public class NewsItem implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String passageId;
-    private String title;
-    private String preview;
-    private String author;
-    private String updateTime;
-    private String icon;
-    private String detailUrl;
+    private String passageId;//不知道有什么卵用的东东
+    private String title;//新闻标题
+    private String preview;//新闻预览
+    private String author;//这个属性似乎每篇都是空的
+    private String updateTime;//新闻跟新时间
+    private String icon;//新闻的第一张图
+    private String detailURl;//新闻详情的链接
 
     @Override
     public String toString() {
         return "NewsItem{" +
-                ", detailUrl='" + detailUrl + '\'' +
+                ", detailURl='" + detailURl + '\'' +
                 ", icon='" + icon + '\'' +
                 ", updateTime='" + updateTime + '\'' +
                 ", author='" + author + '\'' +
@@ -77,12 +77,12 @@ public class NewsItem implements Serializable {
         this.icon = icon;
     }
 
-    public String getDetailUrl() {
-        return detailUrl;
+    public String getDetailURl() {
+        return detailURl;
     }
 
-    public void setDetailUrl(String detailUrl) {
-        this.detailUrl = detailUrl;
+    public void setDetailURl(String detailURl) {
+        this.detailURl = detailURl;
     }
 
 

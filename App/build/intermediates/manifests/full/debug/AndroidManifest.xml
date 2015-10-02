@@ -66,6 +66,10 @@
             android:name="org.iflab.icampus.YellowPageDetailsActivity"
             android:label="@string/title_activity_yellow_page_details" >
         </activity>
+        <activity
+            android:name="org.iflab.icampus.NewsDetailActivity"
+            android:label="@string/title_activity_news_detail" >
+        </activity>
     </application>
 
 </manifest>

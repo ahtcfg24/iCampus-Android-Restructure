@@ -2048,37 +2048,39 @@ containing a value of this type.
         public static final int activity_about_details=0x7f040019;
         public static final int activity_home=0x7f04001a;
         public static final int activity_news=0x7f04001b;
-        public static final int activity_oauth=0x7f04001c;
-        public static final int activity_personal=0x7f04001d;
-        public static final int activity_splash=0x7f04001e;
-        public static final int activity_user_center=0x7f04001f;
-        public static final int activity_yellow_page=0x7f040020;
-        public static final int activity_yellow_page_details=0x7f040021;
-        public static final int dial_dialog=0x7f040022;
-        public static final int fragment_home=0x7f040023;
-        public static final int fragment_menu=0x7f040024;
-        public static final int fragment_news_list=0x7f040025;
-        public static final int home_item=0x7f040026;
-        public static final int load_more_item=0x7f040027;
-        public static final int news_item=0x7f040028;
-        public static final int progress_dialog=0x7f040029;
-        public static final int progress_layout=0x7f04002a;
-        public static final int selector_option_fold=0x7f04002b;
-        public static final int slector_menu=0x7f04002c;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002d;
-        public static final int toast=0x7f04002e;
-        public static final int toolbar=0x7f04002f;
-        public static final int yellow_page_details_item=0x7f040030;
-        public static final int yellow_page_item=0x7f040031;
+        public static final int activity_news_detail=0x7f04001c;
+        public static final int activity_oauth=0x7f04001d;
+        public static final int activity_personal=0x7f04001e;
+        public static final int activity_splash=0x7f04001f;
+        public static final int activity_user_center=0x7f040020;
+        public static final int activity_yellow_page=0x7f040021;
+        public static final int activity_yellow_page_details=0x7f040022;
+        public static final int dial_dialog=0x7f040023;
+        public static final int fragment_home=0x7f040024;
+        public static final int fragment_menu=0x7f040025;
+        public static final int fragment_news_list=0x7f040026;
+        public static final int home_item=0x7f040027;
+        public static final int load_more_item=0x7f040028;
+        public static final int news_item=0x7f040029;
+        public static final int progress_dialog=0x7f04002a;
+        public static final int progress_layout=0x7f04002b;
+        public static final int selector_option_fold=0x7f04002c;
+        public static final int slector_menu=0x7f04002d;
+        public static final int support_simple_spinner_dropdown_item=0x7f04002e;
+        public static final int toast=0x7f04002f;
+        public static final int toolbar=0x7f040030;
+        public static final int yellow_page_details_item=0x7f040031;
+        public static final int yellow_page_item=0x7f040032;
     }
     public static final class menu {
         public static final int menu_about=0x7f0d0000;
         public static final int menu_about_details=0x7f0d0001;
         public static final int menu_home=0x7f0d0002;
         public static final int menu_news=0x7f0d0003;
-        public static final int menu_user_center=0x7f0d0004;
-        public static final int menu_yellow_page=0x7f0d0005;
-        public static final int menu_yellow_page_details=0x7f0d0006;
+        public static final int menu_news_detail=0x7f0d0004;
+        public static final int menu_user_center=0x7f0d0005;
+        public static final int menu_yellow_page=0x7f0d0006;
+        public static final int menu_yellow_page_details=0x7f0d0007;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -2108,10 +2110,11 @@ containing a value of this type.
         public static final int title_activity_about_detials=0x7f060015;
         public static final int title_activity_home=0x7f060016;
         public static final int title_activity_news=0x7f060017;
-        public static final int title_activity_oauth=0x7f060018;
-        public static final int title_activity_user_center=0x7f060019;
-        public static final int title_activity_yellow_page=0x7f06001a;
-        public static final int title_activity_yellow_page_details=0x7f06001b;
+        public static final int title_activity_news_detail=0x7f060018;
+        public static final int title_activity_oauth=0x7f060019;
+        public static final int title_activity_user_center=0x7f06001a;
+        public static final int title_activity_yellow_page=0x7f06001b;
+        public static final int title_activity_yellow_page_details=0x7f06001c;
     }
     public static final class style {
         /**  Customize your theme here. 

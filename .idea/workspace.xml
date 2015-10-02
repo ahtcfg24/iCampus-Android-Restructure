@@ -18,20 +18,32 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="System.out" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3909f95c-a74f-4035-ab80-9ddb22289844" name="Default" comment="changed dialog">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/res/layout/progress_layout.xml" />
+    <list default="true" id="3909f95c-a74f-4035-ab80-9ddb22289844" name="Default" comment="fix progress layout">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/MyFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/News.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsRes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/res/layout/activity_news_detail.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/src/main/res/menu/menu_news_detail.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/HomeActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/HomeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/HomeFragment.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/HomeFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyProgressDialog.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyProgressDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyToast.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyToast.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/NewsListAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/NewsListAdapter$ViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/model/NewsItem.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/model/NewsItem.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/NewsListAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/NewsListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$ScrollListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$ScrollListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$id.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/OAuthActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/OAuthActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/contextmenu/lib/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$layout.class" />
@@ -40,35 +52,34 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$style.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$styleable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity$yellowPageListListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity$yellowPageListListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/SplashActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/SplashActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/UserCenterActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/UserCenterActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/YellowPageAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/YellowPageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity$BranchListListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity$BranchListListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/YellowPageDialog.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/YellowPageDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/yellowPageDetailsAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/yellowPageDetailsAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/NewsListAdapter.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/NewsListAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsItem.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/yalantis/contextmenu/lib/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/yalantis/contextmenu/lib/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/activity_yellow_page.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/activity_yellow_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page.xml" afterPath="$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/activity_yellow_page_details.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/activity_yellow_page_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page_details.xml" afterPath="$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page_details.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/fragment_news_list.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/fragment_news_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml" afterPath="$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/App/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iCampus-Android-Restructure.iws" />
@@ -96,13 +107,34 @@
     <favorites_list name="iCampus-Android-Restructure" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="NewsDetailActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.1669658">
+              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="News.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/News.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -2401,11 +2433,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/src/main/res/layout/dial_dialog.xml" />
-        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsListModel.java" />
-        <option value="$PROJECT_DIR$/App/src/main/res/layout/news_tem.xml" />
-        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/DropDownListView.java" />
-        <option value="$PROJECT_DIR$/WaterDropListView/build.gradle" />
         <option value="$PROJECT_DIR$/WaterDropListView/src/main/java/medusa/theone/waterdroplistview/entity/Circle.java" />
         <option value="$PROJECT_DIR$/WaterDropListView/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java" />
         <option value="$PROJECT_DIR$/ViewPagerIndicatorlibrary/src/main/AndroidManifest.xml" />
@@ -2420,7 +2447,6 @@
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/的.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/MyGridAdapter.java" />
-        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsItem.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/StaticVariable.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/oauth/OAuthURLUtil.java" />
         <option value="$PROJECT_DIR$/captures/SystemInfo_2015.10.01_13.17.28.txt" />
@@ -2447,12 +2473,25 @@
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/NewsListAdapter.java" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/fragment_news_list.xml" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/progresslayout.xml" />
-        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page.xml" />
         <option value="$PROJECT_DIR$/App/src/main/res/layout/activity_yellow_page_details.xml" />
-        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java" />
         <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsItem.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/MyFilter.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/1.json" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/News.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsRes.java" />
+        <option value="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -2518,6 +2557,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2549,42 +2589,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2636,29 +2640,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oauth" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2702,28 +2684,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="fragment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2736,71 +2696,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icampus" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCampus-Android-Restructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="App">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2826,6 +2721,26 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="App">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2839,6 +2754,17 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="org.iflab.icampus.fragment" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.iflab.icampus" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.App">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -3153,7 +3079,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443700628564</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix progress layout">
+      <created>1443703912523</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1443703912523</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3167,24 +3099,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7064846" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48634812" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3196,6 +3127,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3227,7 +3159,8 @@
     <MESSAGE value="a issue of Bistu WiFi" />
     <MESSAGE value="fixed all toasts" />
     <MESSAGE value="changed dialog" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed dialog" />
+    <MESSAGE value="fix progress layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix progress layout" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -3239,88 +3172,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/jars/classes.jar!/com/facebook/drawee/interfaces/SimpleDraweeControllerBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54064274">
-          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.6.0/jars/classes.jar!/com/facebook/common/internal/Supplier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24574669">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/App/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.6.0/jars/classes.jar!/com/facebook/drawee/view/SimpleDraweeView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34404537">
-          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/AboutListViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3333335">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/MyGridAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13333334">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/TabPageIndicatorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.833333">
-          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/YellowPageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0666666">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/yellowPageDetailsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0666666">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/application/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6666665">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/http/AsyncHttpIc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13333334">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/http/UrlStatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0666666">
@@ -3329,19 +3180,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/HomeItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1666665">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/oauth/AuthorizationCodeHandle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1666665">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3349,9 +3191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.366667">
           <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3369,7 +3208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4666667">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3377,7 +3215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8333335">
           <caret line="47" column="35" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3385,7 +3222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4666667">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3393,7 +3229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1666665">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3427,9 +3262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8333335">
           <caret line="60" column="27" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3437,7 +3269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0666666">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3470,22 +3301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23339318">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/AndroidSDK/sdk/sources/android-21/android/app/Dialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37881508">
           <caret line="130" column="11" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
-          <folding>
-            <element signature="e#4568#4569#0" expanded="false" />
-            <element signature="e#4606#4607#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3509,7 +3328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3517,7 +3335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="661" column="17" selection-start-line="661" selection-start-column="17" selection-end-line="661" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3541,15 +3358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2593516">
           <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sdk/sources/android-21/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0074812965">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3557,22 +3365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67581046">
           <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/MyProgressDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.159601">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/NewsListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3617,7 +3409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29601517">
           <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3636,7 +3427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.740038">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3662,29 +3452,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java">
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/ui/MyProgressDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7342908">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3734291">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15978456">
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java">
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/TabPageIndicatorAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7324955">
-          <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.5332136">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/res/layout/activity_news_detail.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/yellowPageDetailsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32675046">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18671454">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/YellowPageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.518851">
-          <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.29982045">
+          <caret line="147" column="82" selection-start-line="147" selection-start-column="82" selection-end-line="147" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0053859963">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/adapter/NewsListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33241758">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/AndroidSDK/sdk/sources/android-21/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33213645">
+          <caret line="1598" column="18" selection-start-line="1598" selection-start-column="18" selection-end-line="1598" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/utils/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6804309">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5008976">
+          <caret line="174" column="85" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.24138">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42010772">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/NewsRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7001795">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/HomeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34649912">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/model/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1669658">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

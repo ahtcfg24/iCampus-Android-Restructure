@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#fff">
 
-   <include layout="@layout/progress_layout"/>
+    <include layout="@layout/progress_layout" />
 
     <com.yalantis.phoenix.PullToRefreshView
         android:id="@+id/pull_to_refresh"

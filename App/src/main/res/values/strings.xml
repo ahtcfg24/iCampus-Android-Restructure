@@ -13,4 +13,5 @@
         如果有任何建议请在新浪微博@ifLab,安卓版本功能问题可以直接联系QQ764951578</string>
     <string name="title_activity_about_detials">AboutDetialsActivity</string>
     <string name="title_activity_yellow_page_details">YellowPageDetailsActivity</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
 </resources>

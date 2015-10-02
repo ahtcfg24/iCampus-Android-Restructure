@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.yalantis.phoenix.PullToRefreshView;
 
 import org.apache.http.Header;
+import org.iflab.icampus.NewsDetailActivity;
 import org.iflab.icampus.R;
 import org.iflab.icampus.adapter.NewsListAdapter;
 import org.iflab.icampus.http.AsyncHttpIc;
@@ -25,6 +27,7 @@ import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.NewsItem;
 import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.utils.ACache;
+import org.iflab.icampus.utils.MyFilter;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,6 +46,7 @@ public class NewsListFragment extends Fragment {
     private View loadMoreView;//上拉加载更多控件
     private View rootView;//Fragment的界面
     private String newsPath;//对应Fragment的相对路径
+    private String fragmentName;//每个fragmentTab的名字
     private int currentPage;//分页加载的当前页编号
     private String newsListData;//新闻列表数据
     private String newsListData1;//不含返回码的新闻列表数据
@@ -51,6 +55,7 @@ public class NewsListFragment extends Fragment {
     private List<NewsItem> newsList;
     private TextView loadMoreTextView, loadToLastTextView;
     private LinearLayout footerProgressLayout, progressLayout;//两个progressBar
+    private Intent intent;
 
 
     @Override
@@ -68,6 +73,7 @@ public class NewsListFragment extends Fragment {
     private void init() {
         Bundle bundle = getArguments();
         newsPath = bundle.getString("newsPath");
+        fragmentName = bundle.getString("fragmentName");
         currentPage = 1;
         newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
         aCache = ACache.get(getActivity());
@@ -87,6 +93,17 @@ public class NewsListFragment extends Fragment {
         pullToRefreshView = (PullToRefreshView) rootView.findViewById(R.id.pull_to_refresh);
         pullToRefreshView.setOnRefreshListener(new RefreshListener());
         newsListView.setOnScrollListener(new ScrollListener());//下拉刷新
+        /*监听listView*/
+        newsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                intent = new Intent();
+                intent.putExtra("detailURL", newsList.get(position).getDetailURl());
+                intent.putExtra("fragmentName", fragmentName);
+                intent.setClass(getActivity(), NewsDetailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /**
@@ -154,12 +171,12 @@ public class NewsListFragment extends Fragment {
                 String attributes = jsonObject.getString("attributes");
                 JSONObject jsonObject2 = new JSONObject(attributes);
                 newsItem.setPassageId(jsonObject2.getString("id"));
-                newsItem.setTitle(jsonObject2.getString("n"));
-                newsItem.setPreview(jsonObject2.getString("ab"));
+                newsItem.setTitle(MyFilter.handleNewsTitle(jsonObject2.getString("n")));
+                newsItem.setPreview(MyFilter.replaceBr(jsonObject2.getString("ab")));
                 newsItem.setAuthor(jsonObject2.getString("au"));
                 newsItem.setUpdateTime(jsonObject2.getString("rt"));
                 newsItem.setIcon(jsonObject2.getString("ic"));
-                newsItem.setDetailUrl(filterUrl(jsonObject2.getString("url")));
+                newsItem.setDetailURl(MyFilter.handleNewsURL(jsonObject2.getString("url")));
                 newsList.add(newsItem);
             }
         } catch (JSONException e) {
@@ -184,16 +201,6 @@ public class NewsListFragment extends Fragment {
         loadMoreTextView.setVisibility(View.VISIBLE);
     }
 
-
-    /**
-     * @param url
-     * @return
-     */
-    private String filterUrl(String url) {
-        int a = url.indexOf(".cn/");
-        int b = url.indexOf(".xml");
-        return url.substring(a + 4, b);
-    }
 
     /**
      * 从网络或者缓存载入数据
