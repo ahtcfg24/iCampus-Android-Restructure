@@ -1,12 +1,23 @@
 package org.iflab.icampus;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bigkoo.convenientbanner.CBPageAdapter;
+import com.bigkoo.convenientbanner.CBViewHolderCreator;
+import com.bigkoo.convenientbanner.ConvenientBanner;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.interfaces.DraweeController;
+import com.facebook.drawee.view.SimpleDraweeView;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
@@ -14,6 +25,7 @@ import org.iflab.icampus.http.AsyncHttpIc;
 import org.iflab.icampus.http.UrlStatic;
 import org.iflab.icampus.model.News;
 import org.iflab.icampus.model.NewsRes;
+import org.iflab.icampus.ui.MyToast;
 import org.iflab.icampus.utils.MyFilter;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,6 +39,8 @@ public class NewsDetailActivity extends ActionBarActivity {
     private String detailURL;//新闻详情的相对路径
     private String newsURL;//新闻详情的绝对路径
     private TextView newsTitleTextView, newsTimeTextView, newsContentTextView;
+    private ConvenientBanner newsBannerView;//新闻图片Banner
+    private LinearLayout progressLayout;//加载进度控件
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +69,8 @@ public class NewsDetailActivity extends ActionBarActivity {
         newsTitleTextView = (TextView) findViewById(R.id.newsDetailTitle_textView);
         newsTimeTextView = (TextView) findViewById(R.id.newsDetailTime_textView);
         newsContentTextView = (TextView) findViewById(R.id.newsContent_textView);
+        progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
+        newsBannerView = (ConvenientBanner) findViewById(R.id.newsDetail_bannerView);
 
     }
 
@@ -73,7 +89,12 @@ public class NewsDetailActivity extends ActionBarActivity {
                     jsonNewsDetailData(newsDetailData, news);//解析新闻详情
                     String newsResData = jsonObject.getString("as");
                     List<NewsRes> newsResList = new ArrayList<>();
-                    jsonNewsResData(newsResData, newsResList);//解析新闻资源
+
+                    if (!newsResData.contains("a")) {
+                        newsBannerView.setVisibility(View.GONE);
+                    } else {
+                        jsonNewsResData(newsResData, newsResList);//解析新闻资源
+                    }
                     news.setNewsResList(newsResList);//把新闻资源添加到新闻对象里
                     loadData(news);
                 } catch (JSONException e) {
@@ -83,7 +104,7 @@ public class NewsDetailActivity extends ActionBarActivity {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-
+                new MyToast("网络连接失败，请重试吧！");
             }
         });
     }
@@ -94,10 +115,25 @@ public class NewsDetailActivity extends ActionBarActivity {
      * @param news 新闻对象
      */
     private void loadData(News news) {
+        progressLayout.setVisibility(View.INVISIBLE);
         newsTitleTextView.setText(news.getDoctitle());
         newsTimeTextView.setText(news.getDocreltime());
         newsContentTextView.setText(news.getDochtmlcon());
+        if (news.getNewsResList().size() > 0) {//如果资源线性表不为空就执行
+            List<String> newsImageURLList = new ArrayList<>();
+            for (NewsRes res : news.getNewsResList()) {
+                newsImageURLList.add(res.getResLink());
+            }
+            //使用Android-ConvenientBanner库设置banner
+            newsBannerView.setPages(new CBViewHolderCreator<ImageHolderView>() {
+                @Override
+                public ImageHolderView createHolder() {
+                    return new ImageHolderView();
+                }
+            }, newsImageURLList);
+        }
     }
+
 
     /**
      * 解析新闻详情
@@ -138,19 +174,28 @@ public class NewsDetailActivity extends ActionBarActivity {
 
         try {
             JSONObject jsonObject2 = new JSONObject(newsResData);
-
             String newsResArray = jsonObject2.getString("a");
-            JSONArray jsonArray = new JSONArray(newsResArray);
-
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonObject3 = jsonArray.getJSONObject(i);
-                String newsSubResData = jsonObject3.getString("attributes");
+            if (!newsResArray.contains("[")) {
+                JSONObject jsonObject0 = new JSONObject(newsResArray);
+                String newsSubResData = jsonObject0.getString("attributes");
                 JSONObject jsonObject4 = new JSONObject(newsSubResData);
                 NewsRes newsRes = new NewsRes();
                 newsRes.setResName(jsonObject4.getString("n"));
                 newsRes.setResType(jsonObject4.getString("t"));
                 newsRes.setResLink(jsonObject4.getString("url"));
                 newsResList.add(newsRes);
+            } else {
+                JSONArray jsonArray = new JSONArray(newsResArray);
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject jsonObject3 = jsonArray.getJSONObject(i);
+                    String newsSubResData = jsonObject3.getString("attributes");
+                    JSONObject jsonObject4 = new JSONObject(newsSubResData);
+                    NewsRes newsRes = new NewsRes();
+                    newsRes.setResName(jsonObject4.getString("n"));
+                    newsRes.setResType(jsonObject4.getString("t"));
+                    newsRes.setResLink(jsonObject4.getString("url"));
+                    newsResList.add(newsRes);
+                }
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -177,5 +222,32 @@ public class NewsDetailActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * 通过URL加载网络上的新闻图片
+     * 使用Android-ConvenientBanner库所需的类
+     */
+    private class ImageHolderView implements CBPageAdapter.Holder<String> {
+        private SimpleDraweeView imageView;
+
+        @Override
+        public View createView(Context context) {
+            //imageView可以通过layout文件来创建，也可以用代码创建，不一定是Image，任何控件都可以进行翻页
+            imageView = new SimpleDraweeView(context);
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+            return imageView;
+        }
+
+        @Override
+        public void UpdateUI(Context context, final int position, String data) {
+            System.out.println(data);
+//            imageView.setImageResource(R.drawable.logo_bistu);//设置默认图片
+            DraweeController controller = Fresco.newDraweeControllerBuilder()
+                    .setUri(Uri.parse(data))
+                    .build();
+            imageView.setController(controller);
+
+        }
     }
 }
