@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:2:1-69:12
+ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManife
 	android:name
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:7:5-67:19
+ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:7:5-66:19
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.yalantis:contextmenu:1.0.4] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.4\AndroidManifest.xml:11:5-12:19
@@ -104,17 +104,17 @@ ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManife
 	android:name
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:56:13-49
 activity#org.iflab.icampus.YellowPageDetailsActivity
-ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:59:9-62:20
+ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:59:9-61:83
 	android:label
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:61:13-71
 	android:name
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:60:13-54
 activity#org.iflab.icampus.NewsDetailActivity
-ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:63:9-66:20
+ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:62:9-65:20
 	android:label
-		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:65:13-63
+		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:64:13-63
 	android:name
-		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:64:13-47
+		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:63:13-47
 uses-sdk
 INJECTED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42

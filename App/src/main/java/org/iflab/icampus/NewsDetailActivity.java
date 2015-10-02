@@ -61,7 +61,6 @@ public class NewsDetailActivity extends ActionBarActivity {
                     List<NewsRes> newsResList = new ArrayList<>();
                     jsonNewsResData(newsResData, newsResList);//解析新闻资源
                     news.setNewsResList(newsResList);//把新闻资源添加到新闻对象里
-                    System.out.println("news=" + news);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -119,9 +118,7 @@ public class NewsDetailActivity extends ActionBarActivity {
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject3 = jsonArray.getJSONObject(i);
-                System.out.println("jsonArray[" + i + "]=" + jsonObject3);
                 String newsSubResData = jsonObject3.getString("attributes");
-                System.out.println("newsSubResData=" + newsSubResData);
                 JSONObject jsonObject4 = new JSONObject(newsSubResData);
                 NewsRes newsRes = new NewsRes();
                 newsRes.setResName(jsonObject4.getString("n"));

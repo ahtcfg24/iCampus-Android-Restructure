@@ -170,6 +170,7 @@ public class NewsListFragment extends Fragment {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 String attributes = jsonObject.getString("attributes");
                 JSONObject jsonObject2 = new JSONObject(attributes);
+
                 newsItem.setPassageId(jsonObject2.getString("id"));
                 newsItem.setTitle(MyFilter.handleNewsTitle(jsonObject2.getString("n")));
                 newsItem.setPreview(MyFilter.replaceBr(jsonObject2.getString("ab")));
