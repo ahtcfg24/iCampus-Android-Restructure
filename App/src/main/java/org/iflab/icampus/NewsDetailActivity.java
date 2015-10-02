@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -25,14 +26,17 @@ public class NewsDetailActivity extends ActionBarActivity {
     private Intent intent;
     private String detailURL;//新闻详情的相对路径
     private String newsURL;//新闻详情的绝对路径
+    private TextView newsTitleTextView, newsTimeTextView, newsContentTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
         init();
+        initView();
         getNewsDataByURL();
     }
+
 
     /**
      * 初始化
@@ -42,6 +46,16 @@ public class NewsDetailActivity extends ActionBarActivity {
         setTitle(intent.getStringExtra("fragmentName"));
         detailURL = intent.getStringExtra("detailURL");
         newsURL = UrlStatic.NEWSAPI + "/api.php?table=news&url=/" + detailURL;
+    }
+
+    /**
+     * 初始化控件
+     */
+    private void initView() {
+        newsTitleTextView = (TextView) findViewById(R.id.newsDetailTitle_textView);
+        newsTimeTextView = (TextView) findViewById(R.id.newsDetailTime_textView);
+        newsContentTextView = (TextView) findViewById(R.id.newsContent_textView);
+
     }
 
     /**
@@ -61,6 +75,7 @@ public class NewsDetailActivity extends ActionBarActivity {
                     List<NewsRes> newsResList = new ArrayList<>();
                     jsonNewsResData(newsResData, newsResList);//解析新闻资源
                     news.setNewsResList(newsResList);//把新闻资源添加到新闻对象里
+                    loadData(news);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -71,6 +86,17 @@ public class NewsDetailActivity extends ActionBarActivity {
 
             }
         });
+    }
+
+    /**
+     * 填充新闻数据到控件里
+     *
+     * @param news 新闻对象
+     */
+    private void loadData(News news) {
+        newsTitleTextView.setText(news.getDoctitle());
+        newsTimeTextView.setText(news.getDocreltime());
+        newsContentTextView.setText(news.getDochtmlcon());
     }
 
     /**

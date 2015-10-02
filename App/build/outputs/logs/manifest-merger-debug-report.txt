@@ -28,6 +28,8 @@ MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Andro
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.yalantis:phoenix:1.2.2] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\phoenix\1.2.2\AndroidManifest.xml:11:5-47
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:11:9-41
@@ -131,6 +133,9 @@ MERGED from [com.facebook.fresco:imagepipeline:0.6.0] D:\WorkSpaceAS\iCampus-And
 MERGED from [com.facebook.fresco:fbcore:0.6.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.yalantis:phoenix:1.2.2] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.yalantis\phoenix\1.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.bigkoo:convenientbanner:1.0.7] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.bigkoo\convenientbanner\1.0.7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:21.0.3] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\AndroidManifest.xml:15:5-42
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [iCampus-Android-Restructure:ViewPagerIndicatorlibrary:unspecified] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\iCampus-Android-Restructure\ViewPagerIndicatorlibrary\unspecified\AndroidManifest.xml:7:5-9:40
 MERGED from [com.android.support:support-v4:22.2.0] D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
