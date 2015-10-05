@@ -3,6 +3,19 @@
     package="org.iflab.icampus">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".application.MyApplication"
@@ -10,13 +23,16 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UCTT2m0Yh88ItFrSwVzKe0dG" />
+
         <activity android:name=".SplashActivity" />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -54,14 +70,19 @@
         </activity>
         <activity
             android:name=".AboutDetailsActivity"
-            android:label="@string/title_activity_about_detials">
-        </activity>
+            android:label="@string/title_activity_about_detials"></activity>
         <activity
             android:name=".YellowPageDetailsActivity"
-            android:label="@string/title_activity_yellow_page_details"></activity>
+            android:label="@string/title_activity_yellow_page_details" />
         <activity
             android:name=".NewsDetailActivity"
-            android:label="@string/title_activity_news_detail">
+            android:label="@string/title_activity_news_detail"></activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
         </activity>
     </application>
 

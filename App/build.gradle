@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
     productFlavors {
     }
 }
@@ -25,9 +30,16 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.loopj.android:android-async-http:1.4.6'
-    compile 'com.yalantis:contextmenu:1.0.4'//动画菜单
-    compile 'com.facebook.fresco:fresco:0.6.0+'//Fresco
-    compile 'com.yalantis:phoenix:1.2.2'//下拉刷新
-    compile 'com.bigkoo:convenientbanner:1.0.7'//Android-ConvenientBanner
+    //动画菜单
+    compile 'com.yalantis:contextmenu:1.0.4'
+    //Fresco
+    compile 'com.facebook.fresco:fresco:0.6.0+'
+    //下拉刷新
+    compile 'com.yalantis:phoenix:1.2.2'
+    //图片Banner
+    compile 'com.bigkoo:convenientbanner:1.0.7'
+    //Viewpager Tab
     compile project(':ViewPagerIndicatorlibrary')
+    //百度地图
+    compile files('libs/baidumapapi_v3_5_0.jar')
 }

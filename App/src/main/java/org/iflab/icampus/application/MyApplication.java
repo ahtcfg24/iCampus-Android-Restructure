@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -46,6 +47,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
+        SDKInitializer.initialize(MyApplication.getContext());//使用百度地图必须传入最高生命周期的context
         Fresco.initialize(getApplicationContext());//初始化Fresco库，程序中会多处用到
        /*请求源数据不需要接参数，故设为null*/
         AsyncHttpIc.get(JSONSOURCE, null, new AsyncHttpResponseHandler() {

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import org.iflab.icampus.MapActivity;
 import org.iflab.icampus.NewsActivity;
 import org.iflab.icampus.R;
 import org.iflab.icampus.YellowPageActivity;
@@ -39,7 +40,7 @@ public class HomeFragment extends Fragment {
         modules = new ArrayList<>();
         modules.add(new HomeItem(R.drawable.news, "新闻", NewsActivity.class));
         modules.add(new HomeItem(R.drawable.yellowpage, "黄页", YellowPageActivity.class));
-        //        modules.add(new HomeItem(R.drawable.map, "地图", MapActivity.class));
+        modules.add(new HomeItem(R.drawable.map, "地图", MapActivity.class));
         //        modules.add(new HomeItem(R.drawable.schoolbus, "校车", SchoolBusActivity.class));
         //        modules.add(new HomeItem(R.drawable.wifi, "WiFi", WiFiActivity.class));
         //        modules.add(new HomeItem(R.drawable.job, "工作", JobActivity.class));

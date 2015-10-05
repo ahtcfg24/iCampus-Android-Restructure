@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items version="2" >
 
-    <item
-        jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\exploded-aar\com.bigkoo\convenientbanner\1.0.7\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2" sha1="a83e7ee587df0c904bc6ee46f6a46eb66519609c">
+    <item jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\libs\baidumapapi_v3_5_0.jar"
+        jumboMode="false" revision="21.1.2" sha1="a24c63a76e95fb308964c73cf6bdddeb5c6361b1">
         <dex
-            dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\classes-36dc4dcdf014c7a9f55f9a2d79c783cee676b2c6.jar" />
+            dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\baidumapapi_v3_5_0-c4e24c98a0d83d5ac795f5c0e5e86028cfccc47e.jar" />
     </item>
 
 </items>
