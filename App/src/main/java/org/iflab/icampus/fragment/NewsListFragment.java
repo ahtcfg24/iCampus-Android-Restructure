@@ -51,7 +51,7 @@ public class NewsListFragment extends Fragment {
     private int currentPage;//分页加载的当前页编号
     private NewsListAdapter newsListAdapter;
     private List<NewsItem> newsList;
-    private TextView loadMoreTextView, loadToLastTextView;
+    private TextView loadToLastTextView;
     private LinearLayout footerProgressLayout, progressLayout;//两个progressBar
     private Intent intent;
 
@@ -85,7 +85,6 @@ public class NewsListFragment extends Fragment {
     private void initView() {
         newsListView = (ListView) rootView.findViewById(R.id.newsListView);
         loadMoreView = getActivity().getLayoutInflater().inflate(R.layout.load_more_item, null);
-        loadMoreTextView = (TextView) loadMoreView.findViewById(R.id.load_more_textView);
         loadToLastTextView = (TextView) loadMoreView.findViewById(R.id.load_to_last_textView);
         footerProgressLayout = (LinearLayout) loadMoreView.findViewById(R.id.footer_progress_layout);
         progressLayout = (LinearLayout) rootView.findViewById(R.id.progress_layout);
@@ -183,7 +182,6 @@ public class NewsListFragment extends Fragment {
         } catch (NullPointerException e) {
             Log.i("handleNewsListData", "空指针异常");
         }
-
         progressLayout.setVisibility(View.INVISIBLE);
         newsListAdapter.addItem(newsList);
         if (currentPage == 1) {
@@ -192,8 +190,6 @@ public class NewsListFragment extends Fragment {
             newsListAdapter.notifyDataSetChanged();//更新列表视图
         }
         currentPage++;
-        footerProgressLayout.setVisibility(View.INVISIBLE);
-        loadMoreTextView.setVisibility(View.VISIBLE);
     }
 
 
@@ -228,8 +224,6 @@ public class NewsListFragment extends Fragment {
         public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
             //判断是否滚到最后一行
             if (firstVisibleItem + visibleItemCount == totalItemCount && totalItemCount > 0) {
-                //
-                System.out.println(firstVisibleItem + visibleItemCount + "====" + totalItemCount);
                 isLastRow = true;
             }
         }
@@ -250,7 +244,6 @@ public class NewsListFragment extends Fragment {
         public void onScrollStateChanged(AbsListView view, int scrollState) {
             //当滚到最后一行且停止滚动时，执行加载
             if (isLastRow && scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) {
-                loadMoreTextView.setVisibility(View.INVISIBLE);
                 loadToLastTextView.setVisibility(View.INVISIBLE);
                 footerProgressLayout.setVisibility(View.VISIBLE);
                 loadData();

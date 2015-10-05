@@ -10,8 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:visibility="invisible">
+        android:orientation="horizontal">
 
         <ProgressBar
             android:id="@+id/loading_progressbar"
@@ -29,12 +28,6 @@
             />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/load_more_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="查看更多" />
 
     <TextView
         android:id="@+id/load_to_last_textView"

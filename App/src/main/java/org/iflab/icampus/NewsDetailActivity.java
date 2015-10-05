@@ -70,7 +70,7 @@ public class NewsDetailActivity extends ActionBarActivity {
         newsTimeTextView = (TextView) findViewById(R.id.newsDetailTime_textView);
         newsContentTextView = (TextView) findViewById(R.id.newsContent_textView);
         progressLayout = (LinearLayout) findViewById(R.id.progress_layout);
-        newsBannerView = (ConvenientBanner<String>) findViewById(R.id.newsDetail_bannerView);
+        newsBannerView = (ConvenientBanner) findViewById(R.id.newsDetail_bannerView);
 
     }
 
@@ -130,28 +130,22 @@ public class NewsDetailActivity extends ActionBarActivity {
                 public ImageHolderView createHolder() {
                     return new ImageHolderView();
                 }
-            }, newsImageURLList)
-                    //设置翻页的效果，不需要翻页效果可用不设
-                    .setPageTransformer(ConvenientBanner.Transformer.DefaultTransformer);
+            }, newsImageURLList);
+            if (news.getNewsResList().size() > 1) {//如果图片数量超过一张就执行
+                newsBannerView.startTurning(5000);
+            }
         }
     }
 
     /**
-     * 设置图片自动滚动
-     */
-    @Override
-    protected void onResume() {
-        super.onResume();
-        newsBannerView.startTurning(2000);
-    }
-
-    /**
-     * 停止滚动
+     * 停止图片自动滚动
      */
     @Override
     protected void onPause() {
         super.onPause();
-        newsBannerView.stopTurning();
+        if (newsBannerView.isTurning()) {
+            newsBannerView.stopTurning();
+        }
     }
 
     /**
