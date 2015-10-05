@@ -130,7 +130,9 @@ public class NewsDetailActivity extends ActionBarActivity {
                 public ImageHolderView createHolder() {
                     return new ImageHolderView();
                 }
-            }, newsImageURLList);
+            }, newsImageURLList)
+                    //设置两个点图片作为翻页指示器，不设置则没有指示器
+                    .setPageIndicator(new int[]{R.drawable.ic_page_indicator, R.drawable.ic_page_indicator_focused});
             if (news.getNewsResList().size() > 1) {//如果图片数量超过一张就执行
                 newsBannerView.startTurning(5000);
             }

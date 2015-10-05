@@ -12,8 +12,8 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int buildings = 0x7f020040;
-		public static final int sky = 0x7f02007a;
-		public static final int sun = 0x7f020081;
+		public static final int sky = 0x7f02007c;
+		public static final int sun = 0x7f020083;
 	}
 	public static final class id {
 		public static final int sun = 0x7f0c001b;

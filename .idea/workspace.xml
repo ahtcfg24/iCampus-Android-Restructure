@@ -26,21 +26,14 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3909f95c-a74f-4035-ab80-9ddb22289844" name="Default" comment="fixed a bug of newslist">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutDetailsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/AboutDetailsActivity.class" />
+    <list default="true" id="3909f95c-a74f-4035-ab80-9ddb22289844" name="Default" comment="add a">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/apk/App-debug.apk" afterPath="$PROJECT_DIR$/App/build/outputs/apk/App-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/HomeActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyProgressDialog.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyProgressDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyToast.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/ui/MyToast.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/NewsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/NewsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/NewsListAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/NewsListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener$1.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$RefreshListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$ScrollListener.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment$ScrollListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/NewsListFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/HomeFragment.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/fragment/HomeFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$drawable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/viewpagerindicator/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/phoenix/R$drawable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/com/yalantis/phoenix/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$drawable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$id.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$integer.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$layout.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$layout.class" />
@@ -49,23 +42,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$style.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$styleable.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/UserCenterActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/UserCenterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/YellowPageAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/YellowPageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/YellowPageDetailsActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/App/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/yellowPageDetailsAdapter.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/adapter/yellowPageDetailsAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/fragment/NewsListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/viewpagerindicator/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/viewpagerindicator/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/yalantis/phoenix/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/com/yalantis/phoenix/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/load_more_item.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/layout/load_more_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/res/layout/load_more_item.xml" afterPath="$PROJECT_DIR$/App/src/main/res/layout/load_more_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iCampus-Android-Restructure.iws" />
@@ -97,8 +86,8 @@
       <file leaf-file-name="NewsDetailActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43985638">
-              <caret line="140" column="15" selection-start-line="140" selection-start-column="15" selection-end-line="140" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.5202952">
+              <caret line="134" column="37" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="37" />
               <folding>
                 <element signature="e#4615#4823#0" expanded="true" />
                 <element signature="e#4822#4823#0" expanded="true" />
@@ -3105,7 +3094,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444020963739</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fixed a bug of picture">
+      <created>1444025038534</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1444025038534</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3133,7 +3128,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4880546" sideWeight="0.49394855" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4880546" sideWeight="0.49394855" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -3185,7 +3180,8 @@
     <MESSAGE value="solve the pic of news" />
     <MESSAGE value="news completed" />
     <MESSAGE value="fixed a bug of newslist" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug of newslist" />
+    <MESSAGE value="fixed a bug of picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug of picture" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -3618,8 +3614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/NewsDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43985638">
-          <caret line="140" column="15" selection-start-line="140" selection-start-column="15" selection-end-line="140" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.5202952">
+          <caret line="134" column="37" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="37" />
           <folding>
             <element signature="e#4615#4823#0" expanded="true" />
             <element signature="e#4822#4823#0" expanded="true" />
