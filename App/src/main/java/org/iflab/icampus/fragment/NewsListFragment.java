@@ -1,6 +1,5 @@
 package org.iflab.icampus.fragment;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -35,7 +34,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * 新闻列表
  */
@@ -47,10 +45,10 @@ public class NewsListFragment extends Fragment {
     private View rootView;//Fragment的界面
     private String newsPath;//对应Fragment的相对路径
     private String fragmentName;//每个fragmentTab的名字
-    private int currentPage;//分页加载的当前页编号
     private String newsListData;//新闻列表数据
     private String newsListData1;//不含返回码的新闻列表数据
-    private String newsListURL;
+    private String newsListURL;//缺少当前页编号参数的新闻列表URL
+    private int currentPage;//分页加载的当前页编号
     private NewsListAdapter newsListAdapter;
     private List<NewsItem> newsList;
     private TextView loadMoreTextView, loadToLastTextView;
@@ -74,9 +72,11 @@ public class NewsListFragment extends Fragment {
         Bundle bundle = getArguments();
         newsPath = bundle.getString("newsPath");
         fragmentName = bundle.getString("fragmentName");
+        newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=";
         currentPage = 1;
-        newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
         aCache = ACache.get(getActivity());
+        newsList = new ArrayList<>();
+        newsListAdapter = new NewsListAdapter(NewsListFragment.this.getActivity());
     }
 
     /**
@@ -136,7 +136,7 @@ public class NewsListFragment extends Fragment {
                             try {
                                 JSONObject jsonObject1 = new JSONObject(newsListData);
                                 newsListData1 = jsonObject1.getString("d");
-                                aCache.put(newsListURL, newsListData1, 1000);//存入缓存,过期时间1000秒
+                                aCache.put(newsListURL + currentPage, newsListData1, 1000);//存入缓存,过期时间1000秒
                             } catch (JSONException e1) {
                                 e1.printStackTrace();
                             }
@@ -161,8 +161,6 @@ public class NewsListFragment extends Fragment {
      * @param newsListData1 分页存放的数据
      */
     private void handleNewsListData(String newsListData1) {
-        //不让新刷新的数据存到newsList的尾部，而是整个替代原来的newsList，然后在适配器里添加到原来newsList的尾部
-        newsList = new ArrayList<>();
         try {
             JSONArray jsonArray = new JSONArray(newsListData1);
             for (int i = 0; i < jsonArray.length(); i++) {
@@ -187,17 +185,13 @@ public class NewsListFragment extends Fragment {
         }
 
         progressLayout.setVisibility(View.INVISIBLE);
-
+        newsListAdapter.addItem(newsList);
         if (currentPage == 1) {
-            newsListAdapter = new NewsListAdapter(newsList, NewsListFragment.this.getActivity());
             newsListView.setAdapter(newsListAdapter);
-            currentPage++;
         } else {
-            newsListAdapter.addItem(newsList);
             newsListAdapter.notifyDataSetChanged();//更新列表视图
-            currentPage++;
         }
-        newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
+        currentPage++;
         footerProgressLayout.setVisibility(View.INVISIBLE);
         loadMoreTextView.setVisibility(View.VISIBLE);
     }
@@ -207,9 +201,9 @@ public class NewsListFragment extends Fragment {
      * 从网络或者缓存载入数据
      */
     private void loadData() {
-        newsListData1 = aCache.getAsString(newsListURL);
+        newsListData1 = aCache.getAsString(newsListURL + currentPage);
         if (newsListData1 == null) {
-            getNewsListDataByURL(newsListURL);
+            getNewsListDataByURL(newsListURL + currentPage);
         } else {
             handleNewsListData(newsListData1);
         }
@@ -234,6 +228,8 @@ public class NewsListFragment extends Fragment {
         public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
             //判断是否滚到最后一行
             if (firstVisibleItem + visibleItemCount == totalItemCount && totalItemCount > 0) {
+                //
+                System.out.println(firstVisibleItem + visibleItemCount + "====" + totalItemCount);
                 isLastRow = true;
             }
         }
@@ -274,8 +270,8 @@ public class NewsListFragment extends Fragment {
                 public void run() {
                     pullToRefreshView.setRefreshing(false);
                     currentPage = 1;
-                    newsListURL = UrlStatic.NEWSAPI + "/api.php?table=newslist&url=" + newsPath + "&index=" + currentPage;
-                    getNewsListDataByURL(newsListURL);
+                    newsList.clear();//清空旧的新闻列表
+                    getNewsListDataByURL(newsListURL + currentPage);
                     new MyToast("刷新完成");
                 }
             }, 1000);

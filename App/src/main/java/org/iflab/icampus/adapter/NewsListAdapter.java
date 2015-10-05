@@ -24,11 +24,10 @@ public class NewsListAdapter extends BaseAdapter {
     private Context context;
     private ViewHolder viewHolder;
 
-    public NewsListAdapter(List<NewsItem> newsList, Context context) {
-        this.newsList = newsList;
+
+    public NewsListAdapter(Context context) {
         this.context = context;
     }
-
 
     @Override
     public int getCount() {
@@ -74,14 +73,12 @@ public class NewsListAdapter extends BaseAdapter {
     }
 
     /**
-     * 添加新加载的item到原新闻列表的尾部
+     * 把更新后的新闻列表同步到listView里
      *
-     * @param list 新加载出来的item的列表
+     * @param list 更新后的新闻列表
      */
     public void addItem(List<NewsItem> list) {
-        for (NewsItem newsItem : list) {
-            newsList.add(newsItem);
-        }
+        newsList = list;
     }
 
     /**
