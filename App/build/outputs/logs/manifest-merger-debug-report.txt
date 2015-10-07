@@ -154,7 +154,7 @@ ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManife
 	android:name
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:65:13-42
 activity#org.iflab.icampus.AboutDetailsActivity
-ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:71:9-73:77
+ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:71:9-73:68
 	android:label
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:73:13-65
 	android:name
@@ -166,7 +166,7 @@ ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManife
 	android:name
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:75:13-54
 activity#org.iflab.icampus.NewsDetailActivity
-ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:77:9-79:75
+ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:77:9-79:66
 	android:label
 		ADDED from D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\AndroidManifest.xml:79:13-63
 	android:name

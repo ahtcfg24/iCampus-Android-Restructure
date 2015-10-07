@@ -77,7 +77,7 @@
         </activity>
         <activity
             android:name="org.iflab.icampus.AboutDetailsActivity"
-            android:label="@string/title_activity_about_detials" />
+            android:label="@string/title_activity_about_details" />
         <activity
             android:name="org.iflab.icampus.YellowPageDetailsActivity"
             android:label="@string/title_activity_yellow_page_details" />

@@ -2126,7 +2126,7 @@ containing a value of this type.
         public static final int app_name=0x7f060012;
         public static final int hello_world=0x7f060013;
         public static final int title_activity_about=0x7f060014;
-        public static final int title_activity_about_details =0x7f060015;
+        public static final int title_activity_about_details=0x7f060015;
         public static final int title_activity_home=0x7f060016;
         public static final int title_activity_map=0x7f060017;
         public static final int title_activity_news=0x7f060018;

@@ -301,7 +301,7 @@
     <string name="app_name">iCampus</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_about">关于我们</string>
-    <string name="title_activity_about_detials">关于详情</string>
+    <string name="title_activity_about_details">关于详情</string>
     <string name="title_activity_home">主页</string>
     <string name="title_activity_map">地图</string>
     <string name="title_activity_news">新闻</string>

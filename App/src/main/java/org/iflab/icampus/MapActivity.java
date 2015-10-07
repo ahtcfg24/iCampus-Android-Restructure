@@ -23,6 +23,7 @@ import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
+import com.baidu.mapapi.map.MyLocationConfiguration;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
@@ -238,6 +239,8 @@ public class MapActivity extends ActionBarActivity {
                     .longitude(longitude)
                     .build();// 构造定位数据
             baiduMap.setMyLocationData(locData);// 设置定位数据
+            baiduMap.setMyLocationConfigeration(new MyLocationConfiguration(
+                    MyLocationConfiguration.LocationMode.FOLLOWING, true, null));//设置定位模式为跟随
             LatLng myLocation = new LatLng(latitude, longitude);//当前位置坐标
             MapStatusUpdate currentStatus = MapStatusUpdateFactory.newLatLng(myLocation);//地图中心点移到当前坐标
             baiduMap.animateMapStatus(currentStatus);//执行更新
