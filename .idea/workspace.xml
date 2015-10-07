@@ -23,27 +23,10 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="===" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3909f95c-a74f-4035-ab80-9ddb22289844" name="Default" comment="completed map">
-      <change type="DELETED" beforePath="D:\WorkSpaceAS\iCampus-Android-Restructure\App\src\main\res\drawable\location_marker.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" afterPath="$PROJECT_DIR$/App/build/intermediates/classes/debug/org/iflab/icampus/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/App/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/MapActivity.java" afterPath="$PROJECT_DIR$/App/src/main/java/org/iflab/icampus/MapActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" afterPath="$PROJECT_DIR$/App/build/generated/source/r/debug/org/iflab/icampus/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/App/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/App/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/App/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iCampus-Android-Restructure.iws" />
@@ -3161,7 +3144,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444207895907</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="completed map">
+      <created>1444208214491</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1444208214491</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3175,7 +3164,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
