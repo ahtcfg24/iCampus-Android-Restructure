@@ -1985,6 +1985,7 @@ containing a value of this type.
         public static final int radio=0x7f0c0030;
         public static final int realName_textView=0x7f0c0052;
         public static final int root=0x7f0c0060;
+        public static final int satellite_View=0x7f0c007c;
         public static final int search_badge=0x7f0c003a;
         public static final int search_bar=0x7f0c0039;
         public static final int search_button=0x7f0c003b;
@@ -2000,7 +2001,6 @@ containing a value of this type.
         public static final int showHome=0x7f0c0010;
         public static final int showTitle=0x7f0c0011;
         public static final int split_action_bar=0x7f0c0007;
-        public static final int satellite_View =0x7f0c007c;
         public static final int submit_area=0x7f0c0041;
         public static final int sun=0x7f0c001b;
         public static final int tabMode=0x7f0c000b;
@@ -2126,7 +2126,7 @@ containing a value of this type.
         public static final int app_name=0x7f060012;
         public static final int hello_world=0x7f060013;
         public static final int title_activity_about=0x7f060014;
-        public static final int title_activity_about_detials=0x7f060015;
+        public static final int title_activity_about_details =0x7f060015;
         public static final int title_activity_home=0x7f060016;
         public static final int title_activity_map=0x7f060017;
         public static final int title_activity_news=0x7f060018;

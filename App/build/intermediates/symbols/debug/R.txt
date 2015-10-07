@@ -634,6 +634,7 @@ int id pull_to_refresh 0x7f0c0063
 int id radio 0x7f0c0030
 int id realName_textView 0x7f0c0052
 int id root 0x7f0c0060
+int id satellite_View 0x7f0c007c
 int id search_badge 0x7f0c003a
 int id search_bar 0x7f0c0039
 int id search_button 0x7f0c003b
@@ -649,7 +650,6 @@ int id showCustom 0x7f0c000f
 int id showHome 0x7f0c0010
 int id showTitle 0x7f0c0011
 int id split_action_bar 0x7f0c0007
-int id staellite_View 0x7f0c007c
 int id submit_area 0x7f0c0041
 int id sun 0x7f0c001b
 int id tabMode 0x7f0c000b

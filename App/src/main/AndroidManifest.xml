@@ -70,13 +70,13 @@
         </activity>
         <activity
             android:name=".AboutDetailsActivity"
-            android:label="@string/title_activity_about_detials"></activity>
+            android:label="@string/title_activity_about_details" />
         <activity
             android:name=".YellowPageDetailsActivity"
             android:label="@string/title_activity_yellow_page_details" />
         <activity
             android:name=".NewsDetailActivity"
-            android:label="@string/title_activity_news_detail"></activity>
+            android:label="@string/title_activity_news_detail" />
         <activity
             android:name=".MapActivity"
             android:label="@string/title_activity_map">

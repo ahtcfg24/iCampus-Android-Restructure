@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items version="2" >
 
-    <item jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\libs\baidumapapi_v3_5_0.jar"
-        jumboMode="false" revision="21.1.2" sha1="a24c63a76e95fb308964c73cf6bdddeb5c6361b1">
+    <item jar="D:\WorkSpaceAS\iCampus-Android-Restructure\App\libs\BaiduLBS_Android.jar"
+        jumboMode="false" revision="21.1.2" sha1="976fc082b624de8148afcf42172c24d2f22b1eb0">
         <dex
-            dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\baidumapapi_v3_5_0-c4e24c98a0d83d5ac795f5c0e5e86028cfccc47e.jar" />
+            dex="D:\WorkSpaceAS\iCampus-Android-Restructure\App\build\intermediates\pre-dexed\debug\BaiduLBS_Android-8d5bb1fe378fa82732ac2f28340c922ccd5d8cb4.jar" />
     </item>
 
 </items>
