@@ -159,7 +159,7 @@ Event: 0.481 Thread 0x0000000000f5e000 Uncommon trap: reason=unstable_if action=
 Event: 0.497 Thread 0x0000000000f5e000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000000000f2e7cd4 method=com.android.dx.ssa.NormalSsaInsn.accept(Lcom/android/dx/ssa/SsaInsn$Visitor;)V @ 9
 
 Internal exceptions (2 events):
-Event: 0.033 Thread 0x0000000000f5e000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab13080) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u60\4407\hotspot\srt—`n¥¡?
+Event: 0.033 Thread 0x0000000000f5e000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab13080) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u60\4407\hotspot\srtï¿½`nï¿½ï¿½?
 Event: 0.033 Thread 0x0000000000f5e000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000eab13368) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u60\4407\hotspot\src\share\vm\prims\j
 
 Events (10 events):
@@ -243,6 +243,6 @@ Memory: 4k page, physical 8271252k(3440436k free), swap 9478904k(3217388k free)
 
 vm_info: Java HotSpot(TM) 64-Bit Server VM (25.60-b23) for windows-amd64 JRE (1.8.0_60-b27), built on Aug  4 2015 11:06:27 by "java_re" with MS VC++ 10.0 (VS2010)
 
-time: Wed Sep 30 23:30:55 2015
-elapsed time: 0 seconds (0d 0h 0m 0s)
+times: Wed Sep 30 23:30:55 2015
+elapsed times: 0 seconds (0d 0h 0m 0s)
 

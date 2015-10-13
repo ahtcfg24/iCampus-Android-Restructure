@@ -33,6 +33,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -55,6 +56,27 @@
                 android:value=".HomeActivity" />
         </activity>
         <activity
+            android:name=".YellowPageDetailsActivity"
+            android:label="@string/title_activity_yellow_page_details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".YellowPageActivity" />
+        </activity>
+        <activity
+            android:name=".SchoolBusActivity"
+            android:label="@string/title_activity_school_bus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name=".SchoolBusDetailActivity"
+            android:label="@string/title_activity_school_bus_detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SchoolBusActivity" />
+        </activity>
+        <activity
             android:name=".UserCenterActivity"
             android:label="@string/title_activity_user_center">
             <meta-data
@@ -72,9 +94,6 @@
             android:name=".AboutDetailsActivity"
             android:label="@string/title_activity_about_details" />
         <activity
-            android:name=".YellowPageDetailsActivity"
-            android:label="@string/title_activity_yellow_page_details" />
-        <activity
             android:name=".NewsDetailActivity"
             android:label="@string/title_activity_news_detail" />
         <activity
@@ -84,6 +103,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomeActivity" />
         </activity>
+
     </application>
 
 </manifest>

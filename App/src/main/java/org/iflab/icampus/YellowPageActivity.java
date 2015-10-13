@@ -70,7 +70,6 @@ public class YellowPageActivity extends ActionBarActivity {
      * 从网络获取黄页数据
      */
     public void getYellowPageDataByUrl(String yellowPageURl) {
-
         AsyncHttpIc.get(yellowPageURl, null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {

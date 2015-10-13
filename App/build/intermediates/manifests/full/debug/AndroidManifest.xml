@@ -62,6 +62,27 @@
                 android:value=".HomeActivity" />
         </activity>
         <activity
+            android:name="org.iflab.icampus.YellowPageDetailsActivity"
+            android:label="@string/title_activity_yellow_page_details" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".YellowPageActivity" />
+        </activity>
+        <activity
+            android:name="org.iflab.icampus.SchoolBusActivity"
+            android:label="@string/title_activity_school_bus" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="org.iflab.icampus.SchoolBusDetailActivity"
+            android:label="@string/title_activity_school_bus_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SchoolBusActivity" />
+        </activity>
+        <activity
             android:name="org.iflab.icampus.UserCenterActivity"
             android:label="@string/title_activity_user_center" >
             <meta-data
@@ -78,9 +99,6 @@
         <activity
             android:name="org.iflab.icampus.AboutDetailsActivity"
             android:label="@string/title_activity_about_details" />
-        <activity
-            android:name="org.iflab.icampus.YellowPageDetailsActivity"
-            android:label="@string/title_activity_yellow_page_details" />
         <activity
             android:name="org.iflab.icampus.NewsDetailActivity"
             android:label="@string/title_activity_news_detail" />

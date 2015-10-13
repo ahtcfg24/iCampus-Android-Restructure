@@ -12,6 +12,7 @@ import android.widget.GridView;
 import org.iflab.icampus.MapActivity;
 import org.iflab.icampus.NewsActivity;
 import org.iflab.icampus.R;
+import org.iflab.icampus.SchoolBusActivity;
 import org.iflab.icampus.YellowPageActivity;
 import org.iflab.icampus.adapter.MyGridAdapter;
 import org.iflab.icampus.model.HomeItem;
@@ -41,7 +42,7 @@ public class HomeFragment extends Fragment {
         modules.add(new HomeItem(R.drawable.news, "新闻", NewsActivity.class));
         modules.add(new HomeItem(R.drawable.yellowpage, "黄页", YellowPageActivity.class));
         modules.add(new HomeItem(R.drawable.map, "地图", MapActivity.class));
-        //        modules.add(new HomeItem(R.drawable.schoolbus, "校车", SchoolBusActivity.class));
+        modules.add(new HomeItem(R.drawable.schoolbus, "校车", SchoolBusActivity.class));
         //        modules.add(new HomeItem(R.drawable.wifi, "WiFi", WiFiActivity.class));
         //        modules.add(new HomeItem(R.drawable.job, "工作", JobActivity.class));
         //        modules.add(new HomeItem(R.drawable.group, "群组", GroupActivity.class));
