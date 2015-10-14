@@ -210,7 +210,7 @@ public class MapActivity extends ActionBarActivity {
             textView.setTextColor(getResources().getColor(R.color.black));
             textView.setGravity(Gravity.CENTER);
             MapStatus mMapStatus = new MapStatus.Builder().target(marker.getPosition())
-                    .zoom(12).build();//构造地图即将改变成的状态
+                    .zoom(16).build();//构造地图即将改变成的状态
             //定义MapStatusUpdate对象，以便描述地图状态将要发生的变化
             MapStatusUpdate mMapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mMapStatus);
             baiduMap.animateMapStatus(mMapStatusUpdate);//以动画方式更新地图状态

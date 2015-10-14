@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="selectedColor"/>
     <attr format="dimension" name="strokeWidth"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="unselectedColor"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -26,14 +26,14 @@
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
     <bool name="default_line_indicator_centered">true</bool>
     <bool name="default_title_indicator_selected_bold">true</bool>
     <bool name="default_underline_indicator_fades">true</bool>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -45,10 +45,10 @@
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black">#000</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -58,7 +58,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
     <color name="default_circle_indicator_page_color">#00000000</color>
@@ -69,19 +69,19 @@
     <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <color name="divider_color">#b5b5b5</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="grey">#86000000</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -94,11 +94,11 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <color name="menu_fragment_background">#B3000000</color>
     <color name="menu_item_background">#f2f2f2</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -116,11 +116,11 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="toolbar_color">#0099CC</color>
     <color name="transparent">#00ffffff</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
@@ -130,7 +130,7 @@
     <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
     <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
     <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="white">#fff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -163,7 +163,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -202,11 +202,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
@@ -221,7 +221,7 @@
     <dimen name="default_title_indicator_text_size">15dp</dimen>
     <dimen name="default_title_indicator_title_padding">5dp</dimen>
     <dimen name="default_title_indicator_top_padding">7dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -229,34 +229,34 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <dimen name="divider_height">1dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="main_screen_side_padding">10dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <dimen name="menu_item_padding">2dp</dimen>
     <dimen name="menu_text_size">15sp</dimen>
     <dimen name="text_right_padding">28dp</dimen>
     <dimen name="text_right_translation">8dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="text_top_padding">25dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <dimen name="text_wrapper_right_margin">-8dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="title_text_size">26sp</dimen>
     <dimen name="tool_bar_height">57dp</dimen>
     <dimen name="tool_bar_text_size">22sp</dimen>
     <dimen name="user_margin_left">10dp</dimen>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
     <eat-comment/>
     <drawable name="actionbar_background">#0099cc</drawable>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -268,14 +268,14 @@
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -293,7 +293,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="aboutString">iBistu是北京信息科技大学官方移动应用,由本校信息网络中心ifLab（网络实践创新联盟）开发及维护。
         如果有任何建议请在新浪微博@ifLab,安卓版本功能问题可以直接联系QQ764951578</string>
@@ -312,13 +312,13 @@
     <string name="title_activity_user_center">用户中心</string>
     <string name="title_activity_yellow_page">黄页</string>
     <string name="title_activity_yellow_page_details">黄页详情</string>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@android:color/white</item>
         <!-- Customize your theme here. -->
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>
@@ -1072,7 +1072,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
@@ -1093,7 +1093,7 @@
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <style name="MenuFragmentStyle" parent="AppTheme">
         <item name="android:background">@android:color/transparent</item>
@@ -1103,7 +1103,7 @@
         <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MenuTextStyle" parent="TextView.DefaultStyle">
         <item name="android:textStyle">bold</item>
@@ -1114,7 +1114,7 @@
         <!-- 支持库兼容 -->
         <item name="background">@drawable/actionbar_background</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1323,25 +1323,25 @@
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"/>
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"/>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#404040</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"/>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"/>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Title" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.yalantis/contextmenu/1.0.4/res/values/values.xml -->
     <eat-comment/>
     <style name="TextView"/>
     <style name="TextView.DefaultStyle">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">@dimen/menu_text_size</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.AppCompat" parent="Base.Theme.AppCompat"/>
     <style name="Theme.AppCompat.CompactMenu" parent="Base.Theme.AppCompat.CompactMenu"/>
@@ -1359,23 +1359,23 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Theme.PageIndicatorDefaults" parent="CustomActionBarTheme">
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget">
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar"/>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid"/>
@@ -1430,7 +1430,7 @@
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Base.Widget.AppCompat.Spinner.DropDown.ActionBar"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/build/intermediates/exploded-aar/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.IconPageIndicator" parent="Widget">
         <item name="android:layout_marginLeft">6dp</item>
@@ -1447,7 +1447,7 @@
         <item name="android:textSize">14sp</item>
         <item name="android:maxLines">1</item>
     </style>
-    <!-- From: file:/G:/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/App/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="YellowPageDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>

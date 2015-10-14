@@ -34,7 +34,7 @@ public class SchoolBusDetailActivity extends ActionBarActivity {
     private TextView busName1;
     private TextView busName2;
     private TextView busName3;
-    private String titile;
+    private String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +72,7 @@ public class SchoolBusDetailActivity extends ActionBarActivity {
         stations.remove(0);
 
         //设置标题
-        getSupportActionBar().setTitle(titile);
+        getSupportActionBar().setTitle(title);
 
         //设置listview适配
         show();
@@ -86,9 +86,9 @@ public class SchoolBusDetailActivity extends ActionBarActivity {
            */
         Intent intent = getIntent();
         bundle = intent.getExtras();
-        titile = bundle.getString("busType");
+        title = bundle.getString("busType");
         busName = bundle.getString("busName");
-        busLine = (ArrayList<Map<String, String>>)bundle.getSerializable("busLine");
+        busLine = (ArrayList<Map<String, String>>) bundle.getSerializable("busLine");
 
         LayoutInflater inflater = LayoutInflater.from(this);
         header = inflater.inflate(R.layout.activity_school_bus_detail_header, null);

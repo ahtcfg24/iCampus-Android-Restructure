@@ -10,18 +10,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:paddingTop="5dp"
         android:paddingBottom="4dp"
-        android:src="@drawable/schoolbus" />
+        android:paddingTop="5dp"
+        android:src="@drawable/bus" />
 
     <TextView
         android:id="@+id/busNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="5dp"
         android:layout_toRightOf="@+id/busLogoImageView"
-        android:textSize="16sp"
-        android:text="TextView" />
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/busIntroTextView"
@@ -29,9 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/busLogoImageView"
         android:layout_alignLeft="@+id/busNameTextView"
-        android:textColor="#CCCCCC"
         android:paddingBottom="4dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#CCCCCC" />
 
     <TextView
         android:id="@+id/goTimeTextView"
@@ -39,15 +39,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:paddingTop="7dp"
-        android:textColor="#FF0033"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#FF0033" />
 
     <ImageView
         android:id="@+id/goTimeImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="9dp"
         android:layout_toLeftOf="@+id/goTimeTextView"
+        android:paddingTop="9dp"
         android:src="@drawable/depart" />
 
     <ImageView
@@ -65,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/returnTimeImageView"
         android:layout_toRightOf="@+id/goTimeImageView"
-        android:textColor="#FF6600"
         android:paddingBottom="4dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#FF6600" />
 
 </RelativeLayout>

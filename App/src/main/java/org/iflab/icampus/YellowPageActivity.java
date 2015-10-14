@@ -51,7 +51,6 @@ public class YellowPageActivity extends ActionBarActivity {
             getYellowPageDataByUrl(YellowPageURl);
         } else {
             jsonYellowPageData(yellowPageData);
-
         }
         yellowPageListView.setOnItemClickListener(new yellowPageListListener());
     }
