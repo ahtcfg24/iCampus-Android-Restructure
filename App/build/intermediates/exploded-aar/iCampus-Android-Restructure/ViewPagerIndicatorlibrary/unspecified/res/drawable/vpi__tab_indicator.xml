@@ -16,19 +16,20 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Non focused states -->
-    <item android:drawable="@drawable/vpi__tab_unselected_holo" android:state_focused="false" android:state_pressed="false" android:state_selected="false" />
-    <item android:drawable="@drawable/vpi__tab_selected_holo" android:state_focused="false" android:state_pressed="false" android:state_selected="true" />
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="false" android:drawable="@drawable/vpi__tab_unselected_holo" />
+    <item android:state_focused="false" android:state_selected="true"  android:state_pressed="false" android:drawable="@drawable/vpi__tab_selected_holo" />
 
     <!-- Focused states -->
-    <item android:drawable="@drawable/vpi__tab_unselected_focused_holo" android:state_focused="true" android:state_pressed="false" android:state_selected="false" />
-    <item android:drawable="@drawable/vpi__tab_selected_focused_holo" android:state_focused="true" android:state_pressed="false" android:state_selected="true" />
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="false" android:drawable="@drawable/vpi__tab_unselected_focused_holo" />
+    <item android:state_focused="true" android:state_selected="true"  android:state_pressed="false" android:drawable="@drawable/vpi__tab_selected_focused_holo" />
 
     <!-- Pressed -->
     <!--    Non focused states -->
-    <item android:drawable="@drawable/vpi__tab_unselected_pressed_holo" android:state_focused="false" android:state_pressed="true" android:state_selected="false" />
-    <item android:drawable="@drawable/vpi__tab_selected_pressed_holo" android:state_focused="false" android:state_pressed="true" android:state_selected="true" />
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/vpi__tab_unselected_pressed_holo" />
+    <item android:state_focused="false" android:state_selected="true"  android:state_pressed="true" android:drawable="@drawable/vpi__tab_selected_pressed_holo" />
 
     <!--    Focused states -->
-    <item android:drawable="@drawable/vpi__tab_unselected_pressed_holo" android:state_focused="true" android:state_pressed="true" android:state_selected="false" />
-    <item android:drawable="@drawable/vpi__tab_selected_pressed_holo" android:state_focused="true" android:state_pressed="true" android:state_selected="true" />
-</selector><!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/drawable/vpi__tab_indicator.xml -->
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/vpi__tab_unselected_pressed_holo" />
+    <item android:state_focused="true" android:state_selected="true"  android:state_pressed="true" android:drawable="@drawable/vpi__tab_selected_pressed_holo" />
+</selector>
+<!-- From: file:/D:/WorkSpaceAS/iCampus-Android-Restructure/ViewPagerIndicatorlibrary/src/main/res/drawable/vpi__tab_indicator.xml -->
