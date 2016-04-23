@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.iflab.icampus"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7749757b96c6a7bbaf9289df891526b9"/>
+
+
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <activity android:name=".SplashActivity"/>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OAuthActivity"
+            android:label="@string/title_activity_oauth"/>
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@style/Theme.PageIndicatorDefaults">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity
+            android:name=".YellowPageActivity"
+            android:label="@string/title_activity_yellow_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity
+            android:name=".YellowPageDetailsActivity"
+            android:label="@string/title_activity_yellow_page_details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".YellowPageActivity"/>
+        </activity>
+        <activity
+            android:name=".SchoolBusActivity"
+            android:label="@string/title_activity_school_bus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity
+            android:name=".SchoolBusDetailActivity"
+            android:label="@string/title_activity_school_bus_detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SchoolBusActivity"/>
+        </activity>
+        <activity
+            android:name=".UserCenterActivity"
+            android:label="@string/title_activity_user_center">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+        <activity
+            android:name=".AboutDetailsActivity"
+            android:label="@string/title_activity_about_details"/>
+        <activity
+            android:name=".NewsDetailActivity"
+            android:label="@string/title_activity_news_detail"/>
+        <activity
+            android:name=".AMapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"/>
+        </activity>
+    </application>
+
+</manifest>

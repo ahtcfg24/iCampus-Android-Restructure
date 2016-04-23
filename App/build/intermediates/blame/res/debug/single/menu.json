@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_bus.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_bus.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_home.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_home.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_news.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_news.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_about_details.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_about_details.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_about.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_about.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_school_bus_detail.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_school_bus_detail.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_amap.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_amap.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_yellow_page_details.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_yellow_page_details.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_news_detail.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_news_detail.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_user_center.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_user_center.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\menu\\menu_yellow_page.xml",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\menu\\menu_yellow_page.xml"
+    }
+]

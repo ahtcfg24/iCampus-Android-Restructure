@@ -1,0 +1,386 @@
+[
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\left.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\left.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\wifi.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\wifi.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\demo.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\demo.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\depart.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\depart.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sky.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.yalantis\\phoenix\\1.2.3\\res\\drawable-hdpi-v4\\sky.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buildings.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.yalantis\\phoenix\\1.2.3\\res\\drawable-hdpi-v4\\buildings.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\input1.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\input1.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\yellowpage.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\yellowpage.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\classroom.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\classroom.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\vpi__tab_selected_pressed_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\iCampus-Android-Restructure\\ViewPagerIndicatorlibrary\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bus_detail_arrow_right.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\bus_detail_arrow_right.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bus_special.jpg",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\bus_special.jpg"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\logo_bistu.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\logo_bistu.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\secondhand.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\secondhand.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\job.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\job.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\option_fold.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\option_fold.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\school.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\school.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\busline_header.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\busline_header.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_vertical.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\menu_vertical.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\logo.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\logo.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\vpi__tab_selected_focused_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\iCampus-Android-Restructure\\ViewPagerIndicatorlibrary\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\item.PNG",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\item.PNG"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\turn.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\turn.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mark2.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\mark2.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\menu.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\push.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\push.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\imgbg.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\imgbg.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\back3.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\back3.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\grade.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\grade.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\vpi__tab_unselected_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\iCampus-Android-Restructure\\ViewPagerIndicatorlibrary\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sperate.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\sperate.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\back1.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\back1.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\news.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\news.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\vpi__tab_unselected_pressed_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\iCampus-Android-Restructure\\ViewPagerIndicatorlibrary\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\schoolbus.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\schoolbus.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\back4.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\back4.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\map.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\map.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\input.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\input.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\option_update.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\option_update.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\loading.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\loading.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bus.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\bus.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\first.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\first.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\busline_footer.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\busline_footer.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\busline_inner.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\busline_inner.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\vpi__tab_unselected_focused_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\iCampus-Android-Restructure\\ViewPagerIndicatorlibrary\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sun.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.yalantis\\phoenix\\1.2.3\\res\\drawable-hdpi-v4\\sun.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mark1.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\mark1.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\option_fold_right.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\option_fold_right.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\group.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\group.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\alarm.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\alarm.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\option_user.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\src\\main\\res\\drawable-hdpi\\option_user.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-hdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\vpi__tab_selected_holo.9.png",
+        "source": "C:\\WorkSpace\\AndroidStudio\\iCampus-Android-Restructure\\App\\build\\intermediates\\exploded-aar\\iCampus-Android-Restructure\\ViewPagerIndicatorlibrary\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_selected_holo.9.png"
+    }
+]
